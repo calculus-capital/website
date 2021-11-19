@@ -65,9 +65,9 @@ function Payables(props:PayablesProps) {
               <Content className={styles.discountingContent}>
                 <h3>Delay payments with invoice discounting</h3>
                 <ul>
-                  <li><h4>Procure inventory now</h4></li>
-                  <li><h4>Introduce flexibility in payment terms</h4></li>
-                  <li><h4>Integrate collections with repayments</h4></li>
+                  <li>Procure inventory now</li>
+                  <li>Introduce flexibility in payment terms</li>
+                  <li>Integrate collections with repayments</li>
                 </ul>
                 <h3>Get onboarded and integrate with our APIs</h3>
                 <ol>
@@ -101,9 +101,9 @@ function Payables(props:PayablesProps) {
               <Content className={styles.discountingContent}>
                 <h3>Arm procurement teams with immediate payments</h3>
                 <ul>
-                  <li><h4>Procure inventory now, pay immediately</h4></li>
-                  <li><h4>Convenient payments - Cards and UPI based BNPL</h4></li>
-                  <li><h4>Flexible, centralized repayments, like credit cards</h4></li>
+                  <li>Procure inventory now, pay immediately</li>
+                  <li>Convenient payments - Cards and UPI based BNPL</li>
+                  <li>Flexible, centralized repayments, like credit cards</li>
                 </ul>
                 <h3>Get onboarded</h3>
                 <ol>

@@ -49,10 +49,10 @@ function Receivables(props:ReceivablesProps) {
               <Content className={styles.discountingContent}>
                 <h3>Delay payments with invoice discounting</h3>
                 <ul>
-                  <li><h4>Get paid for sold inventory now</h4></li>
-                  <li><h4>Introduce flexibility in payment terms</h4></li>
-                  <li><h4>Streamline collections</h4></li>
-                  <li><h4>Help your supply chain grow</h4></li>
+                  <li>Get paid for sold inventory now</li>
+                  <li>Introduce flexibility in payment terms</li>
+                  <li>Streamline collections</li>
+                  <li>Help your supply chain grow</li>
                 </ul>
                 <h3>Get onboarded and integrate with our APIs</h3>
                 <ol>

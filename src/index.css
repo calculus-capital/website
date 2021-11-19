@@ -5,7 +5,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Works on Firefox */
+* {
+  scrollbar-width: thick;
+  scrollbar-color: #ff1616 #02020c;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #d4d4d4;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ff1616;
+  border-radius: 20px;
+  border: 3px solid #d4d4d4;
 }
