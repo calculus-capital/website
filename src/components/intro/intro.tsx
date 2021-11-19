@@ -26,7 +26,7 @@ function Intro(props:IntroProps) {
               </div>
               <div className={styles.separator}></div>
               <div className={styles.calculusAbout}>
-                <p>Cash Flow Financing<br></br>
+                <p>Cash Flow Financing System<br></br>
                 For Startups
                 </p>
               </div>
