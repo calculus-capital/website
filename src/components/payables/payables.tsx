@@ -6,7 +6,7 @@ import bnpl from '../../assets/bnpl/bnpl1.gif'
 
 import { Grid, Cell } from 'styled-css-grid'
 import 'bulma/css/bulma.min.css';
-import { Tabs, Content } from 'react-bulma-components'
+import { Tabs, Content, Button } from 'react-bulma-components'
 
 type PayablesProps = {}
 
@@ -77,6 +77,7 @@ function Payables(props:PayablesProps) {
                   <li>Start buying</li>
                 </ol>
               </Content>
+              <Button className={styles.contactButton}>Get in touch</Button>
             </Cell>
           </Grid>
           {/* ---------------------------------------------------------------------- */}
@@ -114,6 +115,7 @@ function Payables(props:PayablesProps) {
                   <li>Start buying</li>
                 </ol>
               </Content>
+              <Button className={styles.contactButton}>Get in touch</Button>
             </Cell>
           </Grid>
         </Cell>

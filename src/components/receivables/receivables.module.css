@@ -58,6 +58,7 @@
 .discountingContent {
   text-align: left;
   color: d4d4d4;
+  margin-left: 40px;
 }
 
 .discountingContent * {
@@ -77,7 +78,18 @@
 }
 
 .discountingSummary {
-  margin-left: 15%;
+  margin-left: 30%;
+}
+
+.contactButton {
+  background-color: #ff1616;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 13pt;
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
 }
 
 

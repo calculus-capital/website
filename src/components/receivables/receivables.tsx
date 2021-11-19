@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
 import styles from './receivables.module.css'
-import discounting from '../../assets/discounting/discounting1.gif'
-import bnpl from '../../assets/bnpl/bnpl1.gif'
+import discounting from '../../assets/revdisc/revdisc1.gif'
+import revenue from '../../assets/revenue/revenue1.gif'
 
 import { Grid, Cell } from 'styled-css-grid'
 import 'bulma/css/bulma.min.css';
-import { Tabs, Content } from 'react-bulma-components'
+import { Tabs, Content, Button } from 'react-bulma-components'
 
 type ReceivablesProps = {}
 
@@ -62,6 +62,7 @@ function Receivables(props:ReceivablesProps) {
                   <li>Start discounting</li>
                 </ol>
               </Content>
+              <Button className={styles.contactButton}>Get in touch</Button>
             </Cell>
             <Cell width={1} height={1} className={styles.cell}>
               <div className={styles.discountingGif}>
@@ -86,9 +87,9 @@ function Receivables(props:ReceivablesProps) {
               <Content className={styles.discountingContent}>
                 <h3>Arm procurement teams with immediate payments</h3>
                 <ul>
-                  <li><h4>Get paid for incoming revenue</h4></li>
-                  <li><h4>Customized to fit your needs</h4></li>
-                  <li><h4>Manage cash flows better</h4></li>
+                  <li>Get paid for incoming revenue</li>
+                  <li>Customized to fit your needs</li>
+                  <li>Manage cash flows better</li>
                 </ul>
                 <h3>Get onboarded</h3>
                 <ol>
@@ -99,10 +100,11 @@ function Receivables(props:ReceivablesProps) {
                   <li>Get paid</li>
                 </ol>
               </Content>
+              <Button className={styles.contactButton}>Get in touch</Button>
             </Cell>
             <Cell width={1} className={styles.cell}>
               <div className={styles.discountingGif}>
-                <img src={bnpl}></img>
+                <img src={revenue}></img>
               </div>
             </Cell>
           </Grid>

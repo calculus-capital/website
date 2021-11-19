@@ -12,7 +12,7 @@ import { Receivables } from './components/receivables/receivables'
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      {/* <Header></Header> */}
       <Intro></Intro>
       <Payables></Payables>
       <Receivables></Receivables>
