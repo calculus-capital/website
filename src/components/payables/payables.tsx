@@ -77,7 +77,7 @@ function Payables(props:PayablesProps) {
                   <li>Start buying</li>
                 </ol>
               </Content>
-              <Button className={styles.contactButtons}>Get in touch</Button>
+              <Button className={styles.contactButton}>Get in touch</Button>
             </Cell>
           </Grid>
           {/* ---------------------------------------------------------------------- */}
@@ -115,7 +115,7 @@ function Payables(props:PayablesProps) {
                   <li>Start buying</li>
                 </ol>
               </Content>
-              <Button className={styles.contactButtons}>Get in touch</Button>
+              <Button className={styles.contactButton}>Get in touch</Button>
             </Cell>
           </Grid>
         </Cell>
