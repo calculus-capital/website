@@ -24,7 +24,7 @@ function Outro(props:OutroProps) {
           <div className={styles.separator}></div>
           <div className={styles.calculusAbout}>
             <ul>
-              <li>Centally view and control distributed activity</li>
+              <li>Centrally view and control distributed activity</li>
               <li>Analytics and cash flow management console</li>
               <li>Track every transaction on the blockchain</li>
               <li>Secure and fraud resilient auditing</li>
