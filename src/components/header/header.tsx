@@ -1,5 +1,5 @@
 import React from 'react'
-import banner from '../../assets/banner2.png'
+import banner from '../../assets/banner7.png'
 
 import styles from './header.module.css'
 

@@ -12,13 +12,13 @@ function Intro(props:IntroProps) {
     <div className={styles.intro}>
       <Grid columns={12} flow="row" className={styles.grid}>
         <Cell width={1} className={styles.cell}></Cell>
-        <Cell width={2} height={1} center middle className={styles.cell}>
+        <Cell width={2} center middle className={styles.cell}>
           <div className={styles.logo}>
             <img src={logo}></img>
           </div>
         </Cell>
-        <Cell width={7} className={styles.cell}>
-          <Grid columns={2} rows={4} flow="column" className={styles.grid}>
+        <Cell width={3} className={styles.cell}>
+          <Grid columns={1} rows={4} flow="column" className={styles.grid}>
             <Cell height={1} width={1} className={styles.cell}></Cell>
             <Cell height={3} width={1} start className={styles.cell}>
               <div className={styles.calculus}>
@@ -31,12 +31,12 @@ function Intro(props:IntroProps) {
                 </p>
               </div>
             </Cell>
-            <Cell height={4} start className={styles.cell}>
-              <div className={styles.halo}>
-                <img src={halo}></img>
-              </div>
-            </Cell>
           </Grid>
+        </Cell>
+        <Cell width={5} center className={styles.cell} style={{margin:"auto"}}>
+          <div className={styles.halo}>
+            <img src={halo}></img>
+          </div>
         </Cell>
         <Cell width={1} className={styles.cell}></Cell>
       </Grid>

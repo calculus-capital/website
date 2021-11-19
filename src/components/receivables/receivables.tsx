@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import styles from './payables.module.css'
+import styles from './receivables.module.css'
 import discounting from '../../assets/discounting/discounting1.gif'
 import bnpl from '../../assets/bnpl/bnpl1.gif'
 
@@ -8,11 +8,11 @@ import { Grid, Cell } from 'styled-css-grid'
 import 'bulma/css/bulma.min.css';
 import { Tabs, Content } from 'react-bulma-components'
 
-type PayablesProps = {}
+type ReceivablesProps = {}
 
 // const
 
-function Payables(props:PayablesProps) {
+function Receivables(props:ReceivablesProps) {
   // wow this is indeed a mess
   const [tab1Active, setTab1Active] = useState(true)
   const [tab2Active, setTab2Active] = useState(false)
@@ -22,8 +22,8 @@ function Payables(props:PayablesProps) {
       <Grid rows={10} columns={1} className={styles.grid}>
         <Cell height={2} center middle className={styles.cell}>
           <div>
-            <p className={[styles.neonText, styles.headerText].join(' ')}>Payables Financing</p>
-            <p className={[styles.subText].join(' ')}>Just-In-Time Finance for procurement and other bills</p>
+            <p className={[styles.neonText, styles.headerText].join(' ')}>Receivables Financing</p>
+            <p className={[styles.subText].join(' ')}>Get paid earlier and on your terms</p>
           </div>
         </Cell>
         <Cell height={8} className={styles.cell}>
@@ -40,11 +40,29 @@ function Payables(props:PayablesProps) {
               active={tab2Active}
               onClick={() => {setTab1Active(false); setTab2Active(true)}}
             >
-              <div className={tab2Active ? styles.neonTabText : styles.tabText}>Procurement Cards & BNPL</div>
+              <div className={tab2Active ? styles.neonTabText : styles.tabText}>Short Term Revenue Financing</div>
             </Tabs.Tab>
           </Tabs>
           {/* ---------------------------------------------------------------------- */}
-          <Grid columns={2} rows={2} className={styles.grid} style={tab1Active ? {} : {display:"none"}} flow="column">
+          <Grid columns={2} rows={2} className={styles.grid} style={tab1Active ? {} : {display:"none"}}>
+            <Cell width={1} height={2} className={styles.cell}>
+              <Content className={styles.discountingContent}>
+                <h3>Delay payments with invoice discounting</h3>
+                <ul>
+                  <li><h4>Get paid for sold inventory now</h4></li>
+                  <li><h4>Introduce flexibility in payment terms</h4></li>
+                  <li><h4>Streamline collections</h4></li>
+                  <li><h4>Help your supply chain grow</h4></li>
+                </ul>
+                <h3>Get onboarded and integrate with our APIs</h3>
+                <ol>
+                  <li>Get onboarded with provisioned credit lines</li>
+                  <li>Integrate data pipelines for underwriting</li>
+                  <li>Integrate money pipelines</li>
+                  <li>Start discounting</li>
+                </ol>
+              </Content>
+            </Cell>
             <Cell width={1} height={1} className={styles.cell}>
               <div className={styles.discountingGif}>
                 <img src={discounting}></img>
@@ -52,58 +70,25 @@ function Payables(props:PayablesProps) {
             </Cell>
             <Cell width={1} height={1} className={styles.cell}>
               <Content className={[styles.discountingContent, styles.discountingSummary].join(' ')}>
-                <h3>The Discounting Process</h3>
-                <ol>
-                  <li>Procure inventory</li>
-                  <li>Upload invoice</li>
-                  <li>We pay the supplier</li>
-                  <li>Repay us later</li>
-                </ol>
-              </Content>
-            </Cell>
-            <Cell width={1} height={2} className={styles.cell}>
-              <Content className={styles.discountingContent}>
-                <h3>Delay payments with invoice discounting</h3>
-                <ul>
-                  <li><h4>Procure inventory now</h4></li>
-                  <li><h4>Introduce flexibility in payment terms</h4></li>
-                  <li><h4>Integrate collections with repayments</h4></li>
-                </ul>
-                <h3>Get onboarded and integrate with our APIs</h3>
-                <ol>
-                  <li>Get onboarded with provisioned credit lines</li>
-                  <li>Integrate data pipelines for underwriting</li>
-                  <li>Integrate money pipelines</li>
-                  <li>Start buying</li>
-                </ol>
-              </Content>
+                  <h3>The Discounting Process</h3>
+                  <ol>
+                    <li>Sell inventory</li>
+                    <li>Upload invoice</li>
+                    <li>We pay you</li>
+                    <li>We collect from your buyer</li>
+                  </ol>
+                </Content>
             </Cell>
           </Grid>
           {/* ---------------------------------------------------------------------- */}
-          <Grid columns={2} rows={1} className={styles.grid} style={tab2Active ? {} : {display:"none"}} flow="column">
-            <Cell width={1} height={1} className={styles.cell}>
-              <div className={styles.discountingGif}>
-                <img src={bnpl}></img>
-              </div>
-            </Cell>
-            <Cell width={1} height={1} className={styles.cell}>
-              <Content className={[styles.discountingContent, styles.discountingSummary].join(' ')}>
-                <h3>The Buying Process</h3>
-                <ol>
-                  <li>Procure inventory</li>
-                  <li>Make payment using issued card or app</li>
-                  <li>We pay the supplier</li>
-                  <li>Repay us later</li>
-                </ol>
-              </Content>
-            </Cell>
-            <Cell width={1} height={2} className={styles.cell}>
+          <Grid columns={2} className={styles.grid} style={tab2Active ? {} : {display:"none"}}>
+            <Cell width={1} className={styles.cell}>
               <Content className={styles.discountingContent}>
                 <h3>Arm procurement teams with immediate payments</h3>
                 <ul>
-                  <li><h4>Procure inventory now, pay immediately</h4></li>
-                  <li><h4>Convenient payments - Cards and UPI based BNPL</h4></li>
-                  <li><h4>Flexible, centralized repayments, like credit cards</h4></li>
+                  <li><h4>Get paid for incoming revenue</h4></li>
+                  <li><h4>Customized to fit your needs</h4></li>
+                  <li><h4>Manage cash flows better</h4></li>
                 </ul>
                 <h3>Get onboarded</h3>
                 <ol>
@@ -111,9 +96,14 @@ function Payables(props:PayablesProps) {
                   <li>Issue cards and onboard teams</li>
                   <li>Integrate data pipelines for underwriting</li>
                   <li>Integrate money pipelines</li>
-                  <li>Start buying</li>
+                  <li>Get paid</li>
                 </ol>
               </Content>
+            </Cell>
+            <Cell width={1} className={styles.cell}>
+              <div className={styles.discountingGif}>
+                <img src={bnpl}></img>
+              </div>
             </Cell>
           </Grid>
         </Cell>
@@ -122,4 +112,4 @@ function Payables(props:PayablesProps) {
   )
 }
 
-export { Payables }
+export { Receivables }

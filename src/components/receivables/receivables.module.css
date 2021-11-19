@@ -2,7 +2,6 @@
 .container {
   padding-left: 50px;
   padding-right: 50px;
-
   max-width: 1400px;
 
   margin-left: auto;
@@ -61,10 +60,6 @@
   color: d4d4d4;
 }
 
-.discountingSummary {
-  margin-left: 15%;
-}
-
 .discountingContent * {
   color: white;
 }
@@ -81,6 +76,9 @@
   color: #ff1616 !important;
 }
 
+.discountingSummary {
+  margin-left: 15%;
+}
 
 
 /* util */
