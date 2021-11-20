@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   background-color: #02020c;
+  min-width: 1000px;
+  overflow-x: scroll;
 }
 
 body {
