@@ -3,6 +3,7 @@ import { Cell, Grid } from 'styled-css-grid'
 import logo from '../../assets/logo.png'
 import halo from '../../assets/eye.png'
 
+import 'bulma/css/bulma.min.css';
 import styles from './outro.module.css'
 
 type OutroProps = {}

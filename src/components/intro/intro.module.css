@@ -34,6 +34,25 @@
   text-align: left;
 }
 
+.menu {
+  text-align: left;
+}
+
+.menu p {
+  color: #ff1616;
+  font-size: 10pt;
+}
+
+.menu a {
+  color: #b4b4b4;
+  font-size: 12pt;
+}
+
+.menu a:hover {
+  background-color: #0c0c20;
+  color: #ff1616;
+}
+
 .separator350 {
   background-color: #ff1616;
   height: 2px;

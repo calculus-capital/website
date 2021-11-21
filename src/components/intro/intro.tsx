@@ -4,8 +4,9 @@ import logo from "../../assets/logo.png";
 import halo from "../../assets/halo1.png";
 import systemImg from "../../assets/system.gif";
 
+import 'bulma/css/bulma.min.css';
 import styles from "./intro.module.css";
-import { Content } from "react-bulma-components";
+import { Content, Menu, Section } from "react-bulma-components";
 
 type IntroProps = {};
 
@@ -33,7 +34,22 @@ function Intro(props: IntroProps) {
             </div>
           </Cell>
           <Cell width={4} className={styles.cell}></Cell>
-          <Cell width={2} className={styles.cell}></Cell>
+          <Cell width={2} className={styles.cell}>
+            <Section className={styles.menu}>
+              <Menu>
+                <Menu.List title="Login">
+                  <Menu.List.Item>Console</Menu.List.Item>
+                </Menu.List>
+                <Menu.List title="Documentation">
+                  <Menu.List.Item>Case Studies</Menu.List.Item>
+                  <Menu.List.Item>Usecases</Menu.List.Item>
+                </Menu.List>
+                <Menu.List title="About">
+                  <Menu.List.Item>Team</Menu.List.Item>
+                </Menu.List>
+              </Menu>
+            </Section>
+          </Cell>
         </Grid>
       </div>
       <div className={styles.introFooter}>
