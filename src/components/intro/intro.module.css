@@ -16,6 +16,10 @@
   max-height: 300px;
 }
 
+.introHeader {
+  padding: 20px;
+}
+
 .calculus {
   padding-top: 30px;
   color: #ff1616;
@@ -62,7 +66,6 @@
 
 .system img {
   height: 100%;
-  margin-top: -50px;
   overflow: hidden;
 }
 

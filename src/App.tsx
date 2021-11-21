@@ -12,12 +12,14 @@ import { Receivables } from './components/receivables/receivables'
 function App() {
   return (
     <div className="App">
+      <div className="appContent">
       {/* <Header></Header> */}
-      <Intro></Intro>
-      <Payables></Payables>
-      <Receivables></Receivables>
-      <Outro></Outro>
-      <Footer></Footer>
+        <Intro></Intro>
+        <Payables></Payables>
+        <Receivables></Receivables>
+        <Outro></Outro>
+        <Footer></Footer>
+      </div>
     </div>
   )
 }
