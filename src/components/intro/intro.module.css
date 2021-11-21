@@ -9,7 +9,7 @@
 }
 
 .logo {
-  max-height: 400px;
+  max-height: 300px;
 }
 
 .logo img {
@@ -60,31 +60,40 @@
   margin-bottom: 10px;
 }
 
+.system img {
+  height: 100%;
+  margin-top: -50px;
+  overflow: hidden;
+}
+
+.system {
+  color: #b4b4b4;
+  font-size: 16pt;
+}
+
 .integrate img {
   min-height: 400px;
 }
 
 .content {
   color: #d4d4d4;
-  text-align: left !important;
   font-size: 16pt;
 }
 
 .content h2 {
   font-weight: normal !important;
-  color: #d4d4d4 !important;
-}
-
-.subContent {
-  font-size: 26pt;
-  color: #ff1616;
+  color: #ff1616 !important;
   text-shadow:
     0 0 7px #ff1616,
     0 0 10px #ff1616;
 }
 
 .introFooter {
-  min-height: 150px;
+  display: block;
+}
+
+.introFooterGrid {
+  min-height: 450px;
 }
 
 /* util */
