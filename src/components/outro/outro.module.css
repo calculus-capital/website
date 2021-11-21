@@ -31,11 +31,11 @@
 
 .separator {
   background-color: #ff1616;
-  height: 5px;
+  height: 2px;
   max-width: 350px;
   box-shadow:
     0 0 7px #ff1616,
-    0 0 50px #ff1616;
+    0 0 10px #ff1616;
 
   /* background-image: url(../../assets/banner7.png); */
   background-size: 100%;

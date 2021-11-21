@@ -2,6 +2,7 @@
 .intro {
   border: none;
   max-width: 2000px;
+  padding-top: 50px;
 
   margin-left: auto;
   margin-right: auto;
@@ -28,13 +29,13 @@
   text-align: left;
 }
 
-.separator {
+.separator350 {
   background-color: #ff1616;
-  height: 5px;
+  height: 2px;
   max-width: 350px;
   box-shadow:
     0 0 7px #ff1616,
-    0 0 50px #ff1616;
+    0 0 10px #ff1616;
 
   /* background-image: url(../../assets/banner7.png); */
   background-size: 100%;
@@ -43,17 +44,43 @@
   margin-bottom: 10px;
 }
 
-.halo {
-  max-height: 500px;
-  max-width: 400px;
+.separator {
+  background-color: #ff1616;
+  height: 2px;
+  max-width: 90%;
+  margin: auto;
+  box-shadow:
+    0 0 7px #ff1616,
+    0 0 10px #ff1616;
+
+  /* background-image: url(../../assets/banner7.png); */
+  background-size: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.halo img {
-  padding: 20px;
-  padding-top: 100px;
+.integrate img {
+  min-height: 400px;
+}
 
-  height: 100%;
-  width: 100%;
+.content {
+  color: #d4d4d4;
+  text-align: left !important;
+  font-size: 16pt;
+}
+
+.content h2 {
+  font-weight: normal !important;
+  color: #d4d4d4 !important;
+}
+
+.subContent {
+  font-size: 26pt;
+  color: #ff1616;
+  text-shadow:
+    0 0 7px #ff1616,
+    0 0 10px #ff1616;
 }
 
 .introFooter {
@@ -80,5 +107,5 @@
   color: #ff1616;
   text-shadow:
     0 0 7px #ff1616,
-    0 0 20px #ff1616;
+    0 0 10px #ff1616;
 }
