@@ -47,6 +47,11 @@
   font-size: 12pt;
 }
 
+.notionLink {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .menu a:hover {
   background-color: #0c0c20;
   color: #ff1616;

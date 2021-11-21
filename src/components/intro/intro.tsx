@@ -38,14 +38,30 @@ function Intro(props: IntroProps) {
             <Section className={styles.menu}>
               <Menu>
                 <Menu.List title="Login">
-                  <Menu.List.Item>Console</Menu.List.Item>
+                  <Menu.List.Item>
+                    <a className={styles.notionLink} href="https://calculus-capital.notion.site/" target="_blank">
+                      Console
+                    </a>
+                  </Menu.List.Item>
                 </Menu.List>
                 <Menu.List title="Documentation">
-                  <Menu.List.Item>Case Studies</Menu.List.Item>
-                  <Menu.List.Item>Usecases</Menu.List.Item>
+                  <Menu.List.Item>
+                    <a className={styles.notionLink} href="https://calculus-capital.notion.site/Case-Studies-a6f4d3e8e5214e28b2f3c6e5cba3e7ae" target="_blank">
+                      Case Studies
+                    </a>
+                  </Menu.List.Item>
+                  <Menu.List.Item>
+                    <a className={styles.notionLink} href="https://calculus-capital.notion.site/Usecases-6ef2163278da4990ae027bc2c5e3b1f7" target="_blank">
+                      Usecases
+                    </a>
+                  </Menu.List.Item>
                 </Menu.List>
                 <Menu.List title="About">
-                  <Menu.List.Item>Team</Menu.List.Item>
+                  <Menu.List.Item>
+                    <a className={styles.notionLink} href="https://calculus-capital.notion.site/About-Us-33613fb172fa4d10a23ace098e756781" target="_blank">
+                      Team
+                    </a>
+                  </Menu.List.Item>
                 </Menu.List>
               </Menu>
             </Section>
