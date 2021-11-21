@@ -38,9 +38,9 @@ function Intro(props: IntroProps) {
       </div>
       <div className={styles.introFooter}>
         <Grid columns={12} rows={1} className={[styles.grid, styles.introFooterGrid].join(' ')}>
-          <Cell width={2} center middle className={styles.cell}></Cell>
-          <Cell width={2} center middle className={styles.cell}>
-          <Content className={styles.content}>
+          <Cell width={1} center middle className={styles.cell}></Cell>
+          <Cell width={3} center middle className={styles.cell}>
+            <Content className={styles.content}>
               <h2>Receivables</h2>
               <ul>
                 <li>Invoice Discounting</li>
@@ -56,8 +56,8 @@ function Intro(props: IntroProps) {
               </Content>
             </div>
           </Cell>
-          <Cell width={2} center middle className={styles.cell}>
-          <Content className={styles.content}>
+          <Cell width={3} center middle className={styles.cell}>
+            <Content className={styles.content}>
               <h2>Payables</h2>
               <ul>
                 <li>Invoice Discounting</li>
@@ -65,7 +65,7 @@ function Intro(props: IntroProps) {
               </ul>
             </Content>
           </Cell>
-          <Cell width={2} center middle className={styles.cell}></Cell>
+          <Cell width={1} center middle className={styles.cell}></Cell>
         </Grid>
       </div>
     </div>
