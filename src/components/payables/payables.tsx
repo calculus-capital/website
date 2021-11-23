@@ -22,7 +22,7 @@ function Payables(props:PayablesProps) {
       <Grid rows={10} columns={1} className={styles.grid}>
         <Cell height={2} center middle className={styles.cell}>
           <div>
-            <p className={[styles.neonText, styles.headerText].join(' ')}>Payables Financing</p>
+            <p className={[styles.neonText, styles.headerText].join(' ')}>Payables Financing for Procurement</p>
             <p className={[styles.subText].join(' ')}>Just-In-Time Finance for procurement and other bills</p>
           </div>
         </Cell>

@@ -73,10 +73,10 @@ function Intro(props: IntroProps) {
           <Cell width={1} center middle className={styles.cell}></Cell>
           <Cell width={3} center middle className={styles.cell}>
             <Content className={styles.content}>
-              <h2>Receivables</h2>
+              <h2>Sales</h2>
               <ul>
                 <li>Invoice Discounting</li>
-                <li>Revenue Financing</li>
+                <li>Accounts Receivables</li>
               </ul>
             </Content>
           </Cell>
@@ -90,7 +90,7 @@ function Intro(props: IntroProps) {
           </Cell>
           <Cell width={3} center middle className={styles.cell}>
             <Content className={styles.content}>
-              <h2>Payables</h2>
+              <h2>Procurement</h2>
               <ul>
                 <li>Invoice Discounting</li>
                 <li>Credit cards & BNPL</li>

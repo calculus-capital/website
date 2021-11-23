@@ -22,7 +22,7 @@ function Receivables(props:ReceivablesProps) {
       <Grid rows={10} columns={1} className={styles.grid}>
         <Cell height={2} center middle className={styles.cell}>
           <div>
-            <p className={[styles.neonText, styles.headerText].join(' ')}>Receivables Financing</p>
+            <p className={[styles.neonText, styles.headerText].join(' ')}>Receivables Financing for Sales</p>
             <p className={[styles.subText].join(' ')}>Get paid earlier and on your terms</p>
           </div>
         </Cell>
