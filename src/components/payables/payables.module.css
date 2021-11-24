@@ -84,14 +84,22 @@
 }
 
 .contactButton {
-  background-color: #ff1616 !important;
-  border: none !important;
-  color: white !important;
-  font-weight: bold !important;
-  font-size: 13pt !important;
-  width: 200px !important;
-  height: 50px !important;
-  margin-top: 50px !important;
+  width: 80%;
+  margin: auto;
+
+  margin: 20px;
+  border: 1px solid #ff1616;
+  border-radius: 10px;
+}
+
+.contactButton a {
+  color: #ff1616;
+  font-size: 14pt;
+
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: block;
 }
 
 /* util */

@@ -40,14 +40,14 @@ function Receivables(props:ReceivablesProps) {
               active={tab2Active}
               onClick={() => {setTab1Active(false); setTab2Active(true)}}
             >
-              <div className={tab2Active ? styles.neonTabText : styles.tabText}>Short Term Revenue Financing</div>
+              <div className={tab2Active ? styles.neonTabText : styles.tabText}>Other Accounts Receivables</div>
             </Tabs.Tab>
           </Tabs>
           {/* ---------------------------------------------------------------------- */}
           <Grid columns={2} rows={2} className={styles.grid} style={tab1Active ? {} : {display:"none"}}>
             <Cell width={1} height={2} className={styles.cell}>
               <Content className={styles.discountingContent}>
-                <h3>Delay payments with invoice discounting</h3>
+                <h3>Get paid now with invoice discounting</h3>
                 <ul>
                   <li>Get paid for sold inventory now</li>
                   <li>Introduce flexibility in payment terms</li>
@@ -62,7 +62,9 @@ function Receivables(props:ReceivablesProps) {
                   <li>Start discounting</li>
                 </ol>
               </Content>
-              <Button className={styles.contactButton}>Get in touch</Button>
+              <div className={styles.contactButton}>
+                <a href="https://notionforms.io/forms/contact-us-13" target="_blank">Get in touch</a>
+              </div>
             </Cell>
             <Cell width={1} height={1} className={styles.cell}>
               <div className={styles.discountingGif}>
@@ -85,7 +87,7 @@ function Receivables(props:ReceivablesProps) {
           <Grid columns={2} className={styles.grid} style={tab2Active ? {} : {display:"none"}}>
             <Cell width={1} className={styles.cell}>
               <Content className={styles.discountingContent}>
-                <h3>Arm procurement teams with immediate payments</h3>
+                <h3>Get paid now for other accounts receivables</h3>
                 <ul>
                   <li>Get paid for incoming revenue</li>
                   <li>Customized to fit your needs</li>
@@ -94,13 +96,13 @@ function Receivables(props:ReceivablesProps) {
                 <h3>Get onboarded</h3>
                 <ol>
                   <li>Get onboarded with provisioned credit lines</li>
-                  <li>Issue cards and onboard teams</li>
-                  <li>Integrate data pipelines for underwriting</li>
-                  <li>Integrate money pipelines</li>
+                  <li>Integrate data and money pipelines</li>
                   <li>Get paid</li>
                 </ol>
               </Content>
-              <Button className={styles.contactButton}>Get in touch</Button>
+              <div className={styles.contactButton}>
+                <a href="https://notionforms.io/forms/contact-us-13" target="_blank">Get in touch</a>
+              </div>
             </Cell>
             <Cell width={1} className={styles.cell}>
               <div className={styles.discountingGif}>

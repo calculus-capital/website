@@ -77,7 +77,9 @@ function Payables(props:PayablesProps) {
                   <li>Start buying</li>
                 </ol>
               </Content>
-              <Button className={styles.contactButton}>Get in touch</Button>
+              <div className={styles.contactButton}>
+                <a href="https://notionforms.io/forms/contact-us-13" target="_blank">Get in touch</a>
+              </div>
             </Cell>
           </Grid>
           {/* ---------------------------------------------------------------------- */}
@@ -115,7 +117,9 @@ function Payables(props:PayablesProps) {
                   <li>Start buying</li>
                 </ol>
               </Content>
-              <Button className={styles.contactButton}>Get in touch</Button>
+              <div className={styles.contactButton}>
+                <a href="https://notionforms.io/forms/contact-us-13" target="_blank">Get in touch</a>
+              </div>
             </Cell>
           </Grid>
         </Cell>
