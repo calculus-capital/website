@@ -29,9 +29,9 @@
 .neonTabText {
   font-size: 16pt;
   color: #ff1616;
-  text-shadow:
+  /* text-shadow:
     0 0 7px #ff1616,
-    0 0 10px #ff1616;
+    0 0 10px #ff1616; */
 }
 
 .tab {
@@ -123,7 +123,7 @@
 
 .neonText {
   color: #ff1616;
-  text-shadow:
+  /* text-shadow:
     0 0 7px #ff1616,
-    0 0 20px #ff1616;
+    0 0 20px #ff1616; */
 }

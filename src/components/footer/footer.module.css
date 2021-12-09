@@ -2,9 +2,9 @@
 
 .footerlink {
   color: #ff1616;
-  text-shadow:
+  /* text-shadow:
     0 0 7px #ff1616,
-    0 0 10px #ff1616;
+    0 0 10px #ff1616; */
 
   font-size: 15pt;
 }

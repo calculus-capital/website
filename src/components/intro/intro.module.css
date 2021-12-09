@@ -110,9 +110,9 @@
 .content h2 {
   font-weight: normal !important;
   color: #ff1616 !important;
-  text-shadow:
+  /* text-shadow:
     0 0 7px #ff1616,
-    0 0 10px #ff1616;
+    0 0 10px #ff1616; */
 }
 
 .introFooter {
@@ -141,7 +141,7 @@
 
 .neonText {
   color: #ff1616;
-  text-shadow:
+  /* text-shadow:
     0 0 7px #ff1616,
-    0 0 10px #ff1616;
+    0 0 10px #ff1616; */
 }
