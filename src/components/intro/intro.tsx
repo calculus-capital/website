@@ -39,7 +39,7 @@ function Intro(props: IntroProps) {
               <Menu>
                 <Menu.List title="Login">
                   <Menu.List.Item>
-                    <a className={styles.notionLink} href="https://calculus-capital.notion.site/" target="_blank">
+                    <a className={styles.notionLink} href="https://console.calculus.capital/" target="_blank">
                       Console
                     </a>
                   </Menu.List.Item>
@@ -83,6 +83,7 @@ function Intro(props: IntroProps) {
           <Cell width={6} center middle className={styles.cell}>
             <div className={styles.system}>
               <img src={systemImg}></img>
+
               <Content className={styles.content}>
                 <h2>Console</h2>
               </Content>
