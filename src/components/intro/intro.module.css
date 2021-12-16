@@ -9,11 +9,11 @@
 }
 
 .logo {
-  max-height: 300px;
+  max-height: 200px;
 }
 
 .logo img {
-  max-height: 300px;
+  max-height: 200px;
 }
 
 .introHeader {
@@ -23,13 +23,13 @@
 .calculus {
   padding-top: 30px;
   color: #ff1616;
-  font-size: 35pt;
+  font-size: 25pt;
   text-align: left;
 }
 
 .calculusAbout {
   color: #d4d4d4;
-  font-size: 20pt;
+  font-size: 17pt;
   text-align: left;
 }
 
@@ -45,6 +45,10 @@
 .menu a {
   color: #b4b4b4;
   font-size: 12pt;
+}
+
+.menu p {
+  margin-bottom: 0 !important;
 }
 
 .notionLink {
@@ -120,7 +124,7 @@
 }
 
 .introFooterGrid {
-  min-height: 450px;
+  min-height: 350px;
 }
 
 /* util */

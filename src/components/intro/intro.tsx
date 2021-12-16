@@ -2,7 +2,7 @@ import React from "react";
 import { Cell, Grid } from "styled-css-grid";
 import logo from "../../assets/logo.png";
 import halo from "../../assets/halo1.png";
-import systemImg from "../../assets/system.gif";
+import systemImg from "../../assets/system2.png";
 
 import 'bulma/css/bulma.min.css';
 import styles from "./intro.module.css";
@@ -28,7 +28,7 @@ function Intro(props: IntroProps) {
             <div className={styles.separator350}></div>
             <div className={styles.calculusAbout}>
               <p>
-                Just-In-Time Financing System<br></br>
+                Cash Flow Financing System<br></br>
                 For Startups
               </p>
             </div>
@@ -71,7 +71,7 @@ function Intro(props: IntroProps) {
       <div className={styles.introFooter}>
         <Grid columns={12} rows={1} className={[styles.grid, styles.introFooterGrid].join(' ')}>
           <Cell width={1} center middle className={styles.cell}></Cell>
-          <Cell width={3} center middle className={styles.cell}>
+          <Cell width={2} center middle className={styles.cell}>
             <Content className={styles.content}>
               <h2>Sales</h2>
               <ul>
@@ -80,15 +80,15 @@ function Intro(props: IntroProps) {
               </ul>
             </Content>
           </Cell>
-          <Cell width={4} center middle className={styles.cell}>
+          <Cell width={6} center middle className={styles.cell}>
             <div className={styles.system}>
               <img src={systemImg}></img>
               <Content className={styles.content}>
-                <h2>Central console</h2>
+                <h2>Console</h2>
               </Content>
             </div>
           </Cell>
-          <Cell width={3} center middle className={styles.cell}>
+          <Cell width={2} center middle className={styles.cell}>
             <Content className={styles.content}>
               <h2>Procurement</h2>
               <ul>
