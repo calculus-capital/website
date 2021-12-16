@@ -2,7 +2,7 @@ import React from "react";
 import { Cell, Grid } from "styled-css-grid";
 import logo from "../../assets/logo.png";
 import halo from "../../assets/halo1.png";
-import systemImg from "../../assets/system3.png";
+import systemImg from "../../assets/system4.png";
 
 import 'bulma/css/bulma.min.css';
 import styles from "./intro.module.css";
