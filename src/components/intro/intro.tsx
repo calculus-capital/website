@@ -70,35 +70,35 @@ function Intro(props: IntroProps) {
       </div>
       <div className={styles.introFooter}>
         <Grid columns={12} rows={1} className={[styles.grid, styles.introFooterGrid].join(' ')}>
-          <Cell width={1} center middle className={styles.cell}></Cell>
-          <Cell width={2} center middle className={styles.cell}>
-            <Content className={styles.content}>
-              <h2>Sales</h2>
-              <ul>
-                <li>Invoice Discounting</li>
-                <li>Accounts Receivables</li>
-              </ul>
-            </Content>
-          </Cell>
+          <Cell width={2} center middle className={styles.cell}></Cell>
           <Cell width={6} center middle className={styles.cell}>
             <div className={styles.system}>
-              <img src={systemImg}></img>
-
-              <Content className={styles.content}>
-                <h2>Console</h2>
-              </Content>
+              {/* <img src={systemImg}></img> */}
+              <div className={styles.iframe}>
+                <iframe src="https://console.calculus.capital"></iframe>
+              </div>
             </div>
           </Cell>
-          <Cell width={2} center middle className={styles.cell}>
+          <Cell width={4} center className={styles.cell}>
             <Content className={styles.content}>
               <h2>Procurement</h2>
               <ul>
+                <li>Purchase Financing</li>
                 <li>Invoice Discounting</li>
-                <li>Credit cards & BNPL</li>
+              </ul>
+              <h2>Sales</h2>
+              <ul>
+                <li>Invoice Discounting</li>
+                <li>Receivables Financing</li>
+              </ul>
+              <h2>Management</h2>
+              <ul>
+                <li>Suppliers</li>
+                <li>Lenders</li>
+                <li>Repayments</li>
               </ul>
             </Content>
           </Cell>
-          <Cell width={1} center middle className={styles.cell}></Cell>
         </Grid>
       </div>
     </div>

@@ -28,10 +28,10 @@
 
 .neonTabText {
   font-size: 16pt;
-  color: #ff1616;
+  color: #7a70a7;
   /* text-shadow:
-    0 0 7px #ff1616,
-    0 0 10px #ff1616; */
+    0 0 7px #7a70a7,
+    0 0 10px #7a70a7; */
 }
 
 .tab {
@@ -45,7 +45,7 @@
 }
 
 .tabIsActive a {
-  border-color: #ff1616 !important;
+  border-color: #7a70a7 !important;
 }
 
 .discountingGif {
@@ -80,7 +80,7 @@
 }
 
 .discountingContent h1, h2, h3 {
-  color: #ff1616 !important;
+  color: #7a70a7 !important;
 }
 
 .contactButton {
@@ -88,12 +88,12 @@
   margin: auto;
 
   margin: 20px;
-  border: 1px solid #ff1616;
+  border: 1px solid #7a70a7;
   border-radius: 10px;
 }
 
 .contactButton a {
-  color: #ff1616;
+  color: #7a70a7;
   font-size: 14pt;
 
   width: 100%;
@@ -122,8 +122,8 @@
 }
 
 .neonText {
-  color: #ff1616;
+  color: #7a70a7;
   /* text-shadow:
-    0 0 7px #ff1616,
-    0 0 20px #ff1616; */
+    0 0 7px #7a70a7,
+    0 0 20px #7a70a7; */
 }

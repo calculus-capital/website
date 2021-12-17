@@ -103,6 +103,34 @@
 .system {
   color: #b4b4b4;
   font-size: 16pt;
+  align-items: center;
+  text-align: center;
+  height: 550px;
+}
+
+.iframe {
+  overflow: hidden;
+  width: 920px;
+  height: 450px;
+}
+
+iframe {
+  width: 1920px;
+  height: 1000px;
+  position: relative;
+  left: -10px;
+  top: -10px;
+  bottom: -50px;
+  -moz-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+  -o-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  -moz-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
 }
 
 .integrate img {
@@ -111,12 +139,14 @@
 
 .content {
   color: #d4d4d4;
-  font-size: 16pt;
+  font-size: 14pt;
+  text-align: left;
+  margin-left: 20px;
 }
 
-.content h2 {
+.content h1, h2 {
   font-weight: normal !important;
-  color: #ff1616 !important;
+  color: #7a70a7 !important;
   /* text-shadow:
     0 0 7px #ff1616,
     0 0 10px #ff1616; */
