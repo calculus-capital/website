@@ -17,10 +17,9 @@ function Intro(props: IntroProps) {
   useEffect(() => {
 
     setInterval(() => {
-      console.log(states[~~(Math.random() * states.length)])
       setlocation(states[~~(Math.random() * states.length)])
       return false
-    }, 10000);
+    }, 3000);
 
     return () => {
     }
