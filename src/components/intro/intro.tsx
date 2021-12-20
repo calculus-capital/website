@@ -11,7 +11,7 @@ import { Content, Menu, Section } from "react-bulma-components";
 type IntroProps = {};
 
 function Intro(props: IntroProps) {
-  const [location, setlocation] = useState("/")
+  const [location, setlocation] = useState("/credit")
   const states = ["/","/credit","/receivables","/payables"]
 
   useEffect(() => {
