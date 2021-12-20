@@ -4,7 +4,7 @@
   padding-right: 50px;
   max-width: 1400px;
 
-  margin-top: 100px;
+  /* margin-top: 100px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -79,16 +79,22 @@
 }
 
 .discountingSummary {
-  margin-left: 30%;
+  padding: 50px;
+  border: 50px solid #12122f;
+  border-radius: 20px;
 }
 
 .contactButton {
-  width: 80%;
+  width: 100%;
   margin: auto;
 
   margin: 20px;
   border: 1px solid #7a70a7;
   border-radius: 10px;
+}
+
+.contactButton:hover {
+  background-color: rgba(200,200,255,0.1);
 }
 
 .contactButton a {

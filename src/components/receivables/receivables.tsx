@@ -62,16 +62,13 @@ function Receivables(props:ReceivablesProps) {
                   <li>Start discounting</li>
                 </ol>
               </Content>
-              <div className={styles.contactButton}>
-                <a href="https://notionforms.io/forms/contact-us-13" target="_blank">Get in touch</a>
-              </div>
             </Cell>
-            <Cell width={1} height={1} className={styles.cell}>
+            {/* <Cell width={1} height={1} className={styles.cell}>
               <div className={styles.discountingGif}>
                 <img src={discounting}></img>
               </div>
-            </Cell>
-            <Cell width={1} height={1} className={styles.cell}>
+            </Cell> */}
+            <Cell width={1} height={2} className={styles.cell}>
               <Content className={[styles.discountingContent, styles.discountingSummary].join(' ')}>
                   <h3>The Discounting Process</h3>
                   <ol>
@@ -81,6 +78,9 @@ function Receivables(props:ReceivablesProps) {
                     <li>We collect from your buyer</li>
                   </ol>
                 </Content>
+                <div className={styles.contactButton}>
+                  <a href="https://notionforms.io/forms/contact-us-13" target="_blank">Get in touch</a>
+                </div>
             </Cell>
           </Grid>
           {/* ---------------------------------------------------------------------- */}
@@ -100,15 +100,12 @@ function Receivables(props:ReceivablesProps) {
                   <li>Get paid</li>
                 </ol>
               </Content>
-              <div className={styles.contactButton}>
-                <a href="https://notionforms.io/forms/contact-us-13" target="_blank">Get in touch</a>
-              </div>
             </Cell>
-            <Cell width={1} className={styles.cell}>
+            {/* <Cell width={1} className={styles.cell}>
               <div className={styles.discountingGif}>
                 <img src={revenue}></img>
               </div>
-            </Cell>
+            </Cell> */}
           </Grid>
         </Cell>
       </Grid>

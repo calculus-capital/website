@@ -45,11 +45,11 @@ function Payables(props:PayablesProps) {
           </Tabs>
           {/* ---------------------------------------------------------------------- */}
           <Grid columns={2} rows={2} className={styles.grid} style={tab1Active ? {} : {display:"none"}} flow="column">
-            <Cell width={1} height={1} className={styles.cell}>
+            {/* <Cell width={1} height={1} className={styles.cell}>
               <div className={styles.discountingGif}>
                 <img src={discounting}></img>
               </div>
-            </Cell>
+            </Cell> */}
             <Cell width={1} height={1} className={styles.cell}>
               <Content className={[styles.discountingContent, styles.discountingSummary].join(' ')}>
                 <h3>The Discounting Process</h3>
@@ -60,6 +60,9 @@ function Payables(props:PayablesProps) {
                   <li>Repay us later</li>
                 </ol>
               </Content>
+              <div className={styles.contactButton}>
+                <a href="https://notionforms.io/forms/contact-us-13" target="_blank">Get in touch</a>
+              </div>
             </Cell>
             <Cell width={1} height={2} className={styles.cell}>
               <Content className={styles.discountingContent}>
@@ -77,18 +80,15 @@ function Payables(props:PayablesProps) {
                   <li>Start buying</li>
                 </ol>
               </Content>
-              <div className={styles.contactButton}>
-                <a href="https://notionforms.io/forms/contact-us-13" target="_blank">Get in touch</a>
-              </div>
             </Cell>
           </Grid>
           {/* ---------------------------------------------------------------------- */}
           <Grid columns={2} rows={1} className={styles.grid} style={tab2Active ? {} : {display:"none"}} flow="column">
-            <Cell width={1} height={1} className={styles.cell}>
+            {/* <Cell width={1} height={1} className={styles.cell}>
               <div className={styles.discountingGif}>
                 <img src={bnpl}></img>
               </div>
-            </Cell>
+            </Cell> */}
             <Cell width={1} height={1} className={styles.cell}>
               <Content className={[styles.discountingContent, styles.discountingSummary].join(' ')}>
                 <h3>The Buying Process</h3>
@@ -99,6 +99,9 @@ function Payables(props:PayablesProps) {
                   <li>Repay us later</li>
                 </ol>
               </Content>
+              <div className={styles.contactButton}>
+                <a href="https://notionforms.io/forms/contact-us-13" target="_blank">Get in touch</a>
+              </div>
             </Cell>
             <Cell width={1} height={2} className={styles.cell}>
               <Content className={styles.discountingContent}>
@@ -117,9 +120,6 @@ function Payables(props:PayablesProps) {
                   <li>Start buying</li>
                 </ol>
               </Content>
-              <div className={styles.contactButton}>
-                <a href="https://notionforms.io/forms/contact-us-13" target="_blank">Get in touch</a>
-              </div>
             </Cell>
           </Grid>
         </Cell>
