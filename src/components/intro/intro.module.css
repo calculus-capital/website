@@ -110,8 +110,8 @@
 
 .iframe {
   overflow: hidden;
-  width: 920px;
-  height: 450px;
+  width: 1100px;
+  height: 550px;
 }
 
 iframe {
@@ -121,11 +121,11 @@ iframe {
   left: -10px;
   top: -10px;
   bottom: -50px;
-  -moz-transform: scale(0.5, 0.5);
-  -webkit-transform: scale(0.5, 0.5);
-  -o-transform: scale(0.5, 0.5);
-  -ms-transform: scale(0.5, 0.5);
-  transform: scale(0.5, 0.5);
+  -moz-transform: scale(0.6, 0.6);
+  -webkit-transform: scale(0.6, 0.6);
+  -o-transform: scale(0.6, 0.6);
+  -ms-transform: scale(0.6, 0.6);
+  transform: scale(0.6, 0.6);
   -moz-transform-origin: top left;
   -webkit-transform-origin: top left;
   -o-transform-origin: top left;

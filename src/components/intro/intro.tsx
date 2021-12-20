@@ -14,16 +14,16 @@ function Intro(props: IntroProps) {
   const [location, setlocation] = useState("/credit")
   const states = ["/","/credit","/receivables","/payables"]
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    setInterval(() => {
-      setlocation(states[~~(Math.random() * states.length)])
-      return false
-    }, 10000);
+  //   setInterval(() => {
+  //     setlocation(states[~~(Math.random() * states.length)])
+  //     return false
+  //   }, 10000);
 
-    return () => {
-    }
-  }, [])
+  //   return () => {
+  //   }
+  // }, [])
 
   return (
     <div className={styles.intro}>
@@ -84,8 +84,8 @@ function Intro(props: IntroProps) {
       </div>
       <div className={styles.introFooter}>
         <Grid columns={12} rows={1} className={[styles.grid, styles.introFooterGrid].join(' ')}>
-          <Cell width={2} center middle className={styles.cell}></Cell>
-          <Cell width={6} center middle className={styles.cell}>
+          <Cell width={1} center middle className={styles.cell}></Cell>
+          <Cell width={7} center middle className={styles.cell}>
             <div className={styles.system}>
               {/* <img src={systemImg}></img> */}
               <div className={styles.iframe}>
@@ -93,7 +93,8 @@ function Intro(props: IntroProps) {
               </div>
             </div>
           </Cell>
-          <Cell width={4} center className={styles.cell}>
+          <Cell width={1} center middle className={styles.cell}></Cell>
+          <Cell width={3} center className={styles.cell}>
             <Content className={styles.content}>
               <h2>Procurement</h2>
               <ul>
