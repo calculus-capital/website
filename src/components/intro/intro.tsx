@@ -19,7 +19,7 @@ function Intro(props: IntroProps) {
     setInterval(() => {
       setlocation(states[~~(Math.random() * states.length)])
       return false
-    }, 3000);
+    }, 10000);
 
     return () => {
     }
