@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Cell, Grid } from "styled-css-grid";
 import logo from "../../assets/logo.png";
 import halo from "../../assets/halo1.png";
@@ -11,6 +11,21 @@ import { Content, Menu, Section } from "react-bulma-components";
 type IntroProps = {};
 
 function Intro(props: IntroProps) {
+  const [location, setlocation] = useState("/")
+  const states = ["/","/credit","/receivables","/payables"]
+
+  useEffect(() => {
+
+    setInterval(() => {
+      console.log(states[~~(Math.random() * states.length)])
+      setlocation(states[~~(Math.random() * states.length)])
+      return false
+    }, 10000);
+
+    return () => {
+    }
+  }, [])
+
   return (
     <div className={styles.intro}>
       <div className={styles.introHeader}>
@@ -75,7 +90,7 @@ function Intro(props: IntroProps) {
             <div className={styles.system}>
               {/* <img src={systemImg}></img> */}
               <div className={styles.iframe}>
-                <iframe src="https://console.calculus.capital"></iframe>
+                <iframe src={"https://console.calculus.capital"+location}></iframe>
               </div>
             </div>
           </Cell>
