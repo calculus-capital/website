@@ -76,6 +76,14 @@
 }
 
 @media (min-width: 1100px) {
+  .logo {
+    max-height: 200px;
+  }
+
+  .logo img {
+    max-height: 200px;
+  }
+
   .intro {
     border: none;
     height: 100vh;
@@ -211,7 +219,7 @@
 
 @media (max-width: 481px) {
   * {
-    display: none
+    display: none !important;
   }
 }
 
