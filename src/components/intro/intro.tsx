@@ -76,10 +76,10 @@ function Intro(props: IntroProps) {
               <Grid columns={10}>
                 <Cell width={2}></Cell>
                 <Cell className={styles.iframe} width={4}>
-                  <iframe src={"https://console.calculus.capital/credit"} className={styles.if1}></iframe>
+                  <iframe src={"https://console.calculus.capital/receivables"} className={styles.if1}></iframe>
                 </Cell>
                 <Cell className={styles.iframe2} width={4}>
-                  <iframe src={"https://console.calculus.capital/"} className={styles.if2}></iframe>
+                  <iframe src={"https://console.calculus.capital/credit"} className={styles.if2}></iframe>
                 </Cell>
               </Grid>
             </div>
