@@ -85,7 +85,7 @@ function Intro(props: IntroProps) {
             </div>
           </Cell>
           <Cell width={2} center middle className={styles.cell}></Cell>
-          <Cell width={3} center className={styles.cell}>
+          <Cell width={2} center className={styles.cell}>
             <Content className={styles.content}>
               <h2>Purchase</h2>
               <ul>
@@ -99,6 +99,7 @@ function Intro(props: IntroProps) {
               </ul>
             </Content>
           </Cell>
+          <Cell width={1} center middle className={styles.cell}></Cell>
         </Grid>
       </div>
     </div>
