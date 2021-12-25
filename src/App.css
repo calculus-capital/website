@@ -3,10 +3,7 @@
   background-color: #0c0c20;
   background-image: url('assets/background2.jpg');
   background-size:100% 100%;
-
-  min-width: 1200px;
   overflow-x: scroll;
-
   padding: 20px;
 }
 

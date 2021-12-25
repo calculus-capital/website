@@ -11,19 +11,6 @@ import { Content, Menu, Section } from "react-bulma-components";
 type IntroProps = {};
 
 function Intro(props: IntroProps) {
-  const [location, setlocation] = useState("/credit")
-  const states = ["/","/credit","/receivables","/payables"]
-
-  // useEffect(() => {
-
-  //   setInterval(() => {
-  //     setlocation(states[~~(Math.random() * states.length)])
-  //     return false
-  //   }, 10000);
-
-  //   return () => {
-  //   }
-  // }, [])
 
   return (
     <div className={styles.intro}>
@@ -47,8 +34,8 @@ function Intro(props: IntroProps) {
               </p>
             </div>
           </Cell>
-          <Cell width={4} className={styles.cell}></Cell>
-          <Cell width={2} className={styles.cell}>
+          <Cell width={3} className={styles.cell}></Cell>
+          <Cell width={3} className={styles.cell}>
             <Section className={styles.menu}>
               <Menu>
                 <Menu.List title="Login">
@@ -84,19 +71,23 @@ function Intro(props: IntroProps) {
       </div>
       <div className={styles.introFooter}>
         <Grid columns={12} rows={1} className={[styles.grid, styles.introFooterGrid].join(' ')}>
-          <Cell width={1} center middle className={styles.cell}></Cell>
           <Cell width={7} center middle className={styles.cell}>
             <div className={styles.system}>
-              {/* <img src={systemImg}></img> */}
-              <div className={styles.iframe}>
-                <iframe src={"https://console.calculus.capital"+location}></iframe>
-              </div>
+              <Grid columns={10}>
+                <Cell width={2}></Cell>
+                <Cell className={styles.iframe} width={4}>
+                  <iframe src={"https://console.calculus.capital/credit"} className={styles.if1}></iframe>
+                </Cell>
+                <Cell className={styles.iframe2} width={4}>
+                  <iframe src={"https://console.calculus.capital/"} className={styles.if2}></iframe>
+                </Cell>
+              </Grid>
             </div>
           </Cell>
-          <Cell width={1} center middle className={styles.cell}></Cell>
+          <Cell width={2} center middle className={styles.cell}></Cell>
           <Cell width={3} center className={styles.cell}>
             <Content className={styles.content}>
-              <h2>Procurement</h2>
+              <h2>Purchase</h2>
               <ul>
                 <li>Purchase Financing</li>
                 <li>Invoice Discounting</li>
@@ -105,12 +96,6 @@ function Intro(props: IntroProps) {
               <ul>
                 <li>Invoice Discounting</li>
                 <li>Receivables Financing</li>
-              </ul>
-              <h2>Management</h2>
-              <ul>
-                <li>Suppliers</li>
-                <li>Lenders</li>
-                <li>Repayments</li>
               </ul>
             </Content>
           </Cell>

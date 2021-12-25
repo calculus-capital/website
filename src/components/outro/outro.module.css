@@ -1,7 +1,6 @@
 
 .outro {
   border: none;
-  max-width: 2000px;
 
   margin-top: 100px;
   margin-left: auto;
@@ -19,13 +18,13 @@
 .calculus {
   padding-top: 30px;
   color: #ff1616;
-  font-size: 35pt;
+  font-size: 25pt;
   text-align: left;
 }
 
 .calculusAbout {
   color: #d4d4d4;
-  font-size: 20pt;
+  font-size: 14pt;
   text-align: left;
 }
 

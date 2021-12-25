@@ -17,7 +17,6 @@ function App() {
         <Intro></Intro>
         <Payables></Payables>
         <Receivables></Receivables>
-        <Outro></Outro>
         <Footer></Footer>
       </div>
     </div>
