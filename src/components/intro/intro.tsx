@@ -38,7 +38,7 @@ function Intro(props: IntroProps) {
           <Cell width={3} className={styles.cell}>
             <Section className={styles.menu}>
               <Menu>
-                <Menu.List title="Login">
+                <Menu.List title="Demo">
                   <Menu.List.Item>
                     <a className={styles.notionLink} href="https://console.calculus.capital/" target="_blank">
                       Console
