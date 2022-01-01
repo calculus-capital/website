@@ -36,7 +36,7 @@ function Intro(props: IntroProps) {
               </div>
             </Cell>
           )}
-          <Cell width={s ? 4 : m ? 4 : 4} center middle className={styles.cell}>
+          <Cell width={s ? 6 : m ? 4 : 4} center middle className={styles.cell}>
             <div className={styles.calculus}>
               <p className={styles.neonText}>Calculus Capital</p>
             </div>
@@ -48,8 +48,8 @@ function Intro(props: IntroProps) {
               </p>
             </div>
           </Cell>
-          <Cell width={s ? 4 : m ? 3 : 4} className={styles.cell}></Cell>
-          <Cell width={s ? 2 : m ? 2 : 1} className={styles.cell}>
+          <Cell width={s ? 1 : m ? 3 : 4} className={styles.cell}></Cell>
+          <Cell width={s ? 1 : m ? 2 : 1} className={styles.cell}>
             <Section className={styles.menu}>
               <Menu>
                 <Menu.List title={s ? "" : "Demo"}>
@@ -99,39 +99,38 @@ function Intro(props: IntroProps) {
           </Cell>
         </Grid>
       </div>
-      <Grid columns={s ? 1 : 10} rows={1} className={styles.descriptionBlock}>
-        <Cell width={s ? 1 : 3} center middle>
+      <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
+        <Cell width={s ? 1 : 3} top={s ? 1 : 1} center middle>
           <p className={styles.descriptionText}>
             Structure your financial requirements by tranches of risk
           </p>
         </Cell>
-        <Cell width={s ? 1 : 7} center middle>
+        <Cell width={s ? 1 : 7} top={s ? 2 : 1} enter middle>
           <img src={structure} className={styles.structure}></img>
         </Cell>
       </Grid>
       <Grid columns={s ? 1 : 10} rows={1} className={styles.descriptionBlock}>
-        <Cell width={s ? 1 : 7} center middle>
+        <Cell width={s ? 1 : 3} top={s ? 2 : 1} center middle>
           <img src={avail} className={styles.structure}></img>
         </Cell>
-        <Cell width={s ? 1 : 3} center middle>
+        <Cell width={s ? 1 : 7} top={s ? 1 : 1} enter middle>
           <p className={styles.descriptionTextR}>
-            Avail capital from banks to private lenders depending on risk
-            profile of tranche
+            Fund each tranche from a variety of banks and private lenders
           </p>
         </Cell>
       </Grid>
       <Grid columns={s ? 1 : 10} rows={1} className={styles.descriptionBlock}>
-        <Cell width={s ? 1 : 3} center middle>
+        <Cell width={s ? 1 : 3} top={s ? 1 : 1} center middle>
           <p className={styles.descriptionText}>
             Grow your supply network with trade financing
           </p>
         </Cell>
-        <Cell width={s ? 1 : 7} center middle>
+        <Cell width={s ? 1 : 7} top={s ? 2 : 1} enter middle>
           <img src={trade} className={styles.structure}></img>
         </Cell>
       </Grid>
       <Grid columns={s ? 1 : 10} rows={1} className={styles.descriptionBlock}>
-        <Cell width={s ? 1 : 8} center middle>
+        <Cell width={s ? 1 : 3} top={s ? 2 : 1} center middle>
           <div className={styles.knob}>
             <iframe
               src={"https://console.calculus.capital/"}
@@ -139,7 +138,7 @@ function Intro(props: IntroProps) {
             ></iframe>
           </div>
         </Cell>
-        <Cell width={s ? 1 : 2} center middle>
+        <Cell width={s ? 1 : 7} top={s ? 1 : 1} enter middle>
           <p className={styles.descriptionTextR}>
             A console to do it all
           </p>

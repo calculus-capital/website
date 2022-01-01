@@ -258,7 +258,7 @@
 
   .knob {
     margin: auto;
-    max-height: 900px;
+    max-height: 750px;
   }
 
   .if1 {
@@ -329,12 +329,67 @@
 
 @media (max-width: 481px) {
   .intro {
+    max-width: 350px;
+  }
+
+  .introHeader {
+    padding: 20px;
+  }
+
+  .calculus {
+    color: #ff1616;
+    font-size: 20pt;
+    text-align: left;
+  }
+
+  .calculusAbout {
+    color: #b4b4b4;
+    font-size: 12pt;
+    text-align: left;
+  }
+
+  .logo {
+    max-height: 200px;
+  }
+
+  .logo img {
+    max-height: 200px;
+  }
+
+  .intro {
     border: none;
-    height: 40vh;
-    min-height: 750px;
 
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .description {
+    margin: auto;
+    color: #b4b4b4;
+  }
+
+  .descriptionBlock {
+    margin-bottom: 50px;
+  }
+
+  .descriptionText {
+    font-size: 15pt;
+    color: #b4b4b4;
+  }
+
+  .descriptionTextR {
+    font-size: 15pt;
+    color: #b4b4b4;
+  }
+
+  .structure {
+    object-fit: contain;
+    max-height: 350px;
+  }
+
+  .knob {
+    margin: auto;
+    max-height: 800px;
   }
 
   .if1 {
@@ -345,11 +400,11 @@
     top: 0px;
     border-radius: 30px;
 
-    -moz-transform: scale(0.4, 0.4);
-    -webkit-transform: scale(0.4, 0.4);
-    -o-transform: scale(0.4, 0.4);
-    -ms-transform: scale(0.4, 0.4);
-    transform: scale(0.4, 0.4);
+    -moz-transform: scale(0.7, 0.7);
+    -webkit-transform: scale(0.7, 0.7);
+    -o-transform: scale(0.7, 0.7);
+    -ms-transform: scale(0.7, 0.7);
+    transform: scale(0.7, 0.7);
     -moz-transform-origin: top left;
     -webkit-transform-origin: top left;
     -o-transform-origin: top left;
@@ -358,18 +413,18 @@
   }
 
   .if2 {
-    width: 810px;
-    height: 1080px;
+    width: 390px;
+    height: 844px;
     position: relative;
-    left: 0px;
+    left: calc(50vw - 165px);
     top: 0px;
     border-radius: 30px;
 
-    -moz-transform: scale(0.3, 0.3);
-    -webkit-transform: scale(0.3, 0.3);
-    -o-transform: scale(0.3, 0.3);
-    -ms-transform: scale(0.3, 0.3);
-    transform: scale(0.3, 0.3);
+    -moz-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    -o-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
     -moz-transform-origin: top left;
     -webkit-transform-origin: top left;
     -o-transform-origin: top left;
@@ -377,19 +432,28 @@
     transform-origin: top left;
   }
 
-  .menu p {
+  .menu {
+    text-align: left;
+  }
+
+  :global(.menu p) {
     color: #ff1616;
-    font-size: 10pt;
+    font-size: 9pt !important;
   }
 
   .menu a {
     color: #b4b4b4;
     font-size: 10pt;
+    width: 150px;
+  }
+
+  .menu p {
+    margin-bottom: 0 !important;
   }
 
   .content {
     color: #b4b4b4;
-    font-size: 13pt;
+    font-size: 16pt;
     text-align: left;
   }
 }
