@@ -8,11 +8,11 @@
 
   text-align: center;
   /* background-image: url('../assets/background2.jpg'); */
-  background: linear-gradient(135deg, var(--dark-gradient-1) 0%, var(--dark-gradient-2) 100%);
-  /* background: linear-gradient(90deg, rgba(131,58,180,1) 2%, rgba(253,29,9,1) 71%, rgba(252,176,69,1) 100%); */
+  background: linear-gradient(90deg, rgb(18, 98, 218) 2%, rgb(243, 22, 232) 61%, rgb(218, 10, 114) 100%);
   /* background: radial-gradient(circle, rgba(195,34,145,1) 0%, rgba(253,114,45,1) 100%); */
 
   background-size: 100% 100%;
+  background-color: green;
 
   padding: 10px;
 
