@@ -3,10 +3,15 @@
 
 import React, { useEffect, useState } from "react";
 import { Cell, Grid } from "styled-css-grid";
+import { useMediaQuery } from "react-responsive";
+
 import logo from "../../assets/logo.png";
 import halo from "../../assets/halo1.png";
 import systemImg from "../../assets/system4.png";
-import { useMediaQuery } from "react-responsive";
+import structure from "../../assets/structure.png";
+import avail from "../../assets/avail.png";
+import liquidity from "../../assets/liquidity.png";
+import trade from "../../assets/network.png";
 
 import "bulma/css/bulma.min.css";
 import styles from "./intro.module.css";
@@ -21,8 +26,7 @@ function Intro(props: IntroProps) {
   return (
     <div className={styles.intro}>
       <div className={styles.introHeader}>
-        <Grid columns={12} flow="row" className={styles.grid}>
-          <Cell width={1} center middle className={styles.cell}></Cell>
+        <Grid columns={10} flow="row" className={styles.grid}>
           {s ? (
             <></>
           ) : (
@@ -32,7 +36,7 @@ function Intro(props: IntroProps) {
               </div>
             </Cell>
           )}
-          <Cell width={s ? 3 : 4} center middle className={styles.cell}>
+          <Cell width={s ? 4 : m ? 5 : 4} center middle className={styles.cell}>
             <div className={styles.calculus}>
               <p className={styles.neonText}>Calculus Capital</p>
             </div>
@@ -44,8 +48,8 @@ function Intro(props: IntroProps) {
               </p>
             </div>
           </Cell>
-          <Cell width={s ? 4 : 3} className={styles.cell}></Cell>
-          <Cell width={s ? 2 : 3} className={styles.cell}>
+          <Cell width={s ? 4 : m ? 3 : 4} className={styles.cell}></Cell>
+          <Cell width={s ? 2 : m ? 3 : 1} className={styles.cell}>
             <Section className={styles.menu}>
               <Menu>
                 <Menu.List title={s ? "" : "Demo"}>
@@ -95,39 +99,52 @@ function Intro(props: IntroProps) {
           </Cell>
         </Grid>
       </div>
-      <Grid columns={1}>
-        <Cell>Structure your financial requirements by tranches of risk</Cell>
-        <Cell>
-          Avail capital from banks to private lenders depending on risk profile
-          of tranche
+      <Grid columns={s ? 1 : 10} rows={1} className={styles.descriptionBlock}>
+        <Cell width={s ? 1 : 3} center middle>
+          <p className={styles.descriptionText}>
+            Structure your financial requirements by tranches of risk
+          </p>
         </Cell>
-        <Cell>Customized structures that fit your needs and ambitions</Cell>
+        <Cell width={s ? 1 : 7} center middle>
+          <img src={structure} className={styles.structure}></img>
+        </Cell>
       </Grid>
-      <div className={styles.introFooter}>
-        <div className={styles.system}>
-          <Grid columns={s ? 1 : 11}>
-            {s ? <></> : <Cell width={1}></Cell>}
-            <Cell className={styles.iframe} width={s ? 1 : 4}>
-              <iframe
-                src={"https://console.calculus.capital/receivables"}
-                className={styles.if1}
-              ></iframe>
-            </Cell>
-            {s ? <></> : <Cell width={1}></Cell>}
-            {s ? (
-              <></>
-            ) : (
-              <Cell className={styles.iframe2} width={s ? 1 : 4}>
-                <iframe
-                  src={"https://console.calculus.capital/"}
-                  className={styles.if2}
-                ></iframe>
-              </Cell>
-            )}
-            {s ? <></> : <Cell width={1}></Cell>}
-          </Grid>
-        </div>
-      </div>
+      <Grid columns={s ? 1 : 10} rows={1} className={styles.descriptionBlock}>
+        <Cell width={s ? 1 : 7} center middle>
+          <img src={avail} className={styles.structure}></img>
+        </Cell>
+        <Cell width={s ? 1 : 3} center middle>
+          <p className={styles.descriptionTextR}>
+            Avail capital from banks to private lenders depending on risk
+            profile of tranche
+          </p>
+        </Cell>
+      </Grid>
+      <Grid columns={s ? 1 : 10} rows={1} className={styles.descriptionBlock}>
+        <Cell width={s ? 1 : 3} center middle>
+          <p className={styles.descriptionText}>
+            Grow your supply network with trade financing
+          </p>
+        </Cell>
+        <Cell width={s ? 1 : 7} center middle>
+          <img src={trade} className={styles.structure}></img>
+        </Cell>
+      </Grid>
+      <Grid columns={s ? 1 : 10} rows={1} className={styles.descriptionBlock}>
+        <Cell width={s ? 1 : 7} center middle>
+          <div className={styles.knob}>
+            <iframe
+              src={"https://console.calculus.capital/"}
+              className={styles.if2}
+            ></iframe>
+          </div>
+        </Cell>
+        <Cell width={s ? 1 : 3} center middle>
+          <p className={styles.descriptionTextR}>
+            A knob for managing liquidity
+          </p>
+        </Cell>
+      </Grid>
     </div>
   );
 }
