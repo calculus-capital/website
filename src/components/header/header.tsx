@@ -1,18 +1,18 @@
-import React from 'react'
-import banner from '../../assets/banner7.png'
+import React from "react";
+import banner from "../../assets/banner7.png";
 
-import styles from './header.module.css'
+import styles from "./header.module.css";
 
 // import { Grid, Cell } from 'styled-css-grid'
 
-type HeaderProps = {}
+type HeaderProps = {};
 
-function Header(props:HeaderProps) {
+function Header(props: HeaderProps) {
   return (
     <header>
       <img src={banner} className={styles.banner}></img>
     </header>
-  )
+  );
 }
 
-export { Header }
+export { Header };

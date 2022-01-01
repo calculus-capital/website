@@ -1,50 +1,75 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 
-import styles from './receivables.module.css'
-import discounting from '../../assets/revdisc/revdisc1.gif'
-import revenue from '../../assets/revenue/revenue1.gif'
+import styles from "./receivables.module.css";
+import discounting from "../../assets/revdisc/revdisc1.gif";
+import revenue from "../../assets/revenue/revenue1.gif";
 
-import { Grid, Cell } from 'styled-css-grid'
-import 'bulma/css/bulma.min.css';
-import { Tabs, Content, Button } from 'react-bulma-components'
+import { Grid, Cell } from "styled-css-grid";
+import "bulma/css/bulma.min.css";
+import { Tabs, Content, Button } from "react-bulma-components";
 
-type ReceivablesProps = {}
+type ReceivablesProps = {};
 
 // const
 
-function Receivables(props:ReceivablesProps) {
+function Receivables(props: ReceivablesProps) {
   // wow this is indeed a mess
-  const [tab1Active, setTab1Active] = useState(true)
-  const [tab2Active, setTab2Active] = useState(false)
+  const [tab1Active, setTab1Active] = useState(true);
+  const [tab2Active, setTab2Active] = useState(false);
 
   return (
     <div className={styles.container}>
       <Grid rows={10} columns={1} className={styles.grid}>
         <Cell height={2} center middle className={styles.cell}>
           <div>
-            <p className={[styles.neonText, styles.headerText].join(' ')}>Receivables Financing for Sales</p>
-            <p className={[styles.subText].join(' ')}>Get paid earlier and on your terms</p>
+            <p className={[styles.neonText, styles.headerText].join(" ")}>
+              Receivables Financing for Sales
+            </p>
+            <p className={[styles.subText].join(" ")}>
+              Get paid earlier and on your terms
+            </p>
           </div>
         </Cell>
         <Cell height={8} className={styles.cell}>
           <Tabs className={styles.tabs}>
             <Tabs.Tab
-              className={[styles.tab, tab1Active ? styles.tabIsActive : styles.none].join(' ')}
+              className={[
+                styles.tab,
+                tab1Active ? styles.tabIsActive : styles.none,
+              ].join(" ")}
               active={tab1Active}
-              onClick={() => {setTab1Active(true); setTab2Active(false)}}
+              onClick={() => {
+                setTab1Active(true);
+                setTab2Active(false);
+              }}
             >
-              <div className={tab1Active ? styles.neonTabText : styles.tabText}>Invoice Discounting</div>
+              <div className={tab1Active ? styles.neonTabText : styles.tabText}>
+                Invoice Discounting
+              </div>
             </Tabs.Tab>
             <Tabs.Tab
-              className={[styles.tab, tab2Active ? styles.tabIsActive : styles.none].join(' ')}
+              className={[
+                styles.tab,
+                tab2Active ? styles.tabIsActive : styles.none,
+              ].join(" ")}
               active={tab2Active}
-              onClick={() => {setTab1Active(false); setTab2Active(true)}}
+              onClick={() => {
+                setTab1Active(false);
+                setTab2Active(true);
+              }}
             >
-              <div className={tab2Active ? styles.neonTabText : styles.tabText}>Other Accounts Receivables</div>
+              <div className={tab2Active ? styles.neonTabText : styles.tabText}>
+                Other Accounts Receivables
+              </div>
             </Tabs.Tab>
           </Tabs>
           {/* ---------------------------------------------------------------------- */}
-          <Grid columns={2} rows={2} className={styles.grid} style={tab1Active ? {} : {display:"none"}}>
+          <Grid
+            columns={2}
+            rows={2}
+            className={styles.grid}
+            style={tab1Active ? {} : { display: "none" }}
+          >
             <Cell width={1} height={2} className={styles.cell}>
               <Content className={styles.discountingContent}>
                 <h3>Get paid now with invoice discounting</h3>
@@ -69,22 +94,36 @@ function Receivables(props:ReceivablesProps) {
               </div>
             </Cell> */}
             <Cell width={1} height={2} className={styles.cell}>
-              <Content className={[styles.discountingContent, styles.discountingSummary].join(' ')}>
-                  <h3>The Discounting Process</h3>
-                  <ol>
-                    <li>Sell inventory</li>
-                    <li>Upload invoice</li>
-                    <li>We pay you</li>
-                    <li>We collect from your buyer</li>
-                  </ol>
-                </Content>
-                <div className={styles.contactButton}>
-                  <a href="https://notionforms.io/forms/contact-us-13" target="_blank">Get in touch</a>
-                </div>
+              <Content
+                className={[
+                  styles.discountingContent,
+                  styles.discountingSummary,
+                ].join(" ")}
+              >
+                <h3>The Discounting Process</h3>
+                <ol>
+                  <li>Sell inventory</li>
+                  <li>Upload invoice</li>
+                  <li>We pay you</li>
+                  <li>We collect from your buyer</li>
+                </ol>
+              </Content>
+              <div className={styles.contactButton}>
+                <a
+                  href="https://notionforms.io/forms/contact-us-13"
+                  target="_blank"
+                >
+                  Get in touch
+                </a>
+              </div>
             </Cell>
           </Grid>
           {/* ---------------------------------------------------------------------- */}
-          <Grid columns={2} className={styles.grid} style={tab2Active ? {} : {display:"none"}}>
+          <Grid
+            columns={2}
+            className={styles.grid}
+            style={tab2Active ? {} : { display: "none" }}
+          >
             <Cell width={1} className={styles.cell}>
               <Content className={styles.discountingContent}>
                 <h3>Get paid now for other accounts receivables</h3>
@@ -110,7 +149,7 @@ function Receivables(props:ReceivablesProps) {
         </Cell>
       </Grid>
     </div>
-  )
+  );
 }
 
-export { Receivables }
+export { Receivables };

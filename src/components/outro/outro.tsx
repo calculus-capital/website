@@ -1,19 +1,24 @@
-import React from 'react'
-import { Cell, Grid } from 'styled-css-grid'
-import logo from '../../assets/logo.png'
-import halo from '../../assets/eye.png'
+import React from "react";
+import { Cell, Grid } from "styled-css-grid";
+import logo from "../../assets/logo.png";
+import halo from "../../assets/eye.png";
 
-import 'bulma/css/bulma.min.css';
-import styles from './outro.module.css'
+import "bulma/css/bulma.min.css";
+import styles from "./outro.module.css";
 
-type OutroProps = {}
+type OutroProps = {};
 
-function Outro(props:OutroProps) {
+function Outro(props: OutroProps) {
   return (
     <div className={styles.outro}>
       <Grid columns={12} flow="row" className={styles.grid}>
         <Cell width={1} className={styles.cell}></Cell>
-        <Cell width={5} center className={styles.cell} style={{margin:"auto"}}>
+        <Cell
+          width={5}
+          center
+          className={styles.cell}
+          style={{ margin: "auto" }}
+        >
           <div className={styles.halo}>
             <img src={halo}></img>
           </div>
@@ -42,7 +47,7 @@ function Outro(props:OutroProps) {
         </Grid>
       </div>
     </div>
-  )
+  );
 }
 
-export { Outro }
+export { Outro };

@@ -6,7 +6,7 @@ import { Cell, Grid } from "styled-css-grid";
 import logo from "../../assets/logo.png";
 import halo from "../../assets/halo1.png";
 import systemImg from "../../assets/system4.png";
-import { useMediaQuery } from "react-responsive"
+import { useMediaQuery } from "react-responsive";
 
 import "bulma/css/bulma.min.css";
 import styles from "./intro.module.css";
@@ -15,21 +15,23 @@ import { Content, Menu, Section } from "react-bulma-components";
 type IntroProps = {};
 
 function Intro(props: IntroProps) {
-  const s = useMediaQuery({ query: "(max-width: 481px)" })
-  const m = useMediaQuery({ query: "(max-width: 1100px)" })
+  const s = useMediaQuery({ query: "(max-width: 481px)" });
+  const m = useMediaQuery({ query: "(max-width: 1100px)" });
 
   return (
     <div className={styles.intro}>
       <div className={styles.introHeader}>
         <Grid columns={12} flow="row" className={styles.grid}>
           <Cell width={1} center middle className={styles.cell}></Cell>
-          {s ? <></> :
+          {s ? (
+            <></>
+          ) : (
             <Cell width={1} center middle className={styles.cell}>
               <div className={styles.logo}>
                 <img src={logo}></img>
               </div>
             </Cell>
-          }
+          )}
           <Cell width={s ? 3 : 4} center middle className={styles.cell}>
             <div className={styles.calculus}>
               <p className={styles.neonText}>Calculus Capital</p>
@@ -46,7 +48,7 @@ function Intro(props: IntroProps) {
           <Cell width={s ? 2 : 3} className={styles.cell}>
             <Section className={styles.menu}>
               <Menu>
-                <Menu.List title={ s ? "" : "Demo" }>
+                <Menu.List title={s ? "" : "Demo"}>
                   <Menu.List.Item>
                     <a
                       className={styles.notionLink}
@@ -94,15 +96,12 @@ function Intro(props: IntroProps) {
         </Grid>
       </div>
       <Grid columns={1}>
+        <Cell>Structure your financial requirements by tranches of risk</Cell>
         <Cell>
-          Structure your financial requirements by tranches of risk
+          Avail capital from banks to private lenders depending on risk profile
+          of tranche
         </Cell>
-        <Cell>
-          Avail capital from banks to private lenders depending on risk profile of tranche
-        </Cell>
-        <Cell>
-          Customized structures that fit your needs and ambitions
-        </Cell>
+        <Cell>Customized structures that fit your needs and ambitions</Cell>
       </Grid>
       <div className={styles.introFooter}>
         <div className={styles.system}>
@@ -115,14 +114,16 @@ function Intro(props: IntroProps) {
               ></iframe>
             </Cell>
             {s ? <></> : <Cell width={1}></Cell>}
-            {s ? <></> :
+            {s ? (
+              <></>
+            ) : (
               <Cell className={styles.iframe2} width={s ? 1 : 4}>
-              <iframe
-                src={"https://console.calculus.capital/"}
-                className={styles.if2}
+                <iframe
+                  src={"https://console.calculus.capital/"}
+                  className={styles.if2}
                 ></iframe>
               </Cell>
-            }
+            )}
             {s ? <></> : <Cell width={1}></Cell>}
           </Grid>
         </div>

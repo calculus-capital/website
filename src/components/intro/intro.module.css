@@ -1,4 +1,3 @@
-
 .intro {
 }
 
@@ -50,9 +49,7 @@
   background-color: #ff1616;
   height: 2px;
   max-width: 350px;
-  box-shadow:
-    0 0 7px #ff1616,
-    0 0 10px #ff1616;
+  box-shadow: 0 0 7px #ff1616, 0 0 10px #ff1616;
 
   /* background-image: url(../../assets/banner7.png); */
   background-size: 100%;
@@ -66,9 +63,7 @@
   height: 2px;
   max-width: 90%;
   margin: auto;
-  box-shadow:
-    0 0 7px #ff1616,
-    0 0 10px #ff1616;
+  box-shadow: 0 0 7px #ff1616, 0 0 10px #ff1616;
 
   /* background-image: url(../../assets/banner7.png); */
   background-size: 100%;
@@ -77,7 +72,8 @@
   margin-bottom: 10px;
 }
 
-.content h1, h2 {
+.content h1,
+h2 {
   font-weight: normal !important;
   color: #7a70a7 !important;
   /* text-shadow:
@@ -255,7 +251,6 @@
 }
 
 @media (max-width: 481px) {
-
   .intro {
     border: none;
     height: 40vh;
