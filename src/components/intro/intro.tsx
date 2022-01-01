@@ -36,7 +36,7 @@ function Intro(props: IntroProps) {
               </div>
             </Cell>
           )}
-          <Cell width={s ? 4 : m ? 5 : 4} center middle className={styles.cell}>
+          <Cell width={s ? 4 : m ? 4 : 4} center middle className={styles.cell}>
             <div className={styles.calculus}>
               <p className={styles.neonText}>Calculus Capital</p>
             </div>
@@ -49,7 +49,7 @@ function Intro(props: IntroProps) {
             </div>
           </Cell>
           <Cell width={s ? 4 : m ? 3 : 4} className={styles.cell}></Cell>
-          <Cell width={s ? 2 : m ? 3 : 1} className={styles.cell}>
+          <Cell width={s ? 2 : m ? 2 : 1} className={styles.cell}>
             <Section className={styles.menu}>
               <Menu>
                 <Menu.List title={s ? "" : "Demo"}>
@@ -131,7 +131,7 @@ function Intro(props: IntroProps) {
         </Cell>
       </Grid>
       <Grid columns={s ? 1 : 10} rows={1} className={styles.descriptionBlock}>
-        <Cell width={s ? 1 : 7} center middle>
+        <Cell width={s ? 1 : 8} center middle>
           <div className={styles.knob}>
             <iframe
               src={"https://console.calculus.capital/"}
@@ -139,9 +139,9 @@ function Intro(props: IntroProps) {
             ></iframe>
           </div>
         </Cell>
-        <Cell width={s ? 1 : 3} center middle>
+        <Cell width={s ? 1 : 2} center middle>
           <p className={styles.descriptionTextR}>
-            A knob for managing liquidity
+            A console to do it all
           </p>
         </Cell>
       </Grid>
