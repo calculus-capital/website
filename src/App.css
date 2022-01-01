@@ -1,15 +1,22 @@
 .App {
-  text-align: center;
-  background-color: #0c0c20;
-  /* background-image: url('assets/background2.jpg'); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
 
+  text-align: center;
   /* background-image: url('../assets/background2.jpg'); */
-  background: linear-gradient(135deg, #d53369 0%, #daae51 100%);
+  background: linear-gradient(135deg, var(--dark-gradient-1) 0%, var(--dark-gradient-2) 100%);
   /* background: linear-gradient(90deg, rgba(131,58,180,1) 2%, rgba(253,29,9,1) 71%, rgba(252,176,69,1) 100%); */
   /* background: radial-gradient(circle, rgba(195,34,145,1) 0%, rgba(253,114,45,1) 100%); */
+
   background-size: 100% 100%;
-  overflow-x: scroll;
+
   padding: 10px;
+
+  font-size: 10pt;
 }
 
 body {
@@ -18,5 +25,9 @@ body {
 
 .appContent {
   background-color: #0c0c20;
-  border-radius: 50px;
+
+  border-radius: 30px;
+  height: calc(100vh - 20px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }

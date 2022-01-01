@@ -106,31 +106,31 @@ function Intro(props: IntroProps) {
           </p>
         </Cell>
         <Cell width={s ? 1 : 7} top={s ? 2 : 1} enter middle>
-          <img src={structure} className={styles.structure}></img>
+          <img src={structure} className={styles.descImage}></img>
         </Cell>
       </Grid>
-      <Grid columns={s ? 1 : 10} rows={1} className={styles.descriptionBlock}>
-        <Cell width={s ? 1 : 3} top={s ? 2 : 1} center middle>
-          <img src={avail} className={styles.structure}></img>
+      <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
+        <Cell width={s ? 1 : 7} top={s ? 2 : 1} center middle>
+          <img src={avail} className={styles.descImage}></img>
         </Cell>
-        <Cell width={s ? 1 : 7} top={s ? 1 : 1} enter middle>
+        <Cell width={s ? 1 : 3} top={s ? 1 : 1} enter middle>
           <p className={styles.descriptionTextR}>
             Fund each tranche from a variety of banks and private lenders
           </p>
         </Cell>
       </Grid>
-      <Grid columns={s ? 1 : 10} rows={1} className={styles.descriptionBlock}>
+      <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
         <Cell width={s ? 1 : 3} top={s ? 1 : 1} center middle>
           <p className={styles.descriptionText}>
             Grow your supply network with trade financing
           </p>
         </Cell>
         <Cell width={s ? 1 : 7} top={s ? 2 : 1} enter middle>
-          <img src={trade} className={styles.structure}></img>
+          <img src={trade} className={styles.descImage}></img>
         </Cell>
       </Grid>
-      <Grid columns={s ? 1 : 10} rows={1} className={styles.descriptionBlock}>
-        <Cell width={s ? 1 : 3} top={s ? 2 : 1} center middle>
+      <Grid columns={s ? 1 : 10} rows={s ? 10 : 1} className={styles.descriptionBlock}>
+        <Cell width={s ? 1 : 7} height={s ? 9 : 1} top={s ? 2 : 1} center middle>
           <div className={styles.knob}>
             <iframe
               src={"https://console.calculus.capital/"}
@@ -138,7 +138,7 @@ function Intro(props: IntroProps) {
             ></iframe>
           </div>
         </Cell>
-        <Cell width={s ? 1 : 7} top={s ? 1 : 1} enter middle>
+        <Cell width={s ? 1 : 3} height={s ? 1 : 1} top={s ? 1 : 1} enter middle>
           <p className={styles.descriptionTextR}>
             A console to do it all
           </p>
