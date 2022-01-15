@@ -64,7 +64,7 @@
 
 @media (min-width: 1100px) {
   .intro {
-    max-width: 900px;
+    max-width: 1000px;
   }
 
   .introHeader {
@@ -105,35 +105,34 @@
   }
 
   .descriptionBlock {
-    margin-top: 100px;
+    margin-top: 200px;
   }
 
-  .descriptionText {
-    font-size: 17pt;
-    color: #b4b4b4;
-
-    border-right: 2px solid red;
-    margin-right: 30px;
-    padding-right: 20px;
-  }
-
-  .descriptionTextR {
-    font-size: 17pt;
-    color: #b4b4b4;
-
-    border-left: 2px solid red;
-    margin-left: 30px;
-    padding-left: 20px;
-  }
-
-  .descImage {
+  .revenueImage {
     object-fit: contain;
-    max-height: 400px;
+    max-height: 800px;
+  }
+
+  .earlypayImage {
+    /* object-fit: contain; */
+    height: 500px !important;
+  }
+
+  .earlypayHeader {
+    font-size: 35pt;
+    font-weight: bold;
+    color: white;
+    margin-top: 200px;
+  }
+
+  .poImage {
+    object-fit: contain;
+    max-height: 600px;
   }
 
   .knob {
     margin: auto;
-    max-height: 700px;
+    max-height: 900px;
   }
 
   .if2 {
@@ -147,11 +146,11 @@
     top: 100px;
     border-radius: 30px;
 
-    -moz-transform: scale(0.4, 0.4);
-    -webkit-transform: scale(0.4, 0.4);
-    -o-transform: scale(0.4, 0.4);
-    -ms-transform: scale(0.4, 0.4);
-    transform: scale(0.4, 0.4);
+    -moz-transform: scale(0.7, 0.7);
+    -webkit-transform: scale(0.7, 0.7);
+    -o-transform: scale(0.7, 0.7);
+    -ms-transform: scale(0.7, 0.7);
+    transform: scale(0.7, 0.7);
     -moz-transform-origin: top left;
     -webkit-transform-origin: top left;
     -o-transform-origin: top left;
@@ -231,22 +230,26 @@
     margin-top: 100px;
   }
 
-  .descriptionText {
-    font-size: 15pt;
-    color: #b4b4b4;
-
-    border-right: 2px solid red;
-    margin-right: 30px;
-    padding-right: 20px;
+  .revenueImage {
+    object-fit: contain;
+    max-height: 800px;
   }
 
-  .descriptionTextR {
-    font-size: 15pt;
-    color: #b4b4b4;
+  .earlypayImage {
+    /* object-fit: contain; */
+    height: 500px !important;
+  }
 
-    border-left: 2px solid red;
-    margin-left: 30px;
-    padding-left: 20px;
+  .earlypayHeader {
+    font-size: 35pt;
+    font-weight: bold;
+    color: white;
+    margin-top: 200px;
+  }
+
+  .poImage {
+    object-fit: contain;
+    max-height: 600px;
   }
 
   .descImage {
@@ -378,6 +381,28 @@
   .descriptionTextR {
     font-size: 15pt;
     color: #b4b4b4;
+  }
+
+  .revenueImage {
+    object-fit: contain;
+    max-height: 800px;
+  }
+
+  .earlypayImage {
+    /* object-fit: contain; */
+    height: 500px !important;
+  }
+
+  .earlypayHeader {
+    font-size: 35pt;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 50px;
+  }
+
+  .poImage {
+    object-fit: contain;
+    max-height: 600px;
   }
 
   .descImage {

@@ -13,6 +13,15 @@ import avail from "../../assets/avail.png";
 import liquidity from "../../assets/liquidity.png";
 import trade from "../../assets/network.png";
 
+import revenueL from "../../assets/revenue-left.png";
+import revenueR from "../../assets/revenue-right.png";
+
+import earlypayH from "../../assets/early-payments-heading.png";
+import earlypayL from "../../assets/early-payments-startup.png";
+import earlypayR from "../../assets/early-payments-suppliers.png";
+
+import pofin from "../../assets/po-financing.png";
+
 import "bulma/css/bulma.min.css";
 import styles from "./intro.module.css";
 import { Content, Menu, Section } from "react-bulma-components";
@@ -43,7 +52,7 @@ function Intro(props: IntroProps) {
             <div className={styles.separator350}></div>
             <div className={styles.calculusAbout}>
               <p>
-                Structured Financing<br></br>
+                Powering growth<br></br>
                 For Startups
               </p>
             </div>
@@ -99,49 +108,60 @@ function Intro(props: IntroProps) {
           </Cell>
         </Grid>
       </div>
-      <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
-        <Cell width={s ? 1 : 3} top={s ? 1 : 1} center middle>
-          <p className={styles.descriptionText}>
-            Structure your financial requirements by tranches of risk
-          </p>
+      <Grid
+        columns={s ? 1 : 10}
+        rows={s ? 2 : 1}
+        className={styles.descriptionBlock}
+      >
+        <Cell width={s ? 1 : 5} top={s ? 2 : 1} center middle>
+          <img src={revenueL} className={styles.revenueImage}></img>
         </Cell>
-        <Cell width={s ? 1 : 7} top={s ? 2 : 1} enter middle>
-          <img src={structure} className={styles.descImage}></img>
-        </Cell>
-      </Grid>
-      <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
-        <Cell width={s ? 1 : 7} top={s ? 2 : 1} center middle>
-          <img src={avail} className={styles.descImage}></img>
-        </Cell>
-        <Cell width={s ? 1 : 3} top={s ? 1 : 1} enter middle>
-          <p className={styles.descriptionTextR}>
-            Fund each tranche from a variety of banks and private lenders
-          </p>
+        <Cell width={s ? 1 : 5} top={s ? 1 : 1} enter middle>
+          <img src={revenueR} className={styles.revenueImage}></img>
         </Cell>
       </Grid>
-      <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
-        <Cell width={s ? 1 : 3} top={s ? 1 : 1} center middle>
-          <p className={styles.descriptionText}>
-            Grow your supply network with trade financing
-          </p>
+      <p className={styles.earlypayHeader}>Early Pay Suppliers</p>
+      <Grid
+        columns={s ? 1 : 10}
+        rows={s ? 2 : 1}
+        className={styles.descriptionBlock}
+      >
+        <Cell width={s ? 1 : 5} top={s ? 1 : 2} center middle>
+          <img src={earlypayL} className={styles.earlypayImage}></img>
         </Cell>
-        <Cell width={s ? 1 : 7} top={s ? 2 : 1} enter middle>
-          <img src={trade} className={styles.descImage}></img>
+        <Cell width={s ? 1 : 5} top={s ? 2 : 2} enter middle>
+          <img src={earlypayR} className={styles.earlypayImage}></img>
         </Cell>
       </Grid>
-      <Grid columns={s ? 1 : 10} rows={s ? 10 : 1} className={styles.descriptionBlock}>
-        <Cell width={s ? 1 : 7} height={s ? 9 : 1} top={s ? 2 : 1} center middle>
+      <p className={styles.earlypayHeader}>Finance your orders</p>
+      <Grid
+        columns={s ? 1 : 10}
+        rows={s ? 2 : 1}
+        className={styles.descriptionBlock}
+      >
+        <Cell width={s ? 1 : 10} top={s ? 1 : 1} enter middle>
+          <img src={pofin} className={styles.poImage}></img>
+        </Cell>
+      </Grid>
+      <p className={styles.earlypayHeader}>A console to do it all</p>
+      <Grid
+        columns={s ? 1 : 10}
+        rows={s ? 10 : 1}
+        className={styles.descriptionBlock}
+      >
+        <Cell
+          width={s ? 1 : 10}
+          height={s ? 9 : 1}
+          top={s ? 2 : 2}
+          center
+          middle
+        >
           <div className={styles.knob}>
             <iframe
               src={"https://console.calculus.capital/"}
               className={styles.if2}
             ></iframe>
           </div>
-        </Cell>
-        <Cell width={s ? 1 : 3} height={s ? 1 : 1} top={s ? 1 : 1} enter middle>
-          <p className={styles.descriptionTextR}>
-            A console to do it all
-          </p>
         </Cell>
       </Grid>
     </div>
