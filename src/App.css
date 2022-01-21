@@ -36,7 +36,7 @@ body {
   .appContent {
     background-image: linear-gradient(70deg,
       /* #0c0c20, #1e0c20 */
-      #F49586 5%, #E7A1A4 5% 10%, #EAB6B8 10% 15%, #E2C5A8 15% 20%, #f0d4a0 20% 30%, #f2deb9 30% 40%, #F0E4CE 40% 87%, #F7EBDB 87% 100%
+      #F49586 5%, #E7A1A4 5% 10%, #EAB6B8 10% 15%, #E2C5A8 15% 20%, #f0d4a0 20% 30%, #f2deb9 30% 40%, #F0E4CE 40% 80%, #F7EBDB 80% 100%
     );
   }
 }
