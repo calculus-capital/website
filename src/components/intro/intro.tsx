@@ -61,7 +61,7 @@ function Intro(props: IntroProps) {
           <Cell width={s ? 1 : m ? 2 : 1} className={styles.cell}>
             <Section className={styles.menu}>
               <Menu>
-                <Menu.List title={s ? "" : "Demo"}>
+                <Menu.List title={s ? "" : "Login"}>
                   <Menu.List.Item>
                     <a
                       className={styles.notionLink}
