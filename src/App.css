@@ -8,12 +8,13 @@
 
   text-align: center;
   /* background-image: url('../assets/background2.jpg'); */
-  background-image: linear-gradient(to right top, #845EC2, #D65DB1, #FF6F91, #FFC75F, #F9F871);
+  background-image: linear-gradient(to right, #7d51c4, #d848ad, #fd4f78, #f5b43b, #f5f52e);
   /* background: radial-gradient(circle, rgba(195,34,145,1) 0%, rgba(253,114,45,1) 100%); */
+  /* background: linear-gradient(to right, #ed7979 20%, #e2c286 20% 40%, #e2e288 40% 60%, #93e693 60% 80%, #9797e6 80%); */
 
   background-size: 100% 100%;
 
-  padding: 5px;
+  padding: 10px;
 
   font-size: 10pt;
   overflow-y: auto;
@@ -35,7 +36,7 @@ body {
   .appContent {
     background-image: linear-gradient(70deg,
       /* #0c0c20, #1e0c20 */
-      #F49586 5%, #E7A1A4 5% 10%, #EAB6B8 10% 15%, #E2C5A8 15% 20%, #f0d4a0 20% 30%, #f2deb9 30% 40%, #F0E4CE 40% 85%, #F7EBDB 85% 100%
+      #F49586 5%, #E7A1A4 5% 10%, #EAB6B8 10% 15%, #E2C5A8 15% 20%, #f0d4a0 20% 30%, #f2deb9 30% 40%, #F0E4CE 40% 87%, #F7EBDB 87% 100%
     );
   }
 }

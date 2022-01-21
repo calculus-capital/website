@@ -24,7 +24,7 @@ import pofin from "../../assets/po-financing.png";
 
 import "bulma/css/bulma.min.css";
 import styles from "./intro.module.css";
-import { Content, Menu, Section } from "react-bulma-components";
+import { Button, Content, Menu, Section } from "react-bulma-components";
 
 type IntroProps = {};
 
@@ -117,7 +117,17 @@ function Intro(props: IntroProps) {
           <img src={revenueL} className={styles.revenueImage}></img>
         </Cell>
         <Cell width={s ? 1 : 5} top={s ? 1 : 1} enter middle>
-          <img src={revenueR} className={styles.revenueImage}></img>
+          <Content className={styles.revenueDesc}>
+            <h1>Grow your Business</h1>
+            <h2>with revenue financing</h2>
+            <ul>
+              <li><p className={styles.revenueDescList}>Credit Limit upto ₹50lac</p></li>
+              <li><p className={styles.revenueDescList}>Easy Onboarding</p></li>
+              <li><p className={styles.revenueDescList}>Competitive Rates</p></li>
+              <li><p className={styles.revenueDescList}>Short, repeatable tenures</p></li>
+            </ul>
+            <img src={revenueR}></img>
+          </Content>
         </Cell>
       </Grid>
       <p className={styles.earlypayHeader}>Early Pay Suppliers</p>
@@ -127,10 +137,28 @@ function Intro(props: IntroProps) {
         className={styles.descriptionBlock}
       >
         <Cell width={s ? 1 : 5} top={s ? 1 : 2} center middle>
-          <img src={earlypayL} className={styles.earlypayImage}></img>
+          <Content className={styles.earlypayDesc}>
+            <img src={earlypayL} className={styles.earlypayImage}></img>
+            <h2>Benefits</h2>
+            <ul>
+              <li><p className={styles.earlypayDescList}>Early payment discount from suppliers</p></li>
+              <li><p className={styles.earlypayDescList}>Onboard suppliers without friction</p></li>
+              <li><p className={styles.earlypayDescList}>Increase supplier stickiness by 30-50%</p></li>
+              <li><p className={styles.earlypayDescList}>Reduce supply risk with weak suppliers</p></li>
+            </ul>
+          </Content>
         </Cell>
         <Cell width={s ? 1 : 5} top={s ? 2 : 2} enter middle>
-          <img src={earlypayR} className={styles.earlypayImage}></img>
+          <Content className={styles.earlypayDesc}>
+            <img src={earlypayR} className={styles.earlypayImage}></img>
+            <h2>Benefits</h2>
+            <ul>
+              <li><p className={styles.earlypayDescList}>Improved cash flows</p></li>
+              <li><p className={styles.earlypayDescList}>Reduced risks of order fulfillment</p></li>
+              <li><p className={styles.earlypayDescList}>Impetus for expansion</p></li>
+              <li><p className={styles.earlypayDescList}>Reduce collections risks</p></li>
+            </ul>
+          </Content>
         </Cell>
       </Grid>
       <p className={styles.earlypayHeader}>Finance your orders</p>

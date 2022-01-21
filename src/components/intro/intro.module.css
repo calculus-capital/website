@@ -4,7 +4,7 @@
 }
 
 .menu a:hover {
-  background-color: #0c0c20;
+  background-color: inherit;
   color: #ff1616;
 }
 
@@ -105,12 +105,39 @@
   }
 
   .descriptionBlock {
-    margin-top: 200px;
+    margin-top: 50px;
   }
 
   .revenueImage {
     object-fit: contain;
-    max-height: 800px;
+    max-height: 1000px;
+  }
+
+  .revenueDesc {
+    color: #6d4c44;
+    height: 100%;
+  }
+
+  .revenueDesc h1 {
+    font-size: 40pt;
+    color: #6d4c44;
+  }
+
+  .revenueDesc h2 {
+    font-size: 25pt;
+    color: #6d4c44;
+  }
+
+  .revenueDesc ul {
+    list-style-type: disc;
+    font-size: 25pt;
+  }
+
+  .revenueDesc p {
+    font-size: 20pt;
+    text-align: left;
+    padding-left: 20px;
+    color: #6d4c44;
   }
 
   .earlypayImage {
@@ -121,8 +148,35 @@
   .earlypayHeader {
     font-size: 35pt;
     font-weight: bold;
-    color: white;
+    color: #6d4c44;
     margin-top: 200px;
+  }
+
+  .earlypayDesc {
+    color: #6d4c44;
+    height: 100%;
+  }
+
+  .earlypayDesc h1 {
+    font-size: 40pt;
+    color: #6d4c44;
+  }
+
+  .earlypayDesc h2 {
+    font-size: 25pt;
+    color: #6d4c44;
+  }
+
+  .earlypayDesc ul {
+    list-style-type: disc;
+    font-size: 25pt;
+  }
+
+  .earlypayDesc p {
+    font-size: 16pt;
+    text-align: left;
+    padding-left: 20px;
+    color: #6d4c44;
   }
 
   .poImage {
