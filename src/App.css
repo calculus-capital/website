@@ -8,16 +8,10 @@
 
   text-align: center;
   /* background-image: url('../assets/background2.jpg'); */
-  background: linear-gradient(
-    90deg,
-    rgb(18, 155, 218) 2%,
-    rgb(243, 22, 232) 61%,
-    rgb(218, 10, 114) 100%
-  );
+  background-image: linear-gradient(to right top, #845EC2, #D65DB1, #FF6F91, #FFC75F, #F9F871);
   /* background: radial-gradient(circle, rgba(195,34,145,1) 0%, rgba(253,114,45,1) 100%); */
 
   background-size: 100% 100%;
-  background-color: green;
 
   padding: 5px;
 
@@ -31,12 +25,19 @@ body {
 }
 
 .appContent {
-  background-color: #0c0c20;
-
   border-radius: 30px;
   /* height: calc(100vh - 10px); */
   overflow-y: hidden;
   overflow-x: hidden;
+}
+
+@media (min-width: 1100px) {
+  .appContent {
+    background-image: linear-gradient(70deg,
+      /* #0c0c20, #1e0c20 */
+      #F49586 5%, #E7A1A4 5% 10%, #EAB6B8 10% 15%, #E2C5A8 15% 20%, #f0d4a0 20% 30%, #f2deb9 30% 40%, #F0E4CE 40% 85%, #F7EBDB 85% 100%
+    );
+  }
 }
 
 @media (max-width: 1100px) {
@@ -46,5 +47,10 @@ body {
 
   .appContent {
     border-radius: 0px;
+
+    background-image: linear-gradient(70deg,
+      /* #0c0c20, #1e0c20 */
+      #F49586 5%, #E7A1A4 5% 10%, #EAB6B8 10% 15%, #E2C5A8 15% 20%, #f0d4a0 20% 30%, #f2deb9 30% 40%, #F0E4CE 40% 90%, #F7EBDB 90% 100%
+    );
   }
 }
