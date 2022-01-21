@@ -121,10 +121,22 @@ function Intro(props: IntroProps) {
           <Content className={styles.revenueDesc}>
             <h2>Revenue financing</h2>
             <ul>
-              <li><p className={styles.revenueDescList}>Credit Limit upto ₹50lac</p></li>
-              <li><p className={styles.revenueDescList}>Easy Onboarding</p></li>
-              <li><p className={styles.revenueDescList}>Competitive Rates</p></li>
-              <li><p className={styles.revenueDescList}>Short, repeatable tenures</p></li>
+              <li>
+                <p className={styles.revenueDescList}>
+                  Credit Limit upto ₹50lac
+                </p>
+              </li>
+              <li>
+                <p className={styles.revenueDescList}>Easy Onboarding</p>
+              </li>
+              <li>
+                <p className={styles.revenueDescList}>Competitive Rates</p>
+              </li>
+              <li>
+                <p className={styles.revenueDescList}>
+                  Short, repeatable tenures
+                </p>
+              </li>
             </ul>
             <img src={revenueR}></img>
           </Content>
@@ -141,10 +153,26 @@ function Intro(props: IntroProps) {
             <img src={earlypayL} className={styles.earlypayImage}></img>
             <h2>Benefits</h2>
             <ul>
-              <li><p className={styles.earlypayDescList}>Early payment discount from suppliers</p></li>
-              <li><p className={styles.earlypayDescList}>Onboard suppliers without friction</p></li>
-              <li><p className={styles.earlypayDescList}>Increase supplier stickiness by 30-50%</p></li>
-              <li><p className={styles.earlypayDescList}>Reduce supply risk with weak suppliers</p></li>
+              <li>
+                <p className={styles.earlypayDescList}>
+                  Early payment discount from suppliers
+                </p>
+              </li>
+              <li>
+                <p className={styles.earlypayDescList}>
+                  Onboard suppliers without friction
+                </p>
+              </li>
+              <li>
+                <p className={styles.earlypayDescList}>
+                  Increase supplier stickiness by 30-50%
+                </p>
+              </li>
+              <li>
+                <p className={styles.earlypayDescList}>
+                  Reduce supply risk with weak suppliers
+                </p>
+              </li>
             </ul>
           </Content>
         </Cell>
@@ -153,10 +181,22 @@ function Intro(props: IntroProps) {
             <img src={earlypayR} className={styles.earlypayImage}></img>
             <h2>Benefits</h2>
             <ul>
-              <li><p className={styles.earlypayDescList}>Improved cash flows</p></li>
-              <li><p className={styles.earlypayDescList}>Reduced risks of order fulfillment</p></li>
-              <li><p className={styles.earlypayDescList}>Impetus for expansion</p></li>
-              <li><p className={styles.earlypayDescList}>Reduce collections risks</p></li>
+              <li>
+                <p className={styles.earlypayDescList}>Improved cash flows</p>
+              </li>
+              <li>
+                <p className={styles.earlypayDescList}>
+                  Reduced risks of order fulfillment
+                </p>
+              </li>
+              <li>
+                <p className={styles.earlypayDescList}>Impetus for expansion</p>
+              </li>
+              <li>
+                <p className={styles.earlypayDescList}>
+                  Reduce collections risks
+                </p>
+              </li>
             </ul>
           </Content>
         </Cell>

@@ -13,20 +13,58 @@
   /* background: linear-gradient(to right, #ed7979 20%, #e2c286 20% 40%, #e2e288 40% 60%, #93e693 60% 80%, #9797e6 80%); */
 
   background-color: hsl(34, 53%, 82%);
-  background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
-    hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
-    hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
-    hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
-    hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
-    hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px
+  background-image: repeating-linear-gradient(
+      45deg,
+      transparent 5px,
+      hsla(197, 62%, 11%, 0.5) 5px,
+      hsla(197, 62%, 11%, 0.5) 10px,
+      hsla(5, 53%, 63%, 0) 10px,
+      hsla(5, 53%, 63%, 0) 35px,
+      hsla(5, 53%, 63%, 0.5) 35px,
+      hsla(5, 53%, 63%, 0.5) 40px,
+      hsla(197, 62%, 11%, 0.5) 40px,
+      hsla(197, 62%, 11%, 0.5) 50px,
+      hsla(197, 62%, 11%, 0) 50px,
+      hsla(197, 62%, 11%, 0) 60px,
+      hsla(5, 53%, 63%, 0.5) 60px,
+      hsla(5, 53%, 63%, 0.5) 70px,
+      hsla(35, 91%, 65%, 0.5) 70px,
+      hsla(35, 91%, 65%, 0.5) 80px,
+      hsla(35, 91%, 65%, 0) 80px,
+      hsla(35, 91%, 65%, 0) 90px,
+      hsla(5, 53%, 63%, 0.5) 90px,
+      hsla(5, 53%, 63%, 0.5) 110px,
+      hsla(5, 53%, 63%, 0) 110px,
+      hsla(5, 53%, 63%, 0) 120px,
+      hsla(197, 62%, 11%, 0.5) 120px,
+      hsla(197, 62%, 11%, 0.5) 140px
     ),
-  repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
-    hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
-    hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
-    hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
-    hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
-    hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px
-  );
+    repeating-linear-gradient(
+      135deg,
+      transparent 5px,
+      hsla(197, 62%, 11%, 0.5) 5px,
+      hsla(197, 62%, 11%, 0.5) 10px,
+      hsla(5, 53%, 63%, 0) 10px,
+      hsla(5, 53%, 63%, 0) 35px,
+      hsla(5, 53%, 63%, 0.5) 35px,
+      hsla(5, 53%, 63%, 0.5) 40px,
+      hsla(197, 62%, 11%, 0.5) 40px,
+      hsla(197, 62%, 11%, 0.5) 50px,
+      hsla(197, 62%, 11%, 0) 50px,
+      hsla(197, 62%, 11%, 0) 60px,
+      hsla(5, 53%, 63%, 0.5) 60px,
+      hsla(5, 53%, 63%, 0.5) 70px,
+      hsla(35, 91%, 65%, 0.5) 70px,
+      hsla(35, 91%, 65%, 0.5) 80px,
+      hsla(35, 91%, 65%, 0) 80px,
+      hsla(35, 91%, 65%, 0) 90px,
+      hsla(5, 53%, 63%, 0.5) 90px,
+      hsla(5, 53%, 63%, 0.5) 110px,
+      hsla(5, 53%, 63%, 0) 110px,
+      hsla(5, 53%, 63%, 0) 140px,
+      hsla(197, 62%, 11%, 0.5) 140px,
+      hsla(197, 62%, 11%, 0.5) 160px
+    );
 
   background-size: 100% 100%;
 
@@ -50,9 +88,16 @@ body {
 
 @media (min-width: 1100px) {
   .appContent {
-    background-image: linear-gradient(70deg,
-      /* #0c0c20, #1e0c20 */
-      #faba43 5%, #f8c66a 5% 10%, #ffd992 10% 15%, #ffe3ae 15% 20%, #fce7c0 20% 30%, #fff1d6 30% 40%, #fff7e9 40% 83%, #fdfaf4 83% 100%
+    background-image: linear-gradient(
+      70deg,
+      /* #0c0c20, #1e0c20 */ #faba43 5%,
+      #f7cc7c 5% 10%,
+      #ffe2ad 10% 15%,
+      #ffeed1 15% 20%,
+      #fff4db 20% 30%,
+      #fff7e7 30% 40%,
+      #fffbf5 40% 83%,
+      #ffffff 83% 100%
     );
   }
 }
@@ -65,9 +110,16 @@ body {
   .appContent {
     border-radius: 0px;
 
-    background-image: linear-gradient(70deg,
-      /* #0c0c20, #1e0c20 */
-      #F49586 5%, #E7A1A4 5% 10%, #EAB6B8 10% 15%, #E2C5A8 15% 20%, #f0d4a0 20% 30%, #f2deb9 30% 40%, #F0E4CE 40% 90%, #F7EBDB 90% 100%
+    background-image: linear-gradient(
+      70deg,
+      /* #0c0c20, #1e0c20 */ #f49586 5%,
+      #e7a1a4 5% 10%,
+      #eab6b8 10% 15%,
+      #e2c5a8 15% 20%,
+      #f0d4a0 20% 30%,
+      #f2deb9 30% 40%,
+      #f0e4ce 40% 90%,
+      #f7ebdb 90% 100%
     );
   }
 }
