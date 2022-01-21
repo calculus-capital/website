@@ -108,6 +108,7 @@ function Intro(props: IntroProps) {
           </Cell>
         </Grid>
       </div>
+      <p className={styles.revenueHeader}>Grow your Business</p>
       <Grid
         columns={s ? 1 : 10}
         rows={s ? 2 : 1}
@@ -118,8 +119,7 @@ function Intro(props: IntroProps) {
         </Cell>
         <Cell width={s ? 1 : 5} top={s ? 1 : 1} enter middle>
           <Content className={styles.revenueDesc}>
-            <h1>Grow your Business</h1>
-            <h2>with revenue financing</h2>
+            <h2>Revenue financing</h2>
             <ul>
               <li><p className={styles.revenueDescList}>Credit Limit upto ₹50lac</p></li>
               <li><p className={styles.revenueDescList}>Easy Onboarding</p></li>
