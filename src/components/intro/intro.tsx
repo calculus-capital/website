@@ -17,7 +17,7 @@ import pofin from "../../assets/po-financing.png";
 
 import "bulma/css/bulma.min.css";
 import styles from "./intro.module.css";
-import { Content } from "react-bulma-components";
+import { Button, Content } from "react-bulma-components";
 
 type IntroProps = {};
 
@@ -144,10 +144,13 @@ function Intro(props: IntroProps) {
                 ></Slider>
               </Cell>
               <Cell>
-                <p>Sell offers:</p>
+                <p>Offers:</p>
                 <ul className={styles.revenueResult}>{pledges.slice(0, 5)}</ul>
               </Cell>
             </Grid>
+            <div className={styles.button}>
+              <a>Sign Up</a>
+            </div>
             <img src={revenueR}></img>
           </Content>
         </Cell>
@@ -262,6 +265,9 @@ function Intro(props: IntroProps) {
           </p>
         </Cell>
       </Grid>
+      <div className={styles.button}>
+        <a>Learn More</a>
+      </div>
       <p className={styles.earlypayHeader}>Finance your orders</p>
       <Grid
         columns={s ? 1 : 10}
@@ -272,6 +278,9 @@ function Intro(props: IntroProps) {
           <img src={pofin} className={styles.poImage}></img>
         </Cell>
       </Grid>
+      <div className={styles.button}>
+        <a>Learn more</a>
+      </div>
       <p className={styles.earlypayHeader}>A console to do it all</p>
       <Grid
         columns={s ? 1 : 10}
