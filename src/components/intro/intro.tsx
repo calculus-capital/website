@@ -102,10 +102,11 @@ function Intro(props: IntroProps) {
                 </p>
               </li>
             </ul>
+            <p>Try out our calculator:</p>
             <Grid columns={1} cecnter middle className={styles.revenueCalc}>
               <Cell>
                 <Slider
-                  label="Monthly recurring revenue (Lakhs): "
+                  label="Monthly recurring revenue (₹ Lakh): "
                   min={50}
                   max={1000}
                   init={mrr}
@@ -134,7 +135,7 @@ function Intro(props: IntroProps) {
               </Cell> */}
               <Cell>
                 <Slider
-                  label="Advance: "
+                  label="Advance (₹ Lakh): "
                   min={0}
                   max={2 * mrr}
                   init={ask}
@@ -143,7 +144,7 @@ function Intro(props: IntroProps) {
                 ></Slider>
               </Cell>
               <Cell>
-                <p>You may opt for the following choices:</p>
+                <p>Sell offers:</p>
                 <ul className={styles.revenueResult}>{pledges.slice(0, 5)}</ul>
               </Cell>
             </Grid>
@@ -216,7 +217,7 @@ function Intro(props: IntroProps) {
         </Cell>
         <Cell>
           <Slider
-            label="Monthly recurring purchase (Lakhs): "
+            label="Monthly recurring purchase (₹ Lakh): "
             min={100}
             max={10000}
             init={mp}
@@ -234,7 +235,7 @@ function Intro(props: IntroProps) {
         </Cell>
         <Cell>
           <Slider
-            label="Cost of Capital: "
+            label="Cost of Capital (% per annum): "
             min={10}
             max={24}
             init={wacc}
@@ -253,11 +254,11 @@ function Intro(props: IntroProps) {
         <Cell>
           <p>
             Generate additional revenue of:
-            {" " +
+            {" ₹ " +
               Math.round(
                 (mp * discount) / 100 - mp * ((terms * wacc) / 100 / 365)
-              )}
-            Lakhs
+              ) +
+              " Lakh"}
           </p>
         </Cell>
       </Grid>
