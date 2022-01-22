@@ -4,6 +4,8 @@
 import React, { useEffect, useState } from "react";
 import { Cell, Grid } from "styled-css-grid";
 import { useMediaQuery } from "react-responsive";
+import Slider from "./slider";
+import { computed } from "./revenue";
 
 import logo from "../../assets/logo.png";
 import halo from "../../assets/halo1.png";
@@ -28,9 +30,54 @@ import { Button, Content, Menu, Section } from "react-bulma-components";
 
 type IntroProps = {};
 
+const getPledge = (
+  mrr: number,
+  growth: number,
+  volatility: number,
+  ask: number
+) => {
+  return computed.filter((x) => {
+    return (
+      x.growth === growth &&
+      Math.abs(mrr / ask - x.mrr / x.ask) <= 1 &&
+      x.unviable === 0 &&
+      x.successful / x.viable > 0.5
+    );
+  });
+};
+
+const unique = (a: any) =>
+  // @ts-ignore
+  [...new Set(a.map((o: any) => JSON.stringify(o)))].map((s) => JSON.parse(s));
+
 function Intro(props: IntroProps) {
   const s = useMediaQuery({ query: "(max-width: 481px)" });
   const m = useMediaQuery({ query: "(max-width: 1100px)" });
+
+  const [mrr, setMrr] = useState(100);
+  const [mrrGrowth, setMrrGrowth] = useState(10);
+  const [volatility, setVolatility] = useState(50);
+  const [ask, setAsk] = useState(25);
+
+  const [mp, setMp] = useState(1000);
+  const [discount, setDiscount] = useState(3);
+  const [wacc, setWacc] = useState(16);
+  const [terms, setTerms] = useState(30);
+
+  const pledgeSet = () =>
+    getPledge(mrr, mrrGrowth, volatility, ask).map((p) => {
+      return (
+        <li>
+          Pledge {p.pledge}% revenue for {p.tenure} days
+        </li>
+      );
+    });
+  const [pledges, setPledges] = useState(pledgeSet());
+
+  useEffect(() => {
+    setPledges(pledgeSet());
+    return;
+  }, [mrr, mrrGrowth, volatility, ask]);
 
   return (
     <div className={styles.intro}>
@@ -109,6 +156,7 @@ function Intro(props: IntroProps) {
         </Grid>
       </div>
       <p className={styles.revenueHeader}>Grow your Business</p>
+      <p className={styles.revenueSubHeader}>with Revenue financing</p>
       <Grid
         columns={s ? 1 : 10}
         rows={s ? 2 : 1}
@@ -119,7 +167,6 @@ function Intro(props: IntroProps) {
         </Cell>
         <Cell width={s ? 1 : 5} top={s ? 1 : 1} enter middle>
           <Content className={styles.revenueDesc}>
-            <h2>Revenue financing</h2>
             <ul>
               <li>
                 <p className={styles.revenueDescList}>
@@ -138,6 +185,51 @@ function Intro(props: IntroProps) {
                 </p>
               </li>
             </ul>
+            <Grid columns={1} cecnter middle className={styles.revenueCalc}>
+              <Cell>
+                <Slider
+                  label="Monthly recurring revenue (Lakhs): "
+                  min={50}
+                  max={1000}
+                  init={mrr}
+                  change={setMrr}
+                  step={1}
+                ></Slider>
+              </Cell>
+              <Cell>
+                <Slider
+                  label="MoM growth (%): "
+                  min={5}
+                  max={50}
+                  init={mrrGrowth}
+                  change={setMrrGrowth}
+                  step={5}
+                ></Slider>
+              </Cell>
+              {/* <Cell>
+                <Slider
+                  label="Volatility: "
+                  min={0}
+                  max={100}
+                  init={volatility}
+                  change={setVolatility}
+                ></Slider>
+              </Cell> */}
+              <Cell>
+                <Slider
+                  label="Advance: "
+                  min={0}
+                  max={2 * mrr}
+                  init={ask}
+                  change={setAsk}
+                  step={mrr / 4}
+                ></Slider>
+              </Cell>
+              <Cell>
+                <p>You may opt for the following choices:</p>
+                <ul className={styles.revenueResult}>{pledges.slice(0, 5)}</ul>
+              </Cell>
+            </Grid>
             <img src={revenueR}></img>
           </Content>
         </Cell>
@@ -199,6 +291,57 @@ function Intro(props: IntroProps) {
               </li>
             </ul>
           </Content>
+        </Cell>
+      </Grid>
+      <Grid columns={1} cecnter middle className={styles.earlypayCalc}>
+        <Cell>
+          <p>Revenue from early payments:</p>
+        </Cell>
+        <Cell>
+          <Slider
+            label="Monthly recurring purchase (Lakhs): "
+            min={100}
+            max={10000}
+            init={mp}
+            change={setMp}
+          ></Slider>
+        </Cell>
+        <Cell>
+          <Slider
+            label="Early payment discount (%): "
+            min={0}
+            max={7}
+            init={discount}
+            change={setDiscount}
+          ></Slider>
+        </Cell>
+        <Cell>
+          <Slider
+            label="Cost of Capital: "
+            min={10}
+            max={24}
+            init={wacc}
+            change={setWacc}
+          ></Slider>
+        </Cell>
+        <Cell>
+          <Slider
+            label="Payment terms (days): "
+            min={10}
+            max={90}
+            init={terms}
+            change={setTerms}
+          ></Slider>
+        </Cell>
+        <Cell>
+          <p>
+            Generate additional revenue of:
+            {" " +
+              Math.round(
+                (mp * discount) / 100 - mp * ((terms * wacc) / 100 / 365)
+              )}
+            Lakhs
+          </p>
         </Cell>
       </Grid>
       <p className={styles.earlypayHeader}>Finance your orders</p>
