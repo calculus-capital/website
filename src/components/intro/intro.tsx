@@ -39,8 +39,8 @@ function Intro(props: IntroProps) {
   const [mrr, setMrr] = useState(100);
   const [mrrGrowth, setMrrGrowth] = useState(20);
   const [volatility, setVolatility] = useState(50);
-  const [ask, setAsk] = useState(mrr*7/30);
-  const [margin, setMargin] = useState(30)
+  const [ask, setAsk] = useState(mrr*14/30);
+  const [margin, setMargin] = useState(40);
 
   const [mp, setMp] = useState(1000);
   const [discount, setDiscount] = useState(3);
