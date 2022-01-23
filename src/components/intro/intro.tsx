@@ -107,7 +107,10 @@ function Intro(props: IntroProps) {
                 <Slider label="MoM growth (%): " min={5} max={50} init={mrrGrowth} change={setMrrGrowth} step={5}></Slider>
               </Cell>
               <Cell>
-                <Slider label="Margin (%): " min={20} max={50} init={margin} change={setMargin} step={5}></Slider>
+                <Slider label="Margin (%): " min={20} max={50} value={margin} init={margin} change={setMargin} step={5}></Slider>
+              </Cell>
+              <Cell>
+                <Slider label="Volatility (%): " min={20} max={50} value={margin} init={margin} change={setMargin} step={5}></Slider>
               </Cell>
               <Cell>
                 <Slider label="Advance (₹ Lakh): " min={mrr*7/30} max={Math.min(mrr*35/30, 500)} init={ask} change={setAsk} step={7*mrr/30}></Slider>

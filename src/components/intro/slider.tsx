@@ -7,6 +7,7 @@ const Slider = (props: {
   max: number;
   init: number;
   step?: number;
+  value?: number;
   change?: (x: number) => any;
 }) => {
   const [state, setState] = useState(props.init);
@@ -14,7 +15,7 @@ const Slider = (props: {
   return (
     <>
       <span className={styles.inputLabel}>
-        ⋆ {props.label} {Math.round(state * 100) / 100}
+        ⋆ {props.label} {Math.round((props.value || state) * 100) / 100}
       </span>
       <input
         type="range"
@@ -22,7 +23,7 @@ const Slider = (props: {
           props.step ||
           (props.max - props.min > 100 ? 1 : (props.max - props.min) / 100)
         }
-        value={state}
+        value={props.value || state}
         min={props.min}
         max={props.max}
         onChange={(e) => {
