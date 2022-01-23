@@ -77,7 +77,7 @@ function Intro(props: IntroProps) {
           <Content className={styles.revenueDesc}>
             <ul>
               <li>
-                <p className={styles.revenueDescList}>Credit Limit upto ₹50lac</p>
+                <p className={styles.revenueDescList}>Credit Limit upto ₹5Cr</p>
               </li>
               <li>
                 <p className={styles.revenueDescList}>Easy Onboarding</p>
@@ -110,7 +110,7 @@ function Intro(props: IntroProps) {
                 <Slider label="Margin (%): " min={20} max={50} init={margin} change={setMargin} step={5}></Slider>
               </Cell>
               <Cell>
-                <Slider label="Advance (₹ Lakh): " min={mrr*7/30} max={mrr*35/30} init={ask} change={setAsk} step={7*mrr/30}></Slider>
+                <Slider label="Advance (₹ Lakh): " min={mrr*7/30} max={500} init={ask} change={setAsk} step={7*mrr/30}></Slider>
               </Cell>
               <Cell>
                 <p>Offers:</p>
