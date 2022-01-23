@@ -1,5 +1,6 @@
 import { Cell, Grid } from "styled-css-grid";
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 
 import logo from "../../assets/logo.png";
 import styles from "./header.module.css";
@@ -42,33 +43,26 @@ function Header(props: HeaderProps) {
             <Menu>
               <Menu.List title={s ? "" : "Login"}>
                 <Menu.List.Item>
-                  <a
-                    className={styles.notionLink}
-                    href="https://console.calculus.capital/"
-                    target="_blank"
-                  >
+                  <a className={styles.notionLink} href="https://console.calculus.capital/" target="_blank">
                     Console
                   </a>
                 </Menu.List.Item>
               </Menu.List>
-              <Menu.List title={s ? "" : "Documentation"}>
+              <Menu.List title={s ? "" : "Products"}>
                 <Menu.List.Item>
-                  <a
-                    className={styles.notionLink}
-                    href="https://calculus-capital.notion.site/Case-Studies-a6f4d3e8e5214e28b2f3c6e5cba3e7ae"
-                    target="_blank"
-                  >
-                    Case Studies
-                  </a>
+                  <Link className={styles.notionLink} to="/">
+                    Revenue
+                  </Link>
                 </Menu.List.Item>
                 <Menu.List.Item>
-                  <a
-                    className={styles.notionLink}
-                    href="https://calculus-capital.notion.site/Usecases-6ef2163278da4990ae027bc2c5e3b1f7"
-                    target="_blank"
-                  >
-                    Usecases
-                  </a>
+                  <Link className={styles.notionLink} to="/early-pay">
+                    Early Pay
+                  </Link>
+                </Menu.List.Item>
+                <Menu.List.Item>
+                  <Link className={styles.notionLink} to="/early-collect">
+                    Early Collect
+                  </Link>
                 </Menu.List.Item>
               </Menu.List>
               <Menu.List title={s ? "" : "About"}>

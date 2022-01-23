@@ -18,6 +18,7 @@ import pofin from "../../assets/po-financing.png";
 import "bulma/css/bulma.min.css";
 import styles from "./intro.module.css";
 import { Button, Content } from "react-bulma-components";
+import { Link } from "react-router-dom";
 
 type IntroProps = {};
 
@@ -203,7 +204,7 @@ function Intro(props: IntroProps) {
         </Cell>
       </Grid>
       <div className={styles.button}>
-        <a>Learn More</a>
+        <Link to="/early-pay">Learn more</Link>
       </div>
       <p className={styles.earlypayHeader}>Get Paid Early from Distributors</p>
       <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
@@ -212,16 +213,16 @@ function Intro(props: IntroProps) {
         </Cell>
       </Grid>
       <div className={styles.button}>
-        <a>Learn more</a>
+        <Link to="/early-collect">Learn more</Link>
       </div>
-      <p className={styles.earlypayHeader}>A console to do it all</p>
+      {/* <p className={styles.earlypayHeader}>A console to do it all</p>
       <Grid columns={s ? 1 : 10} rows={s ? 10 : 1} className={styles.descriptionBlock}>
         <Cell width={s ? 1 : 10} height={s ? 9 : 1} top={s ? 2 : 2} center middle>
           <div className={styles.knob}>
             <iframe src={"https://console.calculus.capital/"} className={styles.if2}></iframe>
           </div>
         </Cell>
-      </Grid>
+      </Grid> */}
     </div>
   );
 }

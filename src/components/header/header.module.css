@@ -1,6 +1,8 @@
 .notionLink {
   padding: 0 !important;
   margin: 0 !important;
+  width: 100px;
+  text-align: left;
 }
 
 .menu a:hover {
