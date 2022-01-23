@@ -24,7 +24,7 @@ type IntroProps = {};
 
 const getPledge = (mrr: number, growth: number, margin: number, ask: number) => {
   return computed.filter((x) => {
-    return x.pd <= 10 && x.trapped_viable > 100 && x.mrr === mrr && x.margin === margin && x.growth === growth && Math.abs(ask - x.ask) <= 1;
+    return x.pd <= 10 && x.trapped > 100 && x.mrr === mrr && x.margin === margin && x.growth === growth && Math.abs(ask - x.ask) <= 1;
   });
 };
 
