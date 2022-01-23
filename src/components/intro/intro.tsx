@@ -24,7 +24,7 @@ type IntroProps = {};
 
 const getPledge = (mrr: number, growth: number, margin: number, ask: number) => {
   return computed.filter((x) => {
-    return x.pd <= 10 && x.trapped > 100 && x.mrr === mrr && x.margin === margin && x.growth === growth && Math.abs(ask - x.ask) <= 1;
+    return x.pd <= 10 && x.trapped_viable > 80 && x.mrr === mrr && x.margin === margin && x.growth === growth && Math.abs(ask - x.ask) <= 1;
   });
 };
 
@@ -110,7 +110,7 @@ function Intro(props: IntroProps) {
                 <Slider label="Margin (%): " min={20} max={50} init={margin} change={setMargin} step={5}></Slider>
               </Cell>
               <Cell>
-                <Slider label="Advance (₹ Lakh): " min={mrr*7/30} max={500} init={ask} change={setAsk} step={7*mrr/30}></Slider>
+                <Slider label="Advance (₹ Lakh): " min={mrr*7/30} max={Math.min(mrr*35/30, 500)} init={ask} change={setAsk} step={7*mrr/30}></Slider>
               </Cell>
               <Cell>
                 <p>Offers:</p>
