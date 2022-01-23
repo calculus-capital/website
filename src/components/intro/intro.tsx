@@ -24,7 +24,7 @@ type IntroProps = {};
 
 const getPledge = (mrr: number, growth: number, margin: number, ask: number) => {
   return computed.filter((x) => {
-    return x.pd === 0 && x.mrr === mrr && x.margin === margin && x.growth === growth && Math.abs(ask - x.ask) <= 1;
+    return x.pd <= 10 && x.trapped_viable > 100 && x.mrr === mrr && x.margin === margin && x.growth === growth && Math.abs(ask - x.ask) <= 1;
   });
 };
 
@@ -53,7 +53,7 @@ function Intro(props: IntroProps) {
       .map((p) => {
         return (
           <li>
-            Pledge {p.pledge}% revenue for {p.tenure} days
+            Pledge {p.pledge_viable}% revenue for {p.tenure} days
           </li>
         );
       });
@@ -74,9 +74,6 @@ function Intro(props: IntroProps) {
       <p className={styles.revenueSubHeader}>with Revenue financing</p>
       <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
         <Cell width={s ? 1 : 5} top={s ? 2 : 1} center middle>
-          <img src={revenueL} className={styles.revenueImage}></img>
-        </Cell>
-        <Cell width={s ? 1 : 5} top={s ? 1 : 1} enter middle>
           <Content className={styles.revenueDesc}>
             <ul>
               <li>
@@ -92,7 +89,16 @@ function Intro(props: IntroProps) {
                 <p className={styles.revenueDescList}>Short, repeatable tenures</p>
               </li>
             </ul>
-            <p>Try out our calculator:</p>
+            <img src={revenueR}></img>
+            <div className={styles.button}>
+              <Link to="/revenue">Learn more</Link>
+            </div>
+          </Content>
+          {/* <img src={revenueL} className={styles.revenueImage}></img> */}
+        </Cell>
+        <Cell width={s ? 1 : 5} top={s ? 1 : 1} enter middle>
+          <Content className={styles.revenueDesc}>
+            <p>Calculate!</p>
             <Grid columns={1} cecnter middle className={styles.revenueCalc}>
               <Cell>
                 <Slider label="Monthly recurring revenue (₹ Lakh): " min={50} max={1000} init={mrr} change={setMrr} step={50}></Slider>
@@ -111,10 +117,6 @@ function Intro(props: IntroProps) {
                 <ul className={styles.revenueResult}>{pledges.slice(0, 5)}</ul>
               </Cell>
             </Grid>
-            <div className={styles.button}>
-              <a>Sign Up</a>
-            </div>
-            <img src={revenueR}></img>
           </Content>
         </Cell>
       </Grid>

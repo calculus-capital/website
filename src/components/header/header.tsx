@@ -41,7 +41,12 @@ function Header(props: HeaderProps) {
         <Cell width={s ? 1 : m ? 2 : 1} className={styles.cell}>
           <Section className={styles.menu}>
             <Menu>
-              <Menu.List title={s ? "" : "Login"}>
+              <Menu.List title={s ? "" : "Navigate"}>
+                <Menu.List.Item>
+                  <Link className={styles.notionLink} to="/">
+                    Home
+                  </Link>
+                </Menu.List.Item>
                 <Menu.List.Item>
                   <a className={styles.notionLink} href="https://console.calculus.capital/" target="_blank">
                     Console
@@ -50,7 +55,7 @@ function Header(props: HeaderProps) {
               </Menu.List>
               <Menu.List title={s ? "" : "Products"}>
                 <Menu.List.Item>
-                  <Link className={styles.notionLink} to="/">
+                  <Link className={styles.notionLink} to="/revenue">
                     Revenue
                   </Link>
                 </Menu.List.Item>
@@ -63,17 +68,6 @@ function Header(props: HeaderProps) {
                   <Link className={styles.notionLink} to="/early-collect">
                     Early Collect
                   </Link>
-                </Menu.List.Item>
-              </Menu.List>
-              <Menu.List title={s ? "" : "About"}>
-                <Menu.List.Item>
-                  <a
-                    className={styles.notionLink}
-                    href="https://calculus-capital.notion.site/About-Us-33613fb172fa4d10a23ace098e756781"
-                    target="_blank"
-                  >
-                    Team
-                  </a>
                 </Menu.List.Item>
               </Menu.List>
             </Menu>
