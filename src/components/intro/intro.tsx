@@ -22,9 +22,9 @@ import { Link } from "react-router-dom";
 
 type IntroProps = {};
 
-const getPledge = (mrr: number, growth: number, volatility: number, ask: number) => {
+const getPledge = (mrr: number, growth: number, margin: number, ask: number) => {
   return computed.filter((x) => {
-    return x.growth === growth && Math.abs(mrr / ask - x.mrr / x.ask) <= 1 && x.unviable === 0 && x.successful / x.viable > 0.5;
+    return x.pd === 0 && x.mrr === mrr && x.margin === margin && x.growth === growth && Math.abs(ask - x.ask) <= 1;
   });
 };
 
@@ -39,27 +39,34 @@ function Intro(props: IntroProps) {
   const [mrr, setMrr] = useState(100);
   const [mrrGrowth, setMrrGrowth] = useState(10);
   const [volatility, setVolatility] = useState(50);
-  const [ask, setAsk] = useState(25);
+  const [ask, setAsk] = useState(mrr*7/30);
+  const [margin, setMargin] = useState(30)
 
   const [mp, setMp] = useState(1000);
   const [discount, setDiscount] = useState(3);
   const [wacc, setWacc] = useState(16);
   const [terms, setTerms] = useState(30);
 
-  const pledgeSet = () =>
-    getPledge(mrr, mrrGrowth, volatility, ask).map((p) => {
-      return (
-        <li>
-          Pledge {p.pledge}% revenue for {p.tenure} days
-        </li>
-      );
-    });
+  const pledgeSet = () => {
+    const pledges = getPledge(mrr, mrrGrowth, margin, ask)
+      .sort((x,y) => { return x.tenure > y.tenure ? 1 : -1 })
+      .map((p) => {
+        return (
+          <li>
+            Pledge {p.pledge}% revenue for {p.tenure} days
+          </li>
+        );
+      });
+
+    if (pledges.length < 3) return []
+    else return pledges
+  }
   const [pledges, setPledges] = useState(pledgeSet());
 
   useEffect(() => {
     setPledges(pledgeSet());
     return;
-  }, [mrr, mrrGrowth, volatility, ask]);
+  }, [mrr, mrrGrowth, margin, ask]);
 
   return (
     <div className={styles.intro}>
@@ -88,22 +95,16 @@ function Intro(props: IntroProps) {
             <p>Try out our calculator:</p>
             <Grid columns={1} cecnter middle className={styles.revenueCalc}>
               <Cell>
-                <Slider label="Monthly recurring revenue (₹ Lakh): " min={50} max={1000} init={mrr} change={setMrr} step={1}></Slider>
+                <Slider label="Monthly recurring revenue (₹ Lakh): " min={50} max={1000} init={mrr} change={setMrr} step={50}></Slider>
               </Cell>
               <Cell>
                 <Slider label="MoM growth (%): " min={5} max={50} init={mrrGrowth} change={setMrrGrowth} step={5}></Slider>
               </Cell>
-              {/* <Cell>
-                <Slider
-                  label="Volatility: "
-                  min={0}
-                  max={100}
-                  init={volatility}
-                  change={setVolatility}
-                ></Slider>
-              </Cell> */}
               <Cell>
-                <Slider label="Advance (₹ Lakh): " min={0} max={2 * mrr} init={ask} change={setAsk} step={mrr / 4}></Slider>
+                <Slider label="Margin (%): " min={20} max={50} init={margin} change={setMargin} step={5}></Slider>
+              </Cell>
+              <Cell>
+                <Slider label="Advance (₹ Lakh): " min={mrr*7/30} max={mrr*35/30} init={ask} change={setAsk} step={7*mrr/30}></Slider>
               </Cell>
               <Cell>
                 <p>Offers:</p>
