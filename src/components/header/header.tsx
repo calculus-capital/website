@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import { Cell, Grid } from "styled-css-grid";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
@@ -25,7 +26,7 @@ function Header(props: HeaderProps) {
             </div>
           </Cell>
         )}
-        <Cell width={s ? 6 : m ? 4 : 4} center middle className={styles.cell}>
+        <Cell width={s ? 5 : m ? 4 : 4} center middle className={styles.cell}>
           <div className={styles.calculus}>
             <p className={styles.neonText}>Calculus Capital</p>
           </div>
@@ -38,7 +39,7 @@ function Header(props: HeaderProps) {
           </div>
         </Cell>
         <Cell width={s ? 1 : m ? 3 : 4} className={styles.cell}></Cell>
-        <Cell width={s ? 1 : m ? 2 : 1} className={styles.cell}>
+        <Cell width={s ? 2 : m ? 2 : 1} className={styles.cell}>
           <Section className={styles.menu}>
             <Menu>
               <Menu.List title={s ? "" : "Navigate"}>

@@ -5,7 +5,7 @@ import { useMediaQuery } from "react-responsive";
 import usecase1 from "../../assets/po-financing-usecase1.png";
 // import usecase2 from "../../assets/early-collect-usecase2.png";
 
-import styles from "./earlycollect.module.css";
+import styles from "../common.module.css";
 import { Content } from "react-bulma-components";
 
 interface Props {}

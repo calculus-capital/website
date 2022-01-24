@@ -6,7 +6,7 @@ import earlyPaymentsMore from "../../assets/early-payments-more.png";
 import usecase1 from "../../assets/early-payments-usecase1.png";
 import usecase2 from "../../assets/early-payments-usecase2.png";
 
-import styles from "./earlypay.module.css";
+import styles from "../common.module.css";
 import { Content } from "react-bulma-components";
 
 interface Props {}

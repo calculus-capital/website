@@ -90,7 +90,7 @@ body {
   .appContent {
     background-image: linear-gradient(
       70deg,
-      /* #0c0c20, #1e0c20 */ #faba43 5%,
+      #faba43 5%,
       #f7cc7c 5% 10%,
       #ffe2ad 10% 15%,
       #ffeed1 15% 20%,
@@ -112,14 +112,14 @@ body {
 
     background-image: linear-gradient(
       70deg,
-      /* #0c0c20, #1e0c20 */ #f49586 5%,
-      #e7a1a4 5% 10%,
-      #eab6b8 10% 15%,
-      #e2c5a8 15% 20%,
-      #f0d4a0 20% 30%,
-      #f2deb9 30% 40%,
-      #f0e4ce 40% 90%,
-      #f7ebdb 90% 100%
+      #faba43 5%,
+      #f7cc7c 5% 10%,
+      #ffe2ad 10% 15%,
+      #ffeed1 15% 20%,
+      #fff4db 20% 30%,
+      #fff7e7 30% 40%,
+      #fffbf5 40% 82%,
+      #ffffff 82% 100%
     );
   }
 }
