@@ -84,7 +84,7 @@ export const Earlypay = (props: Props) => {
         </Cell>
       </Grid>
       <div className={styles.button}>
-        <a>Sign Up</a>
+        <a href="https://console.calculus.capital" target="_blank">Sign Up</a>
       </div>
       <p className={styles.header}>Usecase: 1</p>
       <p className={styles.subheader}>Invoice reverse discounting</p>
