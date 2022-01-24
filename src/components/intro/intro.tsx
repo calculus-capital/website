@@ -73,7 +73,7 @@ function Intro(props: IntroProps) {
       <p className={styles.revenueHeader}>Grow your Business</p>
       <p className={styles.revenueSubHeader}>with Revenue financing</p>
       <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
-        <Cell width={s ? 1 : 5} top={s ? 2 : 1} center middle>
+        <Cell width={s ? 1 : 5} top={s ? 1 : 1} center middle>
           <Content className={styles.revenueDesc}>
             <ul>
               <li>
@@ -96,7 +96,7 @@ function Intro(props: IntroProps) {
           </Content>
           {/* <img src={revenueL} className={styles.revenueImage}></img> */}
         </Cell>
-        <Cell width={s ? 1 : 5} top={s ? 1 : 1} enter middle>
+        <Cell width={s ? 1 : 5} top={s ? 2 : 1} enter middle>
           <Content className={styles.revenueDesc}>
             <p>Calculate!</p>
             <Grid columns={1} cecnter middle className={styles.revenueCalc}>
