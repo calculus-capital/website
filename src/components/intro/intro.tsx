@@ -88,6 +88,12 @@ function Intro(props: IntroProps) {
               <li>
                 <p className={styles.revenueDescList}>Short, repeatable tenures</p>
               </li>
+              <li>
+                <p className={styles.revenueDescList}>Part of revenue for repayment</p>
+              </li>
+              <li>
+                <p className={styles.revenueDescList}>Part of revenue as collateral</p>
+              </li>
             </ul>
             <img src={revenueR}></img>
             <div className={styles.button}>
@@ -98,7 +104,7 @@ function Intro(props: IntroProps) {
         </Cell>
         <Cell width={s ? 1 : 5} top={s ? 2 : 1} enter middle>
           <Content className={styles.revenueDesc}>
-            <p>Calculate!</p>
+            <p>Lets calculate:</p>
             <Grid columns={1} cecnter middle className={styles.revenueCalc}>
               <Cell>
                 <Slider label="Monthly recurring revenue (₹ Lakh): " min={50} max={1000} init={mrr} change={setMrr} step={50}></Slider>
