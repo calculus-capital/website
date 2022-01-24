@@ -203,12 +203,12 @@ function Intro(props: IntroProps) {
           <Slider label="Cost of Capital (% per annum): " min={10} max={24} init={wacc} change={setWacc}></Slider>
         </Cell>
         <Cell>
-          <Slider label="Payment terms (days): " min={10} max={90} init={terms} change={setTerms}></Slider>
+          <Slider label="Payment terms (days): " min={10} max={90} init={terms} change={setTerms} step={1}></Slider>
         </Cell>
         <Cell>
           <p>
             Generate additional revenue of:
-            {" ₹ " + Math.round((mp * discount) / 100 - mp * ((terms * wacc) / 100 / 365)) + " Lakh"}
+            {" ₹ " + Math.round((mp * discount) / 100 - mp * ((terms/365) * (wacc/ 100))) + " Lakh"}
           </p>
         </Cell>
       </Grid>
@@ -219,6 +219,31 @@ function Intro(props: IntroProps) {
       <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
         <Cell width={s ? 1 : 10} top={s ? 1 : 1} enter middle>
           <img src={pofin} className={styles.poImage}></img>
+        </Cell>
+      </Grid>
+      <Grid columns={1} cecnter middle className={styles.earlypayCalc}>
+        <Cell>
+          <p>Cost of credit on payment terms:</p>
+        </Cell>
+        <Cell>
+          <Slider label="Monthly recurring sales (₹ Lakh): " min={100} max={10000} init={mp} change={setMp}></Slider>
+        </Cell>
+        <Cell>
+          <Slider label="Early payment discount (%): " min={0} max={7} init={discount} change={setDiscount}></Slider>
+        </Cell>
+        <Cell>
+          <Slider label="Cost of Capital (% per annum): " min={10} max={24} init={wacc} change={setWacc}></Slider>
+        </Cell>
+        <Cell>
+          <Slider label="Payment terms (days): " min={10} max={90} init={terms} change={setTerms} step={1}></Slider>
+        </Cell>
+        <Cell>
+          <p>
+            Cost of credit:
+            {" ₹ " + Math.round((mp * discount) / 100) + " Lakh"}<br></br>
+            Effective discount for distributor:
+            {" ₹ " + Math.round((mp * discount) / 100 - mp * ((terms/365) * (wacc/ 100))) + " Lakh"}
+          </p>
         </Cell>
       </Grid>
       <div className={styles.button}>
