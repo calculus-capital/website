@@ -1,0 +1,134 @@
+.notionLink {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100px;
+  text-align: left;
+}
+
+.menu a:hover {
+  background-color: inherit;
+  color: #ff1616;
+}
+
+.separator350 {
+  background-color: #ff1616;
+  height: 5px;
+  max-width: 400px;
+  background-size: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.separator {
+  background-color: #ff1616;
+  height: 2px;
+  max-width: 90%;
+  margin: auto;
+  box-shadow: 0 0 7px #ff1616, 0 0 10px #ff1616;
+
+  /* background-image: url(../../assets/banner7.png); */
+  background-size: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.introFooter {
+  display: block;
+}
+
+/* util */
+
+.grid {
+  margin: 0;
+  padding: 0;
+
+  grid-gap: 0px !important;
+}
+
+.cell {
+  margin: 0;
+  padding: 0;
+
+  /* border: 1px solid #020c10; */
+}
+
+.neonText {
+  color: #ff1616;
+  /* text-shadow:
+    0 0 7px #ff1616,
+    0 0 10px #ff1616; */
+}
+
+@media (min-width: 1100px) {
+  .introHeader {
+    max-width: 1000px;
+    padding: 20px;
+
+    margin: auto;
+  }
+
+  .calculus {
+    color: #ff1616;
+    font-size: 35pt;
+    text-align: left;
+  }
+
+  .calculusAbout {
+    color: #020c10;
+    font-size: 20pt;
+    text-align: left;
+  }
+
+  .logo {
+    max-height: 250px;
+  }
+
+  .logo img {
+    max-height: 250px;
+  }
+
+  .intro {
+    border: none;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .introHeader {
+    max-width: 90vw;
+    padding: 20px;
+
+    margin: auto;
+  }
+
+  .calculus {
+    color: #ff1616;
+    font-size: 25pt;
+    text-align: left;
+  }
+
+  .calculusAbout {
+    color: #020c10;
+    font-size: 14pt;
+    text-align: left;
+  }
+
+  .logo {
+    max-height: 250px;
+  }
+
+  .logo img {
+    max-height: 250px;
+  }
+
+  .intro {
+    border: none;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
