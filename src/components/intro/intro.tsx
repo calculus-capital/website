@@ -7,11 +7,11 @@ import { useMediaQuery } from "react-responsive";
 import Slider from "./slider";
 import { computed } from "./revenue";
 
-import revenueL from "../../assets/revenue-left.png";
-import revenueR from "../../assets/revenue-right.png";
+// import revenueL from "../../assets/revenue-left.png";
+// import revenueR from "../../assets/revenue-right.png";
 
-import earlypayL from "../../assets/early-payments-startup.png";
-import earlypayR from "../../assets/early-payments-suppliers.png";
+// import earlypayL from "../../assets/early-payments-startup.png";
+// import earlypayR from "../../assets/early-payments-suppliers.png";
 
 import pofin from "../../assets/po-financing.png";
 
@@ -70,26 +70,28 @@ function Intro(props: IntroProps) {
 
   return (
     <div className={styles.intro}>
-      <p className={styles.revenueHeader}>Grow your Business</p>
-      <p className={styles.revenueSubHeader}>with Revenue financing</p>
+      <p className={styles.revenueHeader}>NFTs for attribution</p>
       <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
         <Cell width={s ? 1 : 5} top={s ? 1 : 1} center middle>
           <Content className={styles.revenueDesc}>
             <ul>
               <li>
-                <p className={styles.revenueDescList}>Credit Limit upto ₹5Cr</p>
+                <p className={styles.revenueDescList}>Print NFTs as barcodes and QR codes</p>
               </li>
               <li>
-                <p className={styles.revenueDescList}>Easy Onboarding</p>
+                <p className={styles.revenueDescList}>Scan throughout the supply chain</p>
               </li>
               <li>
-                <p className={styles.revenueDescList}>Competitive Rates</p>
+                <p className={styles.revenueDescList}>Apps for distributors, retailers, end consumers</p>
               </li>
               <li>
-                <p className={styles.revenueDescList}>Short, repeatable tenures</p>
+                <p className={styles.revenueDescList}>Real-time tracking for all participants</p>
+              </li>
+              <li>
+                <p className={styles.revenueDescList}>APIs for integration</p>
               </li>
             </ul>
-            <img src={revenueR}></img>
+            {/* <img src={revenueR}></img> */}
             <div className={styles.button}>
               <Link to="/revenue">Learn more</Link>
             </div>
@@ -120,31 +122,11 @@ function Intro(props: IntroProps) {
           </Content>
         </Cell>
       </Grid>
-      <p className={styles.earlypayHeader}>Grow your Network</p>
-      <div className={styles.network}>
-        <Grid columns={5} className={styles.networkGrid}>
-          <Cell className={styles.networkBlock} center middle>
-            <p>Early Pay (Suppliers)</p>
-          </Cell>
-          <Cell className={styles.networkBlockArrow} center middle>
-            <p>🡠</p>
-          </Cell>
-          <Cell className={styles.networkBlock} center middle>
-            <p>Startup</p>
-          </Cell>
-          <Cell className={styles.networkBlockArrow} center middle>
-            <p>🡠</p>
-          </Cell>
-          <Cell className={styles.networkBlock} center middle>
-            <p>Early Collect (Distributors)</p>
-          </Cell>
-        </Grid>
-      </div>
-      <p className={styles.earlypayHeader}>Early Pay Suppliers</p>
+      <p className={styles.earlypayHeader}>NFTs for authenticity</p>
       <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
         <Cell width={s ? 1 : 5} top={s ? 1 : 2} center middle>
           <Content className={styles.earlypayDesc}>
-            <img src={earlypayL} className={styles.earlypayImage}></img>
+            {/* <img src={earlypayL} className={styles.earlypayImage}></img> */}
             <h2>Benefits</h2>
             <ul>
               <li>
@@ -164,7 +146,7 @@ function Intro(props: IntroProps) {
         </Cell>
         <Cell width={s ? 1 : 5} top={s ? 2 : 2} enter middle>
           <Content className={styles.earlypayDesc}>
-            <img src={earlypayR} className={styles.earlypayImage}></img>
+            {/* <img src={earlypayR} className={styles.earlypayImage}></img> */}
             <h2>Benefits</h2>
             <ul>
               <li>
@@ -209,23 +191,24 @@ function Intro(props: IntroProps) {
       <div className={styles.button}>
         <Link to="/early-pay">Learn more</Link>
       </div>
-      <p className={styles.earlypayHeader}>Get Paid Early from Distributors</p>
+      <p className={styles.earlypayHeader}>NFTs for interaction</p>
       <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
         <Cell width={s ? 1 : 10} top={s ? 1 : 1} enter middle>
-          <img src={pofin} className={styles.poImage}></img>
+          {/* <img src={pofin} className={styles.poImage}></img> */}
         </Cell>
       </Grid>
       <div className={styles.button}>
         <Link to="/early-collect">Learn more</Link>
       </div>
-      {/* <p className={styles.earlypayHeader}>A console to do it all</p>
-      <Grid columns={s ? 1 : 10} rows={s ? 10 : 1} className={styles.descriptionBlock}>
-        <Cell width={s ? 1 : 10} height={s ? 9 : 1} top={s ? 2 : 2} center middle>
-          <div className={styles.knob}>
-            <iframe src={"https://console.calculus.capital/"} className={styles.if2}></iframe>
-          </div>
+      <p className={styles.earlypayHeader}>NFTs for connection</p>
+      <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
+        <Cell width={s ? 1 : 10} top={s ? 1 : 1} enter middle>
+          {/* <img src={pofin} className={styles.poImage}></img> */}
         </Cell>
-      </Grid> */}
+      </Grid>
+      <div className={styles.button}>
+        <Link to="/early-collect">Learn more</Link>
+      </div>
     </div>
   );
 }

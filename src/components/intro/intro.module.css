@@ -32,7 +32,7 @@
   border-radius: 5px;
   margin: 20px;
 
-  background: #f7cc7c;
+  background: #6a053c;
   outline: none;
   opacity: 0.7;
   -webkit-transition: 0.2s;
@@ -44,7 +44,7 @@
   appearance: none;
   width: 10px;
   height: 40px;
-  background: red;
+  background: rgb(161, 163, 211);
   cursor: pointer;
   border: none;
 }
@@ -63,19 +63,19 @@
   margin-left: auto;
   margin-right: auto;
 
-  background: linear-gradient(to bottom left, hsla(39, 88%, 73%, 20%) 50%, hsla(39, 88%, 73%, 40%) 50% 100%),
-    linear-gradient(to bottom right, hsla(39, 88%, 73%, 20%) 50%, hsla(39, 88%, 73%, 40%) 50% 100%);
+  background: linear-gradient(to bottom left, hsla(260, 50%, 20%, 0.6) 50%, hsla(260, 50%, 30%, 0.6) 50% 100%),
+    linear-gradient(to bottom right, hsla(260, 50%, 30%, 0.6) 50%, hsla(260, 50%, 20%, 0.6) 50% 100%);
   border-radius: 7px;
 
   width: 250px;
   padding: 10px;
 
-  color: #6d4c44;
+  color: #f8f8f8;
   font-size: 20pt;
 }
 
 .button a {
-  color: #6d4c44;
+  color: #f8f8f8;
   font-size: 20pt;
 }
 
@@ -102,13 +102,13 @@
   .revenueHeader {
     font-size: 35pt;
     font-weight: bold;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .revenueSubHeader {
     font-size: 25pt;
     font-weight: bold;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .revenueImage {
@@ -117,18 +117,18 @@
   }
 
   .revenueDesc {
-    color: #6d4c44;
+    color: #f8f8f8;
     height: 100%;
   }
 
   .revenueDesc h1 {
     font-size: 40pt;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .revenueDesc h2 {
     font-size: 25pt;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .revenueDesc ul {
@@ -140,12 +140,12 @@
     font-size: 20pt;
     text-align: left;
     padding-left: 20px;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .revenueCalc {
     font-size: 14pt;
-    color: #6d4c44;
+    color: #f8f8f8;
     text-decoration: none;
     text-align: left;
   }
@@ -173,7 +173,7 @@
   .networkBlock {
     padding: 30px;
     font-size: 20pt;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .networkBlockArrow {
@@ -194,23 +194,23 @@
   .earlypayHeader {
     font-size: 35pt;
     font-weight: bold;
-    color: #6d4c44;
+    color: #f8f8f8;
     margin-top: 100px;
   }
 
   .earlypayDesc {
-    color: #6d4c44;
+    color: #f8f8f8;
     height: 100%;
   }
 
   .earlypayDesc h1 {
     font-size: 40pt;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .earlypayDesc h2 {
     font-size: 25pt;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .earlypayDesc ul {
@@ -222,12 +222,12 @@
     font-size: 16pt;
     text-align: left;
     padding-left: 20px;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .earlypayCalc {
     font-size: 14pt;
-    color: #6d4c44;
+    color: #f8f8f8;
     text-decoration: none;
     text-align: left;
 
@@ -323,13 +323,13 @@
   .revenueHeader {
     font-size: 25pt;
     font-weight: bold;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .revenueSubHeader {
     font-size: 15pt;
     font-weight: bold;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .revenueImage {
@@ -338,18 +338,18 @@
   }
 
   .revenueDesc {
-    color: #6d4c44;
+    color: #f8f8f8;
     height: 100%;
   }
 
   .revenueDesc h1 {
     font-size: 20pt;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .revenueDesc h2 {
     font-size: 15pt;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .revenueDesc ul {
@@ -360,12 +360,12 @@
   .revenueDesc p {
     font-size: 15pt;
     text-align: left;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .revenueCalc {
     font-size: 15pt;
-    color: #6d4c44;
+    color: #f8f8f8;
     text-decoration: none;
     text-align: left;
   }
@@ -391,7 +391,7 @@
 
   .networkBlock {
     font-size: 10pt;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .networkBlockArrow {
@@ -409,23 +409,23 @@
   .earlypayHeader {
     font-size: 25pt;
     font-weight: bold;
-    color: #6d4c44;
+    color: #f8f8f8;
     margin-top: 100px;
   }
 
   .earlypayDesc {
-    color: #6d4c44;
+    color: #f8f8f8;
     height: 100%;
   }
 
   .earlypayDesc h1 {
     font-size: 40pt;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .earlypayDesc h2 {
     font-size: 15pt;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .earlypayDesc ul {
@@ -437,12 +437,12 @@
     font-size: 16pt;
     text-align: left;
     padding-left: 20px;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .earlypayCalc {
     font-size: 14pt;
-    color: #6d4c44;
+    color: #f8f8f8;
     text-decoration: none;
     text-align: left;
 
@@ -537,13 +537,13 @@
   .revenueHeader {
     font-size: 25pt;
     font-weight: bold;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .revenueSubHeader {
     font-size: 15pt;
     font-weight: bold;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .revenueImage {
@@ -552,18 +552,18 @@
   }
 
   .revenueDesc {
-    color: #6d4c44;
+    color: #f8f8f8;
     height: 100%;
   }
 
   .revenueDesc h1 {
     font-size: 20pt;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .revenueDesc h2 {
     font-size: 15pt;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .revenueDesc ul {
@@ -574,12 +574,12 @@
   .revenueDesc p {
     font-size: 15pt;
     text-align: left;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .revenueCalc {
     font-size: 15pt;
-    color: #6d4c44;
+    color: #f8f8f8;
     text-decoration: none;
     text-align: left;
   }
@@ -605,7 +605,7 @@
 
   .networkBlock {
     font-size: 10pt;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .networkBlockArrow {
@@ -623,23 +623,23 @@
   .earlypayHeader {
     font-size: 25pt;
     font-weight: bold;
-    color: #6d4c44;
+    color: #f8f8f8;
     margin-top: 100px;
   }
 
   .earlypayDesc {
-    color: #6d4c44;
+    color: #f8f8f8;
     height: 100%;
   }
 
   .earlypayDesc h1 {
     font-size: 40pt;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .earlypayDesc h2 {
     font-size: 15pt;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .earlypayDesc ul {
@@ -651,12 +651,12 @@
     font-size: 16pt;
     text-align: left;
     padding-left: 20px;
-    color: #6d4c44;
+    color: #f8f8f8;
   }
 
   .earlypayCalc {
     font-size: 14pt;
-    color: #6d4c44;
+    color: #f8f8f8;
     text-decoration: none;
     text-align: left;
 

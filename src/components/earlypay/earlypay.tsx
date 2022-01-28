@@ -2,9 +2,9 @@ import React from "react";
 import { Cell, Grid } from "styled-css-grid";
 import { useMediaQuery } from "react-responsive";
 
-import earlyPaymentsMore from "../../assets/early-payments-more.png";
-import usecase1 from "../../assets/early-payments-usecase1.png";
-import usecase2 from "../../assets/early-payments-usecase2.png";
+// import earlyPaymentsMore from "../../assets/early-payments-more.png";
+// import usecase1 from "../../assets/early-payments-usecase1.png";
+// import usecase2 from "../../assets/early-payments-usecase2.png";
 
 import styles from "../common.module.css";
 import { Content } from "react-bulma-components";
@@ -88,10 +88,10 @@ export const Earlypay = (props: Props) => {
       </div>
       <p className={styles.header}>Usecase: 1</p>
       <p className={styles.subheader}>Invoice reverse discounting</p>
-      <img src={usecase1}></img>
+      {/* <img src={usecase1}></img> */}
       <p className={styles.header}>Usecase: 2</p>
       <p className={styles.subheader}>Purchase financing at POS</p>
-      <img src={usecase2}></img>
+      {/* <img src={usecase2}></img> */}
     </div>
   );
 };

@@ -8,12 +8,12 @@
 
   text-align: center;
   /* background-image: url('../assets/background2.jpg'); */
-  /* background-image: linear-gradient(to right, #7d51c4, #d848ad, #fd4f78, #f5b43b, #f5f52e); */
+  background-image: linear-gradient(to right, #7d51c4, #d848ad, #fd4f78, #f5b43b, #f5f52e);
   /* background: radial-gradient(circle, rgba(195,34,145,1) 0%, rgba(253,114,45,1) 100%); */
   /* background: linear-gradient(to right, #ed7979 20%, #e2c286 20% 40%, #e2e288 40% 60%, #93e693 60% 80%, #9797e6 80%); */
 
   background-color: hsl(34, 53%, 82%);
-  background-image: repeating-linear-gradient(
+  /* background-image: repeating-linear-gradient(
       45deg,
       transparent 5px,
       hsla(197, 62%, 11%, 0.5) 5px,
@@ -64,7 +64,7 @@
       hsla(5, 53%, 63%, 0) 140px,
       hsla(197, 62%, 11%, 0.5) 140px,
       hsla(197, 62%, 11%, 0.5) 160px
-    );
+    ); */
 
   background-size: 100% 100%;
 
@@ -90,14 +90,14 @@ body {
   .appContent {
     background-image: linear-gradient(
       70deg,
-      #faba43 5%,
-      #f7cc7c 5% 10%,
-      #ffe2ad 10% 15%,
-      #ffeed1 15% 20%,
-      #fff4db 20% 30%,
-      #fff7e7 30% 40%,
-      #fffbf5 40% 82%,
-      #ffffff 82% 100%
+      #431c70 5%,
+      #2f0e55 5% 10%,
+      #260a47 10% 15%,
+      #1c0636 15% 20%,
+      #16042b 20% 30%,
+      #120224 30% 40%,
+      #0e011d 40% 82%,
+      #01031a 82% 100%
     );
   }
 }
@@ -112,14 +112,14 @@ body {
 
     background-image: linear-gradient(
       70deg,
-      #faba43 5%,
-      #f7cc7c 5% 10%,
-      #ffe2ad 10% 15%,
-      #ffeed1 15% 20%,
-      #fff4db 20% 30%,
-      #fff7e7 30% 40%,
-      #fffbf5 40% 82%,
-      #ffffff 82% 100%
+      #431c70 5%,
+      #2f0e55 5% 10%,
+      #260a47 10% 15%,
+      #1c0636 15% 20%,
+      #16042b 20% 30%,
+      #120224 30% 40%,
+      #0e011d 40% 82%,
+      #01031a 82% 100%
     );
   }
 }

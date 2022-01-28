@@ -20,25 +20,23 @@ function Header(props: HeaderProps) {
         {s ? (
           <></>
         ) : (
-          <Cell width={1} center middle className={styles.cell}>
+          <Cell width={2} center middle className={styles.cell}>
             <div className={styles.logo}>
               <img src={logo}></img>
             </div>
           </Cell>
         )}
-        <Cell width={s ? 5 : m ? 4 : 4} center middle className={styles.cell}>
+        <Cell width={s ? 6 : m ? 5 : 5} center middle className={styles.cell}>
           <div className={styles.calculus}>
-            <p className={styles.neonText}>Calculus Capital</p>
+            <p className={styles.neonText}>Lunar Lander</p>
           </div>
           <div className={styles.separator350}></div>
           <div className={styles.calculusAbout}>
-            <p>
-              Powering growth<br></br>
-              For Startups
-            </p>
+            <p>Blockchains <br></br>
+            For supply chains</p>
           </div>
         </Cell>
-        <Cell width={s ? 1 : m ? 3 : 4} className={styles.cell}></Cell>
+        <Cell width={s ? 1 : m ? 1 : 2} className={styles.cell}></Cell>
         <Cell width={s ? 2 : m ? 2 : 1} className={styles.cell}>
           <Section className={styles.menu}>
             <Menu>
@@ -57,17 +55,17 @@ function Header(props: HeaderProps) {
               <Menu.List title={s ? "" : "Products"}>
                 <Menu.List.Item>
                   <Link className={styles.notionLink} to="/revenue">
-                    Revenue
+                    Distributors
                   </Link>
                 </Menu.List.Item>
                 <Menu.List.Item>
                   <Link className={styles.notionLink} to="/early-pay">
-                    Early Pay
+                    Retailers
                   </Link>
                 </Menu.List.Item>
                 <Menu.List.Item>
                   <Link className={styles.notionLink} to="/early-collect">
-                    Early Collect
+                    Consumers
                   </Link>
                 </Menu.List.Item>
               </Menu.List>

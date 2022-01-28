@@ -2,7 +2,7 @@ import React from "react";
 import { Cell, Grid } from "styled-css-grid";
 import { useMediaQuery } from "react-responsive";
 
-import usecase1 from "../../assets/po-financing-usecase1.png";
+// import usecase1 from "../../assets/po-financing-usecase1.png";
 // import usecase2 from "../../assets/early-collect-usecase2.png";
 
 import styles from "../common.module.css";
@@ -74,7 +74,7 @@ export const Earlycollect = (props: Props) => {
         <a>Sign Up</a>
       </div>
       <p className={styles.header}>Usecase</p>
-      <img src={usecase1}></img>
+      {/* <img src={usecase1}></img> */}
     </div>
   );
 };
