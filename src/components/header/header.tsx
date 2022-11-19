@@ -32,10 +32,7 @@ function Header(props: HeaderProps) {
           </div>
           <div className={styles.separator350}></div>
           <div className={styles.eobAbout}>
-            <p>
-              Leaders who <br></br>
-              take tech to the moon.
-            </p>
+            <p>A podcast by and for leaders and builders of tech.</p>
           </div>
         </Cell>
         <Cell width={s ? 1 : m ? 1 : 2} className={styles.cell}></Cell>

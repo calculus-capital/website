@@ -88,7 +88,17 @@ body {
 
 @media (min-width: 1100px) {
   .appContent {
-    background-image: linear-gradient(
+    background-image: linear-gradient(70deg,
+          #f3f3f3 2%,
+          #a3a3a3 2% 4%,
+          #606060 4% 7%,
+          #404040 7% 10%,
+          #2d2d2d 10% 15%,
+          #1a1a1a 15% 20%,
+          #141414 20% 80%,
+          #0f0f0f 80% 100%);
+
+    /* background-image: linear-gradient(
           70deg,
           #f3f3f3 2%,
           #a3a3a3 2% 4%,
@@ -98,7 +108,7 @@ body {
           #1a1a1a 15% 20%,
           #141414 20% 80%,
           #0f0f0f 80% 100%
-        );
+        ); */
 
     /* background-image: linear-gradient(
       70deg,
@@ -133,6 +143,16 @@ body {
           #0e011d 40% 82%,
           #01031a 82% 100%
         );
+
+    /* background-image: linear-gradient(70deg,
+          #431c70 5%,
+          #2f0e55 5% 10%,
+          #260a47 10% 15%,
+          #1c0636 15% 20%,
+          #16042b 20% 30%,
+          #120224 30% 40%,
+          #0e011d 40% 82%,
+          #01031a 82% 100%); */
 
     /* background-image: linear-gradient(
       70deg,
