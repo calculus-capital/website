@@ -27,13 +27,15 @@ function Header(props: HeaderProps) {
           </Cell>
         )}
         <Cell width={s ? 6 : m ? 5 : 5} center middle className={styles.cell}>
-          <div className={styles.calculus}>
-            <p className={styles.neonText}>Lunar Lander</p>
+          <div className={styles.eob}>
+            <p className={styles.neonText}>Engineers of Bangalore</p>
           </div>
           <div className={styles.separator350}></div>
-          <div className={styles.calculusAbout}>
-            <p>Blockchains <br></br>
-            For supply chains</p>
+          <div className={styles.eobAbout}>
+            <p>
+              Leaders who <br></br>
+              take tech to the moon.
+            </p>
           </div>
         </Cell>
         <Cell width={s ? 1 : m ? 1 : 2} className={styles.cell}></Cell>
@@ -47,25 +49,18 @@ function Header(props: HeaderProps) {
                   </Link>
                 </Menu.List.Item>
                 <Menu.List.Item>
-                  <a className={styles.notionLink} href="https://console.calculus.capital/" target="_blank">
-                    Console
+                  <Link className={styles.notionLink} to="/episodes">
+                    Episodes
+                  </Link>
+                </Menu.List.Item>
+                <Menu.List.Item>
+                  <a className={styles.notionLink} href="https://community.engineersofbangalore.com/" target="_blank">
+                    Community
                   </a>
                 </Menu.List.Item>
-              </Menu.List>
-              <Menu.List title={s ? "" : "Products"}>
                 <Menu.List.Item>
-                  <Link className={styles.notionLink} to="/revenue">
-                    Distributors
-                  </Link>
-                </Menu.List.Item>
-                <Menu.List.Item>
-                  <Link className={styles.notionLink} to="/early-pay">
-                    Retailers
-                  </Link>
-                </Menu.List.Item>
-                <Menu.List.Item>
-                  <Link className={styles.notionLink} to="/early-collect">
-                    Consumers
+                  <Link className={styles.notionLink} to="/contact">
+                    Talk to us
                   </Link>
                 </Menu.List.Item>
               </Menu.List>

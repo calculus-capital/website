@@ -8,11 +8,11 @@
 
   text-align: center;
   /* background-image: url('../assets/background2.jpg'); */
-  background-image: linear-gradient(to right, #7d51c4, #d848ad, #fd4f78, #f5b43b, #f5f52e);
+  /* background-image: linear-gradient(to right, #7d51c4, #d848ad, #fd4f78, #f5b43b, #f5f52e); */
   /* background: radial-gradient(circle, rgba(195,34,145,1) 0%, rgba(253,114,45,1) 100%); */
   /* background: linear-gradient(to right, #ed7979 20%, #e2c286 20% 40%, #e2e288 40% 60%, #93e693 60% 80%, #9797e6 80%); */
 
-  background-color: hsl(34, 53%, 82%);
+  background-color: #0f0f0f;
   /* background-image: repeating-linear-gradient(
       45deg,
       transparent 5px,
@@ -89,6 +89,18 @@ body {
 @media (min-width: 1100px) {
   .appContent {
     background-image: linear-gradient(
+          70deg,
+          #f3f3f3 2%,
+          #a3a3a3 2% 4%,
+          #606060 4% 7%,
+          #404040 7% 10%,
+          #2d2d2d 10% 15%,
+          #1a1a1a 15% 20%,
+          #141414 20% 80%,
+          #0f0f0f 80% 100%
+        );
+
+    /* background-image: linear-gradient(
       70deg,
       #431c70 5%,
       #2f0e55 5% 10%,
@@ -98,7 +110,7 @@ body {
       #120224 30% 40%,
       #0e011d 40% 82%,
       #01031a 82% 100%
-    );
+    ); */
   }
 }
 
@@ -111,6 +123,18 @@ body {
     border-radius: 0px;
 
     background-image: linear-gradient(
+          70deg,
+          #431c70 5%,
+          #2f0e55 5% 10%,
+          #260a47 10% 15%,
+          #1c0636 15% 20%,
+          #16042b 20% 30%,
+          #120224 30% 40%,
+          #0e011d 40% 82%,
+          #01031a 82% 100%
+        );
+
+    /* background-image: linear-gradient(
       70deg,
       #431c70 5%,
       #2f0e55 5% 10%,
@@ -120,6 +144,6 @@ body {
       #120224 30% 40%,
       #0e011d 40% 82%,
       #01031a 82% 100%
-    );
+    ); */
   }
 }

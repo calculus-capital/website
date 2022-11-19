@@ -1,20 +1,38 @@
 .notionLink {
-  padding: 0 !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 10px !important;
+
   margin: 0 !important;
-  width: 100px;
+  width: 180px;
   text-align: left;
   color: white !important;
+
+  border-radius: 10px !important;
+  border: 2px solid #7f7f7f;
+
+  background-image: linear-gradient(
+        90deg,
+        rgba(0,0,0,0) 80%,
+        #323232 80% 100%);
 }
 
+/* .notionLink:hover {
+  border-color: green !important;
+} */
+
 .menu a:hover {
-  background-color: inherit;
-  color: #e1e1e1;
+  background-color: inherit !important;
 }
 
 .separator350 {
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
+
+  background: linear-gradient(to right, #ed7979 20%, #e2c286 20% 40%, #e2e288 40% 60%, #93e693 60% 80%, #9797e6 80%);
+
   height: 5px;
-  max-width: 400px;
+  max-width: 800px;
   background-size: 100%;
   border-radius: 10px;
   margin-top: 10px;
@@ -43,27 +61,29 @@
 
 .neonText {
   color: #f8f8f8;
+  display: inline;
+  white-space: nowrap;
   /* text-shadow:
     0 0 7px #ff1616,
     0 0 10px #ff1616; */
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1800px) {
   .introHeader {
-    max-width: 1000px;
+    max-width: 1600px;
     padding: 20px;
 
     margin: auto;
   }
 
-  .calculus {
+  .eob {
     color: #f8f8f8;
     font-size: 35pt;
     text-align: left;
     padding-left: 10px;
   }
 
-  .calculusAbout {
+  .eobAbout {
     color: #f8f8f8;
     font-size: 20pt;
     text-align: left;
@@ -75,7 +95,9 @@
   }
 
   .logo img {
-    max-height: 250px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
   }
 
   .intro {
@@ -86,7 +108,7 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
   .introHeader {
     max-width: 90vw;
     padding: 20px;
@@ -94,14 +116,14 @@
     margin: auto;
   }
 
-  .calculus {
+  .eob {
     color: #f8f8f8;
     font-size: 25pt;
     text-align: left;
     padding-left: 10px;
   }
 
-  .calculusAbout {
+  .eobAbout {
     color: #f8f8f8;
     font-size: 14pt;
     text-align: left;
