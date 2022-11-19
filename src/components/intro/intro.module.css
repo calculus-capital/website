@@ -70,12 +70,12 @@
   width: 250px;
   padding: 10px;
 
-  color: #f8f8f8;
+  color: #030303;
   font-size: 20pt;
 }
 
 .button a {
-  color: #f8f8f8;
+  color: #030303;
   font-size: 20pt;
 }
 
@@ -96,20 +96,19 @@
   }
 
   .descriptionBlock {
-    margin-top: 50px;
+    margin-top: 0px;
   }
 
   /* revenue */
-  .revenueHeader {
+  .subscribeHeader {
     font-size: 35pt;
-    font-weight: bold;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .revenueSubHeader {
     font-size: 25pt;
     font-weight: bold;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .revenueImage {
@@ -117,19 +116,28 @@
     max-height: 1000px;
   }
 
+  .subscribe {
+    font-size: 5vw;
+    color: #dd7113;
+  }
+
+  .subscribeService {
+    font-size: 15pt;
+  }
+
   /* .revenueDesc {
-    color: #f8f8f8;
+    color: #030303;
     height: 100%;
   }
 
   .revenueDesc h1 {
     font-size: 40pt;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .revenueDesc h2 {
     font-size: 25pt;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .revenueDesc ul {
@@ -141,12 +149,12 @@
     font-size: 20pt;
     text-align: left;
     padding-left: 20px;
-    color: #f8f8f8;
+    color: #030303;
   } */
 
   .revenueCalc {
     font-size: 14pt;
-    color: #f8f8f8;
+    color: #030303;
     text-decoration: none;
     text-align: left;
   }
@@ -174,7 +182,7 @@
   .networkBlock {
     padding: 30px;
     font-size: 20pt;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .networkBlockArrow {
@@ -195,23 +203,23 @@
   .earlypayHeader {
     font-size: 35pt;
     font-weight: bold;
-    color: #f8f8f8;
+    color: #030303;
     margin-top: 100px;
   }
 
   .earlypayDesc {
-    color: #f8f8f8;
+    color: #030303;
     height: 100%;
   }
 
   .earlypayDesc h1 {
     font-size: 40pt;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .earlypayDesc h2 {
     font-size: 25pt;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .earlypayDesc ul {
@@ -223,12 +231,12 @@
     font-size: 16pt;
     text-align: left;
     padding-left: 20px;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .earlypayCalc {
     font-size: 14pt;
-    color: #f8f8f8;
+    color: #030303;
     text-decoration: none;
     text-align: left;
 
@@ -317,20 +325,19 @@
   }
 
   .descriptionBlock {
-    /* margin-top: 50px; */
+    margin-top: 0px;
   }
 
   /* revenue */
-  .revenueHeader {
+  .subscribeHeader {
     font-size: 25pt;
-    font-weight: bold;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .revenueSubHeader {
     font-size: 15pt;
     font-weight: bold;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .revenueImage {
@@ -339,18 +346,18 @@
   }
 
   .revenueDesc {
-    color: #f8f8f8;
+    color: #030303;
     height: 100%;
   }
 
   .revenueDesc h1 {
     font-size: 20pt;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .revenueDesc h2 {
     font-size: 15pt;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .revenueDesc ul {
@@ -361,12 +368,21 @@
   .revenueDesc p {
     font-size: 15pt;
     text-align: left;
-    color: #f8f8f8;
+    color: #030303;
+  }
+
+  .subscribe {
+    font-size: 10vw;
+    color: #dd7113;
+  }
+
+  .subscribeService {
+    font-size: 15pt;
   }
 
   .revenueCalc {
     font-size: 15pt;
-    color: #f8f8f8;
+    color: #030303;
     text-decoration: none;
     text-align: left;
   }
@@ -392,7 +408,7 @@
 
   .networkBlock {
     font-size: 10pt;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .networkBlockArrow {
@@ -410,23 +426,23 @@
   .earlypayHeader {
     font-size: 25pt;
     font-weight: bold;
-    color: #f8f8f8;
+    color: #030303;
     margin-top: 100px;
   }
 
   .earlypayDesc {
-    color: #f8f8f8;
+    color: #030303;
     height: 100%;
   }
 
   .earlypayDesc h1 {
     font-size: 40pt;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .earlypayDesc h2 {
     font-size: 15pt;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .earlypayDesc ul {
@@ -438,12 +454,12 @@
     font-size: 16pt;
     text-align: left;
     padding-left: 20px;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .earlypayCalc {
     font-size: 14pt;
-    color: #f8f8f8;
+    color: #030303;
     text-decoration: none;
     text-align: left;
 
@@ -531,20 +547,19 @@
   }
 
   .descriptionBlock {
-    /* margin-top: 50px; */
+    margin-top: 20px;
   }
 
   /* revenue */
-  .revenueHeader {
+  .subscribeHeader {
     font-size: 25pt;
-    font-weight: bold;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .revenueSubHeader {
     font-size: 15pt;
     font-weight: bold;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .revenueImage {
@@ -553,18 +568,18 @@
   }
 
   .revenueDesc {
-    color: #f8f8f8;
+    color: #030303;
     height: 100%;
   }
 
   .revenueDesc h1 {
     font-size: 20pt;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .revenueDesc h2 {
     font-size: 15pt;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .revenueDesc ul {
@@ -575,12 +590,21 @@
   .revenueDesc p {
     font-size: 15pt;
     text-align: left;
-    color: #f8f8f8;
+    color: #030303;
+  }
+
+  .subscribe {
+    font-size: 10vw;
+    color: #dd7113;
+  }
+
+  .subscribeService {
+    font-size: 10pt;
   }
 
   .revenueCalc {
     font-size: 15pt;
-    color: #f8f8f8;
+    color: #030303;
     text-decoration: none;
     text-align: left;
   }
@@ -606,7 +630,7 @@
 
   .networkBlock {
     font-size: 10pt;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .networkBlockArrow {
@@ -624,23 +648,23 @@
   .earlypayHeader {
     font-size: 25pt;
     font-weight: bold;
-    color: #f8f8f8;
+    color: #030303;
     margin-top: 100px;
   }
 
   .earlypayDesc {
-    color: #f8f8f8;
+    color: #030303;
     height: 100%;
   }
 
   .earlypayDesc h1 {
     font-size: 40pt;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .earlypayDesc h2 {
     font-size: 15pt;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .earlypayDesc ul {
@@ -652,12 +676,12 @@
     font-size: 16pt;
     text-align: left;
     padding-left: 20px;
-    color: #f8f8f8;
+    color: #030303;
   }
 
   .earlypayCalc {
     font-size: 14pt;
-    color: #f8f8f8;
+    color: #030303;
     text-decoration: none;
     text-align: left;
 

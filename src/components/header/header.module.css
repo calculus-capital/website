@@ -1,26 +1,7 @@
-.notionLink {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 0px;
-  padding-bottom: 10px !important;
 
-  margin: 0 !important;
-  width: 180px;
-  text-align: left;
-  color: white !important;
-
-  border-radius: 10px !important;
-  border: 2px solid #7f7f7f;
-
-  background-image: linear-gradient(
-        90deg,
-        rgba(0,0,0,0) 80%,
-        #323232 80% 100%);
+.notionLink:hover {
+  border-color: #e2c286 !important;
 }
-
-/* .notionLink:hover {
-  border-color: green !important;
-} */
 
 .menu a:hover {
   background-color: inherit !important;
@@ -31,7 +12,7 @@
 
   background: linear-gradient(90deg,
       rgba(0, 0, 0, 0) 80%,
-        #e2c286 80% 100%
+        #a1801f 80% 100%
         /* #e2c286 85% 90%,
         #e2e288 90% 95%,
         #93e693 95% 100%,
@@ -40,7 +21,8 @@
 }
 
 .separator350 {
-  /* background-color: #f8f8f8; */
+  background-color: #030303;
+  color: #030303;
 
     background: linear-gradient(90deg,
           rgba(255, 0, 0, 1) 0% 10%,
@@ -83,7 +65,8 @@
 }
 
 .neonText {
-  color: #f8f8f8;
+  /* color: #030303; */
+  color: #030303;
   display: inline;
   white-space: nowrap;
   /* text-shadow:
@@ -91,23 +74,26 @@
     0 0 10px #ff1616; */
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1100px) {
   .introHeader {
-    max-width: 1600px;
+    min-width: 800px;
+    max-width: 70%;
     padding: 20px;
 
     margin: auto;
   }
 
   .eob {
-    color: #f8f8f8;
+    /* color: #030303; */
+    color: #030303;
     font-size: 35pt;
     text-align: left;
     padding-left: 10px;
   }
 
   .eobAbout {
-    color: #f8f8f8;
+    /* color: #030303; */
+    color: #030303;
     font-size: 20pt;
     text-align: left;
     padding-left: 10px;
@@ -129,25 +115,112 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .notionLink {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px !important;
+
+    margin: 0 !important;
+    width: 15vw;
+    text-align: left;
+    color: #030303 !important;
+
+    border-radius: 10px !important;
+    border: 2px solid #902d14;
+
+    background-image: linear-gradient(
+          90deg,
+          rgba(0,0,0,0) 80%,
+          #902d14 80% 100%);
+  }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) and (min-width: 481px) {
   .introHeader {
-    max-width: 90vw;
+    min-width: 400px;
+    max-width: 80%;
     padding: 20px;
 
     margin: auto;
   }
 
   .eob {
-    color: #f8f8f8;
+    /* color: #030303; */
+    color: #030303;
     font-size: 25pt;
     text-align: left;
     padding-left: 10px;
   }
 
   .eobAbout {
-    color: #f8f8f8;
+    /* color: #030303; */
+    color: #030303;
+    font-size: 15pt;
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .logo {
+    max-height: 250px;
+  }
+
+  .logo img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .intro {
+    border: none;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .notionLink {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px !important;
+
+    margin: 0 !important;
+    width: 15vw;
+    min-width: 150px;
+    text-align: left;
+    color: #030303 !important;
+
+    border-radius: 10px !important;
+    border: 2px solid #902d14;
+
+    background-image: linear-gradient(
+          90deg,
+          rgba(0,0,0,0) 80%,
+          #902d14 80% 100%);
+  }
+}
+
+@media (max-width: 481px) {
+  .introHeader {
+    min-width: 300px;
+    max-width: 90%;
+    padding: 20px;
+
+    margin: auto;
+  }
+
+  .eob {
+    /* color: #030303; */
+    color: #030303;
+    font-size: 20pt;
+    text-align: center;
+    padding-left: 10px;
+  }
+
+  .eobAbout {
+    /* color: #030303; */
+    color: #030303;
     font-size: 14pt;
     text-align: left;
     padding-left: 10px;
@@ -166,5 +239,27 @@
 
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .notionLink {
+    padding-top: 0px;
+    padding-bottom: 5px !important;
+
+    margin: 0 !important;
+    width: 70vw;
+    text-align: left;
+    color: #030303 !important;
+
+    border-radius: 10px !important;
+    border: 2px solid #780f0f;
+
+    background-image: linear-gradient(
+          90deg,
+          rgba(0,0,0,0) 80%,
+          #780f0f 80% 100%);
+  }
+
+  .menu {
+    padding: 0px !important;
   }
 }

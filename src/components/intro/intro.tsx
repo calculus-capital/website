@@ -19,6 +19,8 @@ import "bulma/css/bulma.min.css";
 import styles from "./intro.module.css";
 import { Button, Content } from "react-bulma-components";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpotify, faApple, faAudible, faGooglePlay } from "@fortawesome/free-brands-svg-icons";
 
 type IntroProps = {};
 
@@ -72,10 +74,32 @@ function Intro(props: IntroProps) {
 
   return (
     <div className={styles.intro}>
-      <p className={styles.revenueHeader}>Subscribe</p>
-      <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
-        <Cell width={s ? 1 : 5} top={s ? 1 : 1} center middle></Cell>
-        <Cell width={s ? 1 : 5} top={s ? 2 : 1} enter middle></Cell>
+      <p className={styles.subscribeHeader}>Subscribe to the podcast</p>
+      <Grid columns={4} className={styles.descriptionBlock}>
+        <Cell>
+          <div className={styles.subscribe}>
+            <FontAwesomeIcon icon={faSpotify} />
+          </div>
+          <p className={styles.subscribeService}>Spotify</p>
+        </Cell>
+        <Cell>
+          <div className={styles.subscribe}>
+            <FontAwesomeIcon icon={faApple}></FontAwesomeIcon>
+          </div>
+          <p className={styles.subscribeService}>Apple</p>
+        </Cell>
+        <Cell>
+          <div className={styles.subscribe}>
+            <FontAwesomeIcon icon={faAudible}></FontAwesomeIcon>
+          </div>
+          <p className={styles.subscribeService}>Audible</p>
+        </Cell>
+        <Cell>
+          <div className={styles.subscribe}>
+            <FontAwesomeIcon icon={faGooglePlay}></FontAwesomeIcon>
+          </div>
+          <p className={styles.subscribeService}>Google</p>
+        </Cell>
       </Grid>
       <p className={styles.earlypayHeader}>NFTs for authenticity</p>
       <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>

@@ -16,17 +16,17 @@ function Header(props: HeaderProps) {
 
   return (
     <div className={styles.introHeader}>
-      <Grid columns={10} flow="row" className={styles.grid}>
-        {s ? (
+      <Grid columns={10} rows={s ? 2: 1} flow="row" className={styles.grid}>
+        {/* {s ? (
           <></>
         ) : (
           <Cell width={2} center middle className={styles.cell}>
             <div className={styles.logo}>
-              <img src={logo}></img>
+              <img src={logo} alt="logo"></img>
             </div>
           </Cell>
-        )}
-        <Cell width={s ? 6 : m ? 5 : 5} center middle className={styles.cell}>
+        )} */}
+        <Cell width={s ? 6 : m ? 7 : 7} center middle className={styles.cell}>
           <div className={styles.eob}>
             <p className={styles.neonText}>Engineers of Bangalore</p>
           </div>
@@ -36,7 +36,7 @@ function Header(props: HeaderProps) {
           </div>
         </Cell>
         <Cell width={s ? 1 : m ? 1 : 2} className={styles.cell}></Cell>
-        <Cell width={s ? 2 : m ? 2 : 1} className={styles.cell}>
+        <Cell width={s ? 10 : m ? 2 : 1} className={styles.cell}>
           <Section className={styles.menu}>
             <Menu>
               <Menu.List title={s ? "" : "Navigate"}>
