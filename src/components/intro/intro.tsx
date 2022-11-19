@@ -39,7 +39,7 @@ function Intro(props: IntroProps) {
   const [mrr, setMrr] = useState(100);
   const [mrrGrowth, setMrrGrowth] = useState(20);
   const [volatility, setVolatility] = useState(50);
-  const [ask, setAsk] = useState(mrr*14/30);
+  const [ask, setAsk] = useState((mrr * 14) / 30);
   const [margin, setMargin] = useState(40);
 
   const [mp, setMp] = useState(1000);
@@ -49,7 +49,9 @@ function Intro(props: IntroProps) {
 
   const pledgeSet = () => {
     const pledges = getPledge(mrr, mrrGrowth, margin, ask)
-      .sort((x,y) => { return x.tenure > y.tenure ? 1 : -1 })
+      .sort((x, y) => {
+        return x.tenure > y.tenure ? 1 : -1;
+      })
       .map((p) => {
         return (
           <li>
@@ -58,9 +60,9 @@ function Intro(props: IntroProps) {
         );
       });
 
-    if (pledges.length < 3) return []
-    else return pledges
-  }
+    if (pledges.length < 3) return [];
+    else return pledges;
+  };
   const [pledges, setPledges] = useState(pledgeSet());
 
   useEffect(() => {
@@ -70,57 +72,10 @@ function Intro(props: IntroProps) {
 
   return (
     <div className={styles.intro}>
-      <p className={styles.revenueHeader}>NFTs for attribution</p>
+      <p className={styles.revenueHeader}>Subscribe</p>
       <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
-        <Cell width={s ? 1 : 5} top={s ? 1 : 1} center middle>
-          <Content className={styles.revenueDesc}>
-            <ul>
-              <li>
-                <p className={styles.revenueDescList}>Print NFTs as barcodes and QR codes</p>
-              </li>
-              <li>
-                <p className={styles.revenueDescList}>Scan throughout the supply chain</p>
-              </li>
-              <li>
-                <p className={styles.revenueDescList}>Apps for distributors, retailers, end consumers</p>
-              </li>
-              <li>
-                <p className={styles.revenueDescList}>Real-time tracking for all participants</p>
-              </li>
-              <li>
-                <p className={styles.revenueDescList}>APIs for integration</p>
-              </li>
-            </ul>
-            {/* <img src={revenueR}></img> */}
-            <div className={styles.button}>
-              <Link to="/revenue">Learn more</Link>
-            </div>
-          </Content>
-          {/* <img src={revenueL} className={styles.revenueImage}></img> */}
-        </Cell>
-        <Cell width={s ? 1 : 5} top={s ? 2 : 1} enter middle>
-          <Content className={styles.revenueDesc}>
-            <p>Calculate!</p>
-            <Grid columns={1} cecnter middle className={styles.revenueCalc}>
-              <Cell>
-                <Slider label="Monthly recurring revenue (₹ Lakh): " min={50} max={1000} init={mrr} change={setMrr} step={50}></Slider>
-              </Cell>
-              <Cell>
-                <Slider label="MoM Growth (%): " min={20} max={50} init={mrrGrowth} change={setMrrGrowth} step={5}></Slider>
-              </Cell>
-              <Cell>
-                <Slider label="Gross Margin (%): " min={30} max={50} value={margin} init={margin} change={setMargin} step={5}></Slider>
-              </Cell>
-              <Cell>
-                <Slider label="Advance (₹ Lakh): " min={mrr*7/30} max={Math.min(mrr*35/30, 500)} init={ask} change={setAsk} step={7*mrr/30}></Slider>
-              </Cell>
-              <Cell>
-                <p>Offers:</p>
-                <ul className={styles.revenueResult}>{pledges.slice(0, 5)}</ul>
-              </Cell>
-            </Grid>
-          </Content>
-        </Cell>
+        <Cell width={s ? 1 : 5} top={s ? 1 : 1} center middle></Cell>
+        <Cell width={s ? 1 : 5} top={s ? 2 : 1} enter middle></Cell>
       </Grid>
       <p className={styles.earlypayHeader}>NFTs for authenticity</p>
       <Grid columns={s ? 1 : 10} rows={s ? 2 : 1} className={styles.descriptionBlock}>
