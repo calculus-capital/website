@@ -1,40 +1,16 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/iframe-has-title */
 
-import { useEffect, useState } from "react";
 import { Cell, Grid } from "styled-css-grid";
 import { useMediaQuery } from "react-responsive";
-import Slider from "./slider";
-import { computed } from "./revenue";
-
-// import revenueL from "../../assets/revenue-left.png";
-// import revenueR from "../../assets/revenue-right.png";
-
-// import earlypayL from "../../assets/early-payments-startup.png";
-// import earlypayR from "../../assets/early-payments-suppliers.png";
-
-import pofin from "../../assets/po-financing.png";
 
 import "bulma/css/bulma.min.css";
 import styles from "./intro.module.css";
-import { Button, Content, Heading, Media } from "react-bulma-components";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpotify, faApple, faAudible, faGooglePlay } from "@fortawesome/free-brands-svg-icons";
-import { Header } from "components/header/header";
-import { prototype } from "events";
 
 type IntroProps = {};
-
-const getPledge = (mrr: number, growth: number, margin: number, ask: number) => {
-  return computed.filter((x) => {
-    return x.pd <= 10 && x.trapped > 80 && x.mrr === mrr && margin > x.pledge && x.growth === growth && Math.abs(ask - x.ask) <= 1;
-  });
-};
-
-const unique = (a: any) =>
-  // @ts-ignore
-  [...new Set(a.map((o: any) => JSON.stringify(o)))].map((s) => JSON.parse(s));
 
 function Intro(props: IntroProps) {
   const s = useMediaQuery({ query: "(max-width: 481px)" });

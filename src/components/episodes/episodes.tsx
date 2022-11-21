@@ -7,13 +7,12 @@ import { useMediaQuery } from "react-responsive";
 // import usecase2 from "../../assets/early-payments-usecase2.png";
 
 import styles from "../intro/intro.module.css";
-import { Content } from "react-bulma-components";
 
 interface Props {}
 
 export const Episodes = (props: Props) => {
   const s = useMediaQuery({ query: "(max-width: 481px)" });
-  const m = useMediaQuery({ query: "(max-width: 1100px)" });
+  // const m = useMediaQuery({ query: "(max-width: 1100px)" });
 
 
   console.log("Episodes");

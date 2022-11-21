@@ -3,7 +3,7 @@ import { Cell, Grid } from "styled-css-grid";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/logo.png";
+// import logo from "../../assets/logo.png";
 import styles from "./header.module.css";
 import "bulma/css/bulma.min.css";
 import { Menu, Section } from "react-bulma-components";
