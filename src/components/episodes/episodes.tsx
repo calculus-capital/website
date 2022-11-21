@@ -32,7 +32,7 @@ export const Episodes = (props: Props) => {
         </Cell>
         <Cell width={1} height={1} hidden={s}></Cell>
       </Grid>
-      <Grid columns={6} rows={s ? 2 : 1} className={styles.showcaseContainer}>
+      <Grid columns={6} rows={1} className={styles.showcaseContainer}>
         <Cell width={1} height={1} hidden={s}></Cell>
         <Cell width={s ? 6 : 4} height={1}>
           <Showcase
@@ -45,7 +45,7 @@ export const Episodes = (props: Props) => {
         </Cell>
         <Cell width={1} height={1} hidden={s}></Cell>
       </Grid>
-      <Grid columns={6} rows={s ? 2 : 1} className={styles.showcaseContainer}>
+      <Grid columns={6} rows={1} className={styles.showcaseContainer}>
         <Cell width={1} height={1} hidden={s}></Cell>
         <Cell width={s ? 6 : 4} height={1}>
           <Showcase
