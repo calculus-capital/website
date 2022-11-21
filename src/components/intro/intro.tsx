@@ -81,7 +81,7 @@ function Intro(props: IntroProps) {
         <Cell width={s ? 0 : m ? 0 : 1} height={1} hidden={s || m}></Cell>
         <Cell width={s ? 6 : m ? 6 : 4} height={1}>
           <Showcase
-            pic="http://bulma.io/images/placeholders/128x128.png"
+            pic=""
             name="Chirag Hota"
             designation="Engineering Manager, Confluent"
             description="Chirag has been a veteran of the startup and the corporate worlds. Some of his mobile apps - redbus, limeroad, zoomcar, are used by millions of users."
@@ -93,7 +93,7 @@ function Intro(props: IntroProps) {
       <Grid columns={6} rows={s ? 2 : 1} className={styles.showcaseContainer}>
         <Cell width={s ? 6 : 3} height={1}>
           <Showcase
-            pic="http://bulma.io/images/placeholders/128x128.png"
+            pic=""
             name="Aniruddha Mazumdar"
             designation="Senior Mobile Engineer, EpiFi"
             description="Aniruddha is a seasoned engineer who has helped startups like redbus, practo, koo and epifi build successful businesses on mobile applications."
@@ -102,7 +102,7 @@ function Intro(props: IntroProps) {
         </Cell>
         <Cell width={s ? 6 : 3} height={1}>
           <Showcase
-            pic="http://bulma.io/images/placeholders/128x128.png"
+            pic=""
             name="Abhishek Ramaswamy"
             designation="Director Of Analytics, Kaplan"
             description="Starting from simulation systems to leading analytics, data science and data engineering teams, Abhishek has been through an inspiring career."
@@ -117,20 +117,20 @@ function Intro(props: IntroProps) {
   );
 }
 
-function Showcase(props:{pic:String, name:String, designation:String, description:String, full:Boolean})  {
+function Showcase(props: { pic: string; name: string; designation: string; description: string; full: boolean }) {
   const s = useMediaQuery({ query: "(max-width: 481px)" });
   const m = useMediaQuery({ query: "(max-width: 1100px)" });
 
   return (
     <Grid columns={4} rows={4} className={styles.card}>
-      <Cell height={s ? 2 : m && props.full ? 4 : m ? 2 : 4} width={2} className={styles.cardImage}>
-        <img src="http://bulma.io/images/placeholders/128x128.png"></img>
+      <Cell height={s ? 2 : m && !props.full ? 2 : m ? 4 : 4} width={2} className={styles.cardImage}>
+        <img src={props.pic}></img>
       </Cell>
       <Cell height={2} width={2} className={styles.cardHeading} center middle>
         <h1>{props.name}</h1>
         <h5>{props.designation}</h5>
       </Cell>
-      <Cell width={s ? 4 : m ? 4 : 2} height={2} className={styles.cardDescription}>
+      <Cell width={s ? 4 : m && !props.full ? 4 : 2} height={2} className={styles.cardDescription}>
         <p>{props.description}</p>
       </Cell>
     </Grid>

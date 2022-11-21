@@ -119,16 +119,15 @@
   }
 
   .cardImage {
-      background-image: linear-gradient(
-        70deg,
-        #fbd15d 5%,
-        #ffdc7b 5% 10%,
-        #ffe293 10% 15%,
-        #ffe7a5 15% 20%,
-        #00000000 20% 100%
-      );
       border-top-left-radius: 25px;
       border-bottom-left-radius: 25px;
+
+      background-color:white;
+      background-image:
+      radial-gradient(#fbd15d 9px, transparent 10px),
+      repeating-radial-gradient(#fbd15d 0, #fbd15d 4px, transparent 5px, transparent 20px, #fbd15d 21px, #fbd15d 25px, transparent 26px, transparent 50px);
+      background-size: 30px 30px, 90px 90px;
+      background-position: 0 0;
   }
 
   .cardImage img {
@@ -218,19 +217,26 @@
   .card {
     background-color: rgba(255,220,150,0.7);
     border-radius: 25px;
+    background-image: linear-gradient(
+      70deg,
+      #fbd15d 5%,
+      #ffdc7b 5% 10%,
+      #ffe293 10% 15%,
+      #ffe7a5 15% 20%,
+      #00000000 20% 100%
+    );
   }
 
   .cardImage {
-      background-image: linear-gradient(
-        70deg,
-        #fbd15d 5%,
-        #ffdc7b 5% 10%,
-        #ffe293 10% 15%,
-        #ffe7a5 15% 20%,
-        #00000000 20% 100%
-      );
-      border-top-left-radius: 25px;
-      border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+    background-color:white;
+    background-image:
+    radial-gradient(#fbd15d 9px, transparent 10px),
+    repeating-radial-gradient(#fbd15d 0, #fbd15d 4px, transparent 5px, transparent 20px, #fbd15d 21px, #fbd15d 25px, transparent 26px, transparent 50px);
+    background-size: 30px 30px, 90px 90px;
+    background-position: 0 0;
   }
 
   .cardImage img {
@@ -254,7 +260,8 @@
 
   .cardDescription {
     font-size: 12pt;
-    padding: 5px;
+    padding: 10px;
+    margin-left: 40px;
     text-align: left;
   }
 
@@ -329,16 +336,15 @@
   }
 
   .cardImage {
-      background-image: linear-gradient(
-        70deg,
-        #fbd15d 5%,
-        #ffdc7b 5% 10%,
-        #ffe293 10% 15%,
-        #ffe7a5 15% 20%,
-        #00000000 20% 100%
-      );
       border-top-left-radius: 25px;
       border-bottom-left-radius: 25px;
+
+      background-color:white;
+      background-image:
+      radial-gradient(#fbd15d 9px, transparent 10px),
+      repeating-radial-gradient(#fbd15d 0, #fbd15d 4px, transparent 5px, transparent 20px, #fbd15d 21px, #fbd15d 25px, transparent 26px, transparent 50px);
+      background-size: 30px 30px, 90px 90px;
+      background-position: 0 0;
   }
 
   .cardImage img {
