@@ -99,6 +99,11 @@
     margin-top: 0px;
   }
 
+  .subscribeHeader {
+    font-size: 30pt;
+    color: #030303;
+  }
+
   .subscribe  * {
     font-size: 5vw;
     color: #dd7113;
@@ -198,6 +203,11 @@
 
   .descriptionBlock {
     margin-top: 0px;
+  }
+
+  .subscribeHeader {
+    font-size: 25pt;
+    color: #030303;
   }
 
   .subscribe * {
@@ -310,7 +320,6 @@
     margin-top: 20px;
   }
 
-  /* revenue */
   .subscribeHeader {
     font-size: 25pt;
     color: #030303;
@@ -340,9 +349,7 @@
       border-bottom-left-radius: 25px;
 
       background-color:white;
-      background-image:
-      radial-gradient(#fbd15d 9px, transparent 10px),
-      repeating-radial-gradient(#fbd15d 0, #fbd15d 4px, transparent 5px, transparent 20px, #fbd15d 21px, #fbd15d 25px, transparent 26px, transparent 50px);
+      background-image: radial-gradient(#fbd15d 9px, transparent 10px), repeating-radial-gradient(#fbd15d 0, #fbd15d 4px, transparent 5px, transparent 20px, #fbd15d 21px, #fbd15d 25px, transparent 26px, transparent 50px);
       background-size: 30px 30px, 90px 90px;
       background-position: 0 0;
   }
