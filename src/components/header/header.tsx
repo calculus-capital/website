@@ -28,7 +28,7 @@ function Header(props: HeaderProps) {
         )} */}
         <Cell width={s ? 10 : m ? 7 : 7} center middle className={styles.cell}>
           <div className={styles.eob}>
-            <p className={styles.neonText}>Engineers of India</p>
+            <p className={styles.neonText}>The Engineering Leader</p>
           </div>
           <div className={styles.separator350}></div>
           <div className={styles.eobAbout}>

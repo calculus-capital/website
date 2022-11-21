@@ -102,6 +102,7 @@
   .subscribeHeader {
     font-size: 30pt;
     color: #030303;
+    margin-top: 20px;
   }
 
   .subscribe  * {
@@ -208,6 +209,7 @@
   .subscribeHeader {
     font-size: 25pt;
     color: #030303;
+    margin-top: 20px;
   }
 
   .subscribe * {
@@ -323,6 +325,7 @@
   .subscribeHeader {
     font-size: 25pt;
     color: #030303;
+    margin-top: 20px;
   }
 
   .subscribe * {

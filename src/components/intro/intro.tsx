@@ -53,6 +53,7 @@ function Intro(props: IntroProps) {
           <p className={styles.subscribeService}>Google</p>
         </Cell>
       </Grid>
+      <p className={styles.subscribeHeader}>Episodes</p>
       <Grid columns={6} rows={1} className={styles.showcaseContainer}>
         <Cell width={s ? 0 : m ? 0 : 1} height={1} hidden={s || m}></Cell>
         <Cell width={s ? 6 : m ? 6 : 4} height={1}>
