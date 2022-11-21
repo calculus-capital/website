@@ -60,7 +60,7 @@ function Intro(props: IntroProps) {
             pic=""
             name="Chirag Hota"
             designation="Engineering Manager, Confluent"
-            description="Chirag has been a veteran of the startup and the corporate worlds. Some of his mobile apps - redbus, limeroad, zoomcar, are used by millions of users."
+            description="Chirag has been a veteran of the startup and the corporate worlds. Some of his mobile apps - redbus, limeroad, zoomcar, are used by millions of users. An ex-amazon, ex-inmobi, he now leads the platform team at Confluent."
             full={true}
           ></Showcase>
         </Cell>
@@ -72,7 +72,7 @@ function Intro(props: IntroProps) {
             pic=""
             name="Aniruddha Mazumdar"
             designation="Senior Mobile Engineer, EpiFi"
-            description="Aniruddha is a seasoned engineer who has helped startups like redbus, practo, koo and epifi build successful businesses on mobile applications."
+            description="Aniruddha is a seasoned engineer who has helped startups like redbus, practo, koo and epifi build successful businesses at scale. He is currently building a neobank at EpiFi."
             full={false}
           ></Showcase>
         </Cell>
@@ -81,7 +81,7 @@ function Intro(props: IntroProps) {
             pic=""
             name="Abhishek Ramaswamy"
             designation="Director Of Analytics, Kaplan"
-            description="Starting from simulation systems to leading analytics, data science and data engineering teams, Abhishek has been through an inspiring career."
+            description="From building simulation tools to leading analytics and data science teams, Abhishek has been through an inspiring career. He leads the analytics and data science teams at Kaplan."
             full={false}
           ></Showcase>
         </Cell>

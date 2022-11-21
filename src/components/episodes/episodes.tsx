@@ -14,8 +14,6 @@ export const Episodes = (props: Props) => {
   const s = useMediaQuery({ query: "(max-width: 481px)" });
   // const m = useMediaQuery({ query: "(max-width: 1100px)" });
 
-
-  console.log("Episodes");
   return (
     <div className={styles.container}>
       <Grid columns={6} rows={1} className={styles.showcaseContainer}>
@@ -38,7 +36,7 @@ export const Episodes = (props: Props) => {
             pic=""
             name="Aniruddha Mazumdar"
             designation="Senior Mobile Engineer, EpiFi"
-            description="Aniruddha is a seasoned engineer who has helped startups like redbus, practo, koo and epifi build successful businesses on mobile applications."
+            description="Aniruddha is a seasoned engineer who has helped startups like redbus, practo, koo and epifi build successful businesses at scale."
             full={true}
           ></Showcase>
         </Cell>
