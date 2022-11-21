@@ -26,16 +26,16 @@ function Header(props: HeaderProps) {
             </div>
           </Cell>
         )} */}
-        <Cell width={s ? 6 : m ? 7 : 7} center middle className={styles.cell}>
+        <Cell width={s ? 10 : m ? 7 : 7} center middle className={styles.cell}>
           <div className={styles.eob}>
-            <p className={styles.neonText}>Engineers of Bangalore</p>
+            <p className={styles.neonText}>Engineers of India</p>
           </div>
           <div className={styles.separator350}></div>
           <div className={styles.eobAbout}>
-            <p>A podcast by and for leaders and builders of tech.</p>
+            <p>A podcast by and for leaders and builders of tech in India.</p>
           </div>
         </Cell>
-        <Cell width={s ? 1 : m ? 1 : 2} className={styles.cell}></Cell>
+        <Cell width={s ? 1 : m ? 1 : 2} className={styles.cell} hidden={s}></Cell>
         <Cell width={s ? 10 : m ? 2 : 1} className={styles.cell}>
           <Section className={styles.menu}>
             <Menu>
