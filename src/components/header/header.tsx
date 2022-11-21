@@ -51,13 +51,8 @@ function Header(props: HeaderProps) {
                   </Link>
                 </Menu.List.Item>
                 <Menu.List.Item>
-                  <a className={styles.notionLink} href="https://community.engineersofbangalore.com/" target="_blank">
-                    Community
-                  </a>
-                </Menu.List.Item>
-                <Menu.List.Item>
                   <Link className={styles.notionLink} to="/contact">
-                    Talk to us
+                    Team
                   </Link>
                 </Menu.List.Item>
               </Menu.List>

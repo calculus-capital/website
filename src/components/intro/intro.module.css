@@ -63,20 +63,20 @@
   margin-left: auto;
   margin-right: auto;
 
-  background: linear-gradient(to bottom left, hsla(260, 50%, 20%, 0.6) 50%, hsla(260, 50%, 30%, 0.6) 50% 100%),
-    linear-gradient(to bottom right, hsla(260, 50%, 30%, 0.6) 50%, hsla(260, 50%, 20%, 0.6) 50% 100%);
+  background: linear-gradient(to bottom left, #fbd15d82 50%, #ffdc7b4d 50% 100%),
+    linear-gradient(to bottom right, #ffe29355 50%, #ffe7a5 50% 100%);
   border-radius: 7px;
 
   width: 250px;
   padding: 10px;
 
   color: #030303;
-  font-size: 20pt;
+  font-size: 15pt;
 }
 
 .button a {
   color: #030303;
-  font-size: 20pt;
+  font-size: 15pt;
 }
 
 @media (min-width: 1100px) {
@@ -99,24 +99,7 @@
     margin-top: 0px;
   }
 
-  /* revenue */
-  .subscribeHeader {
-    font-size: 35pt;
-    color: #030303;
-  }
-
-  .revenueSubHeader {
-    font-size: 25pt;
-    font-weight: bold;
-    color: #030303;
-  }
-
-  .revenueImage {
-    object-fit: contain;
-    max-height: 1000px;
-  }
-
-  .subscribe {
+  .subscribe  * {
     font-size: 5vw;
     color: #dd7113;
   }
@@ -125,162 +108,52 @@
     font-size: 15pt;
   }
 
-  /* .revenueDesc {
-    color: #030303;
-    height: 100%;
+  .showcaseContainer {
+    background-color: none;
+    margin-top: 20px;
   }
 
-  .revenueDesc h1 {
-    font-size: 40pt;
-    color: #030303;
+  .card {
+    background-color: rgba(255,220,150,0.7);
+    border-radius: 25px;
   }
 
-  .revenueDesc h2 {
-    font-size: 25pt;
-    color: #030303;
+  .cardImage {
+      background-image: linear-gradient(
+        70deg,
+        #fbd15d 5%,
+        #ffdc7b 5% 10%,
+        #ffe293 10% 15%,
+        #ffe7a5 15% 20%,
+        #00000000 20% 100%
+      );
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
   }
 
-  .revenueDesc ul {
-    list-style-type: disc;
-    font-size: 25pt;
-  }
-
-  .revenueDesc p {
-    font-size: 20pt;
-    text-align: left;
-    padding-left: 20px;
-    color: #030303;
-  } */
-
-  .revenueCalc {
-    font-size: 14pt;
-    color: #030303;
-    text-decoration: none;
-    text-align: left;
-  }
-
-  .revenueResult {
-    font-size: 16pt;
-    padding-bottom: 20px;
-  }
-
-  .revenueResult li {
-    font-size: 16pt;
-    padding: 5px;
-  }
-
-  .revenueResult :nth-child(odd) {
-    background-color: hsla(39, 88%, 73%, 20%);
-  }
-
-  .network {
-    margin: auto;
-    width: 700px;
-    /* background-color: green; */
-  }
-
-  .networkBlock {
-    padding: 30px;
-    font-size: 20pt;
-    color: #030303;
-  }
-
-  .networkBlockArrow {
-    padding: 30px;
-    margin-left: 20px;
-
-    font-size: 30pt;
-    font-weight: bold;
-    color: hsla(39, 88%, 63%, 100%);
-  }
-
-  /* Early pay */
-  .earlypayImage {
-    /* object-fit: contain; */
-    height: 500px !important;
-  }
-
-  .earlypayHeader {
-    font-size: 35pt;
-    font-weight: bold;
-    color: #030303;
-    margin-top: 100px;
-  }
-
-  .earlypayDesc {
-    color: #030303;
-    height: 100%;
-  }
-
-  .earlypayDesc h1 {
-    font-size: 40pt;
-    color: #030303;
-  }
-
-  .earlypayDesc h2 {
-    font-size: 25pt;
-    color: #030303;
-  }
-
-  .earlypayDesc ul {
-    list-style-type: disc;
-    font-size: 25pt;
-  }
-
-  .earlypayDesc p {
-    font-size: 16pt;
-    text-align: left;
-    padding-left: 20px;
-    color: #030303;
-  }
-
-  .earlypayCalc {
-    font-size: 14pt;
-    color: #030303;
-    text-decoration: none;
-    text-align: left;
-
-    padding-top: 50px;
-    padding-bottom: 20px;
-  }
-
-  .earlypayCalc p {
-    font-size: 20pt;
-  }
-
-  /* po */
-  .poImage {
+  .cardImage img {
+    width: 100%;
     object-fit: contain;
-    max-height: 600px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
   }
 
-  .knob {
-    margin: auto;
-    max-height: 900px;
+  .cardHeading > h1 {
+    font-size: 15pt;
+    padding: 5px;
+    text-align: left;
   }
 
-  /* iframe */
-  .if2 {
-    width: 100vw;
-    height: 100vh;
-    max-width: 1400px;
-    max-height: 1200px;
+  .cardHeading > h5 {
+    font-size: 12pt;
+    padding: 5px;
+    text-align: left;
+  }
 
-    position: relative;
-    left: 0px;
-    top: 100px;
-    border-radius: 30px;
-
-    -moz-transform: scale(0.7, 0.7);
-    -webkit-transform: scale(0.7, 0.7);
-    -o-transform: scale(0.7, 0.7);
-    -ms-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7);
-    -moz-transform-origin: top left;
-    -webkit-transform-origin: top left;
-    -o-transform-origin: top left;
-    -ms-transform-origin: top left;
-    transform-origin: top left;
+  .cardDescription {
+    font-size: 12pt;
+    padding: 5px;
+    text-align: left;
   }
 
   .menu {
@@ -328,50 +201,7 @@
     margin-top: 0px;
   }
 
-  /* revenue */
-  .subscribeHeader {
-    font-size: 25pt;
-    color: #030303;
-  }
-
-  .revenueSubHeader {
-    font-size: 15pt;
-    font-weight: bold;
-    color: #030303;
-  }
-
-  .revenueImage {
-    object-fit: contain;
-    max-height: 1000px;
-  }
-
-  .revenueDesc {
-    color: #030303;
-    height: 100%;
-  }
-
-  .revenueDesc h1 {
-    font-size: 20pt;
-    color: #030303;
-  }
-
-  .revenueDesc h2 {
-    font-size: 15pt;
-    color: #030303;
-  }
-
-  .revenueDesc ul {
-    list-style-type: disc;
-    font-size: 20pt;
-  }
-
-  .revenueDesc p {
-    font-size: 15pt;
-    text-align: left;
-    color: #030303;
-  }
-
-  .subscribe {
+  .subscribe * {
     font-size: 10vw;
     color: #dd7113;
   }
@@ -380,129 +210,52 @@
     font-size: 15pt;
   }
 
-  .revenueCalc {
+  .showcaseContainer {
+    background-color: none;
+    margin-top: 20px;
+  }
+
+  .card {
+    background-color: rgba(255,220,150,0.7);
+    border-radius: 25px;
+  }
+
+  .cardImage {
+      background-image: linear-gradient(
+        70deg,
+        #fbd15d 5%,
+        #ffdc7b 5% 10%,
+        #ffe293 10% 15%,
+        #ffe7a5 15% 20%,
+        #00000000 20% 100%
+      );
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+  }
+
+  .cardImage img {
+    width: 100%;
+    object-fit: contain;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  .cardHeading > h1 {
     font-size: 15pt;
-    color: #030303;
-    text-decoration: none;
+    padding: 5px;
     text-align: left;
   }
 
-  .revenueResult {
-    font-size: 14pt;
-    padding-bottom: 20px;
-  }
-
-  .revenueResult li {
+  .cardHeading > h5 {
     font-size: 12pt;
     padding: 5px;
-  }
-
-  .revenueResult :nth-child(odd) {
-    background-color: hsla(39, 88%, 73%, 20%);
-  }
-
-  .network {
-    margin: auto;
-    width: 80vw;
-  }
-
-  .networkBlock {
-    font-size: 10pt;
-    color: #030303;
-  }
-
-  .networkBlockArrow {
-    font-size: 20pt;
-    font-weight: bold;
-    color: hsla(39, 88%, 63%, 100%);
-  }
-
-  /* Early pay */
-  .earlypayImage {
-    /* object-fit: contain; */
-    height: 500px !important;
-  }
-
-  .earlypayHeader {
-    font-size: 25pt;
-    font-weight: bold;
-    color: #030303;
-    margin-top: 100px;
-  }
-
-  .earlypayDesc {
-    color: #030303;
-    height: 100%;
-  }
-
-  .earlypayDesc h1 {
-    font-size: 40pt;
-    color: #030303;
-  }
-
-  .earlypayDesc h2 {
-    font-size: 15pt;
-    color: #030303;
-  }
-
-  .earlypayDesc ul {
-    list-style-type: disc;
-    font-size: 15pt;
-  }
-
-  .earlypayDesc p {
-    font-size: 16pt;
     text-align: left;
-    padding-left: 20px;
-    color: #030303;
   }
 
-  .earlypayCalc {
-    font-size: 14pt;
-    color: #030303;
-    text-decoration: none;
+  .cardDescription {
+    font-size: 12pt;
+    padding: 5px;
     text-align: left;
-
-    padding-bottom: 20px;
-  }
-
-  .earlypayCalc p {
-    font-size: 20pt;
-  }
-
-  /* po */
-  .poImage {
-    object-fit: contain;
-    max-height: 600px;
-  }
-
-  .knob {
-    margin: auto;
-    max-height: 900px;
-  }
-
-  /* iframe */
-  .if2 {
-    width: 100vw;
-    height: 100vh;
-    max-width: 1400px;
-    max-height: 1200px;
-
-    position: relative;
-    left: 0px;
-    top: 100px;
-    border-radius: 30px;
-
-    -moz-transform: scale(0.7, 0.7);
-    -webkit-transform: scale(0.7, 0.7);
-    -o-transform: scale(0.7, 0.7);
-    -ms-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7);
-    -moz-transform-origin: top left;
-    -webkit-transform-origin: top left;
-    -o-transform-origin: top left;
-    -ms-transform-origin: top left;
-    transform-origin: top left;
   }
 
   .menu {
@@ -556,44 +309,7 @@
     color: #030303;
   }
 
-  .revenueSubHeader {
-    font-size: 15pt;
-    font-weight: bold;
-    color: #030303;
-  }
-
-  .revenueImage {
-    object-fit: contain;
-    max-height: 1000px;
-  }
-
-  .revenueDesc {
-    color: #030303;
-    height: 100%;
-  }
-
-  .revenueDesc h1 {
-    font-size: 20pt;
-    color: #030303;
-  }
-
-  .revenueDesc h2 {
-    font-size: 15pt;
-    color: #030303;
-  }
-
-  .revenueDesc ul {
-    list-style-type: disc;
-    font-size: 20pt;
-  }
-
-  .revenueDesc p {
-    font-size: 15pt;
-    text-align: left;
-    color: #030303;
-  }
-
-  .subscribe {
+  .subscribe * {
     font-size: 10vw;
     color: #dd7113;
   }
@@ -602,129 +318,50 @@
     font-size: 10pt;
   }
 
-  .revenueCalc {
+  .showcaseContainer {
+    background-color: none;
+    margin-top: 20px;
+  }
+
+  .card {
+    background-color: rgba(255,220,150,0.7);
+    border-radius: 25px;
+  }
+
+  .cardImage {
+      background-image: linear-gradient(
+        70deg,
+        #fbd15d 5%,
+        #ffdc7b 5% 10%,
+        #ffe293 10% 15%,
+        #ffe7a5 15% 20%,
+        #00000000 20% 100%
+      );
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+  }
+
+  .cardImage img {
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .cardHeading > h1 {
     font-size: 15pt;
-    color: #030303;
-    text-decoration: none;
+    padding: 5px;
     text-align: left;
   }
 
-  .revenueResult {
-    font-size: 14pt;
-    padding-bottom: 20px;
-  }
-
-  .revenueResult li {
+  .cardHeading > h5 {
     font-size: 12pt;
     padding: 5px;
-  }
-
-  .revenueResult :nth-child(odd) {
-    background-color: hsla(39, 88%, 73%, 20%);
-  }
-
-  .network {
-    margin: auto;
-    width: 80vw;
-  }
-
-  .networkBlock {
-    font-size: 10pt;
-    color: #030303;
-  }
-
-  .networkBlockArrow {
-    font-size: 20pt;
-    font-weight: bold;
-    color: hsla(39, 88%, 63%, 100%);
-  }
-
-  /* Early pay */
-  .earlypayImage {
-    /* object-fit: contain; */
-    height: 500px !important;
-  }
-
-  .earlypayHeader {
-    font-size: 25pt;
-    font-weight: bold;
-    color: #030303;
-    margin-top: 100px;
-  }
-
-  .earlypayDesc {
-    color: #030303;
-    height: 100%;
-  }
-
-  .earlypayDesc h1 {
-    font-size: 40pt;
-    color: #030303;
-  }
-
-  .earlypayDesc h2 {
-    font-size: 15pt;
-    color: #030303;
-  }
-
-  .earlypayDesc ul {
-    list-style-type: disc;
-    font-size: 15pt;
-  }
-
-  .earlypayDesc p {
-    font-size: 16pt;
     text-align: left;
-    padding-left: 20px;
-    color: #030303;
   }
 
-  .earlypayCalc {
-    font-size: 14pt;
-    color: #030303;
-    text-decoration: none;
+  .cardDescription {
+    font-size: 12pt;
+    padding: 5px;
     text-align: left;
-
-    padding-bottom: 20px;
-  }
-
-  .earlypayCalc p {
-    font-size: 20pt;
-  }
-
-  /* po */
-  .poImage {
-    object-fit: contain;
-    max-height: 600px;
-  }
-
-  .knob {
-    margin: auto;
-    max-height: 900px;
-  }
-
-  /* iframe */
-  .if2 {
-    width: 100vw;
-    height: 100vh;
-    max-width: 1400px;
-    max-height: 1200px;
-
-    position: relative;
-    left: 0px;
-    top: 100px;
-    border-radius: 30px;
-
-    -moz-transform: scale(0.7, 0.7);
-    -webkit-transform: scale(0.7, 0.7);
-    -o-transform: scale(0.7, 0.7);
-    -ms-transform: scale(0.7, 0.7);
-    transform: scale(0.7, 0.7);
-    -moz-transform-origin: top left;
-    -webkit-transform-origin: top left;
-    -o-transform-origin: top left;
-    -ms-transform-origin: top left;
-    transform-origin: top left;
   }
 
   .menu {
