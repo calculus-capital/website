@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d1861530.chunk.css",
+    "main.js": "/static/js/main.812fa716.chunk.js",
+    "main.js.map": "/static/js/main.812fa716.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0287ad66.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0287ad66.js.map",
+    "static/css/2.7dfdeb8b.chunk.css": "/static/css/2.7dfdeb8b.chunk.css",
+    "static/js/2.2df80f13.chunk.js": "/static/js/2.2df80f13.chunk.js",
+    "static/js/2.2df80f13.chunk.js.map": "/static/js/2.2df80f13.chunk.js.map",
+    "static/js/3.2004eba8.chunk.js": "/static/js/3.2004eba8.chunk.js",
+    "static/js/3.2004eba8.chunk.js.map": "/static/js/3.2004eba8.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.7dfdeb8b.chunk.css.map": "/static/css/2.7dfdeb8b.chunk.css.map",
+    "static/css/main.d1861530.chunk.css.map": "/static/css/main.d1861530.chunk.css.map",
+    "static/js/2.2df80f13.chunk.js.LICENSE.txt": "/static/js/2.2df80f13.chunk.js.LICENSE.txt",
+    "static/media/early-payments-startup.bb1eeaa5.png": "/static/media/early-payments-startup.bb1eeaa5.png",
+    "static/media/early-payments-suppliers.61e9f3d1.png": "/static/media/early-payments-suppliers.61e9f3d1.png",
+    "static/media/early-payments-usecase1.80926c9a.png": "/static/media/early-payments-usecase1.80926c9a.png",
+    "static/media/early-payments-usecase2.9fadba3c.png": "/static/media/early-payments-usecase2.9fadba3c.png",
+    "static/media/index.css": "/static/media/fira-sans-vietnamese-400-normal.66ebe821.woff2",
+    "static/media/po-financing-usecase1.885cb25b.png": "/static/media/po-financing-usecase1.885cb25b.png",
+    "static/media/po-financing.f1037165.png": "/static/media/po-financing.f1037165.png",
+    "static/media/revenue-right.b1946d0a.png": "/static/media/revenue-right.b1946d0a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0287ad66.js",
+    "static/css/2.7dfdeb8b.chunk.css",
+    "static/js/2.2df80f13.chunk.js",
+    "static/css/main.d1861530.chunk.css",
+    "static/js/main.812fa716.chunk.js"
+  ]
+}
